@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버거킹 로그인 화면</title>
+    <link rel="stylesheet" href="../font/css/bkbulmatpro.css">
+    <link rel="stylesheet" href="../font/css/sdgothicneo.css">
+    <link rel="stylesheet" href="../font/css/pretendardvariable.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <!-- font-weigth - 100~900 사이의 값을 가짐, 보통 Regular - 400 -->
+    <!-- Variable font - 45~900, 해상도에 영향을 받는 크기로 설정해서 두께감도 같이 늘렸다 줄였다 할 때 많이 사용하는 편 -->
+    <!-- font-style - normal -->
+    <!-- line-height - 줄 간격, 글자를 기준으로 위아래 여백, 16px 기준 이하 130%~140%, 줄바꿈이 없다면 100% 설정, 100% = 1 -->
+    <!-- letter-spacing - 자간. em, rem 단위 사용 -->
+    <!-- font-size - rem 단위는 root, 브라우저의 기본 글꼴의 영향을 받음. px, em, rem, vw 등의 단위 사용 -->
+    <style>
+        /* :root - CSS에서 자주 사용할 값을 미리 저장해 둠 */
+        :root {
+            --font: "Sandoll GothicNeoRound", sans-serif;
+            --font-pre: "Pretendard Variable", sans-serif;
+            --font-BKR: "BKR", sans-serif;
+            --primary: #512314;
+            --focus: #D62302;
+            --baseBorder: #D9CFC6;
+            --inputBg: #FFFCF9;
+            --button: #E9DDCD;
+            --errorColor: #C54734;
+            --placeholder: #EBE6E2;
+            --text: #766053;
+            --bg: #F4EBDC;
+        }
+
+        /* var()를 통해 변수 값 불러오기 가능 */
+        body {
+            font-family: var(--font); /* 상속되는 속성, font-size 단위 중 em이나 %, 가로/세로 크기 중 %도 상속이 됨 */
+            font-size: 1.6rem;
+            color: var(--primary);
+        }
+
+
+        #wrap {
+            width: 100%;
+            max-width: 1024px;
+            margin: 0 auto;
+            background-color: var(--bg);
+            min-height: 100dvh;
+        }
+
+        /* 선택자 사이에 space(띄어쓰기) - 지정된 요소의 모든 하위 요소(자식, 손자)와 일치 */
+        /* 선택자 사이에 >가 있는 경우 모든 자식요소를 선택, main > span일 경우 main을 부모로 둔 span만이 선택됨 */
+        /* 선택자 사이에 +가 있는 경우 선택자 기준 다음 형제 요소를 선택 */
+        /* 선택자 사이에 ~가 있는 경우 선택자 기준 다음 형제 요소들을 선택(+의 경우 하나만 선택 가능) */
+        /* :nth-child() - 자식들 중 n번째 자식 선택, :nth-type-of() - 자식들 중 같은 요소 사이에서 n번째 자식 선택 */
+
+        html {
+            font-size: 62.5%;
+        }
+
+        .title > span {
+            line-height: 1;
+        }
+
+        .title > span:first-child {
+            font-size: 2.5rem;
+        }
+
+        .title > span:last-child {
+            font-size: 3.5rem;
+        }
+
+        input {
+            border: 1px solid var(--baseBorder);
+            background-color: var(--inputBg);
+        }
+
+        input::placeholder {
+            color: var(--placeholder);
+        }
+
+        .email {
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        input[type="email"] {
+            margin-top: 8px;
+        }
+
+        input[type="password"] {
+            margin-top: 10px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            height: 50px;
+            padding: 0 20px;
+            /* 방향을 지정해서 줄 수 있음(top, bottom, left, right)
+            모든 방향에 한 번에 줄 경우 방향 생략
+            상하 여백이 같고 좌우 여백이 같을 경우 상하 여백 -> 좌우 여백 순으로 2개
+            모든 곳의 여백이 다를 때는 4개의 값으로 지정, 위, 오른쪽, 아래, 왼쪽 순 
+            위아래 여백은 다르고 좌우 여백이 같을 때 -> 위, 좌우, 아래 순으로 3개 지정 */
+            border-radius: 10px;
+        }
+
+        .input_box.rela {
+            position: relative;
+        }
+
+        .pw_btn {
+            width: 26px;
+            height: 26px;
+            background: url(img/eye_icon.svg) no-repeat center / 26px;
+            position: absolute;
+            right: 20px;
+            bottom: 12px;
+        }
+
+        .login_option {
+            margin-top: 12px;
+        }
+
+        .login_option label {
+            /* label 요소가 span 요소를 정확히 감싸기 위해 적용 */
+            display: inline-flex;
+        }
+
+        .login_option label:first-child {
+            /* display:flex가 적용된 요소에만 gap 지정 가능 */
+            margin-right: 30px;
+        }
+
+        .login_option span {
+            /* 각각의 span을 좌우 정렬하기 위해 inline-flex 사용 */
+            display: inline-flex; /* 일반 flex로 할 경우 줄바꿈 생김 : block 요소 처리됨 */
+            align-items: center;
+            column-gap: 6px;
+        }
+
+        .login_option .check + span::before {
+            /* before, after: 해당 요소의 가상의 자식 요소, 요소의 앞뒤로 들어감 */
+            /* before는 앞, after는 뒤 */
+            /* width와 height를 주려면 display:block; 필요 */
+            content: "";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: url(img/checkBox_disabled.svg) no-repeat center / contain;
+        }
+
+        .login_option .check:checked + span::before {
+            content: "";
+            background-image: url(img/checkBox_active.svg);
+        }
+
+        /* .login_option .check { */
+            /* background-color: yellow; */
+            /* 우선순위 - 유형 선택자, 클래스 선택자, id 선택자보다 인라인 시트가 우선순위 더 높음
+            유형 선택자 < 클래스 선택자 < id 선택자 < 인라인 시트 < !important
+            요소 1점, 클래스/속성 10점, 아이디 100점 */
+        /* } */
+
+        h1 {
+            font-size: 2.0rem;
+            /* text-align: center; */
+            /* text-align은 block 요소에서만 사용 가능 */
+        }
+
+        main {
+            padding: 48px 20px 90px;
+        }
+
+        .title {
+            font-family: var(--font-BKR);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            /* margin-top: 48px; */
+            margin-bottom: 50px;
+        }
+
+        /* button 요소는 기본적으로 상속 불가, 상속에 대한 값을 따로 넣어야 함 */
+        .login_btn {
+            width: 100%;
+            /* max-width: 350px; */
+            height: 44px;
+            border-radius: 22px;
+            font-family: inherit; /* button과 input 요소는 폰트와 컬러가 상속이 안 됨 : inherit으로 상속 */
+            font-size: inherit; /* button과 input 요소는 폰트와 컬러가 상속이 안 됨 : inherit으로 상속 */
+            /* button의 경우 가운데 정렬, 위아래 정렬이 기본적으로 적용됨 */
+            color: var(--placeholder);
+            background-color: var(--primary);
+            border: none;
+            opacity: 0.2;
+            /* 인라인 요소 : width, height 지정 불가
+            margin과 padding을 좌우로만 지정 가능, 가로 정렬 가능
+            블록 요소 : width, height 지정 가능
+            margin과 padding을 좌우, 위아래 지정 가능, 세로 정렬 가능
+            inline-block 요소 : 인라인 요소와 블록 요소의 특징을 동시에 가진 요소, 가로 정렬이 가능하면서 가로/세로 여백 수치 지정 가능
+            display로 변경 가능(display:inline, display:block, display:inline-block 등) */
+        }
+
+        .login_link {
+            margin-top: 20px;
+            font-family: var(--font-pre);
+            font-weight: 500;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+
+        a {
+            /* 밑줄 없애기 */
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .sns_login {
+            margin-top: 96px;
+        }
+
+        .sns_login > p {
+            font-size: 1.3rem;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            column-gap: 12px;
+            margin-bottom: 35px;
+            justify-content: center;
+            white-space: nowrap; /* 줄바꿈을 하지 않겠다 */
+        }
+
+        .sns_login > p::before,
+        .sns_login > p::after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background-color: var(--primary);
+            opacity: 0.3;
+        }
+
+        .login_link a {
+            display: inline-flex;
+            align-items: center;
+            column-gap: 4px;
+        }
+
+        .login_link a::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 12px;
+            background-color: var(--primary);
+            opacity: 1;
+        }
+
+        .login_link a:last-child::after {
+            content: "";
+            display: none;
+        }
+
+        .sns_list {
+            display: flex;
+            column-gap: 20px;
+            justify-content: center;
+        }
+
+        .sns_list > a {
+            display: block;
+            width: 45px;
+            height: 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 45px;
+        }
+
+        .sns_list > a:first-child {
+            background-image: url(img/kakao_logo_icon.svg);
+        }
+
+        .sns_list > a:nth-child(2) {
+            background-image: url(img/naver_logo_icon.svg);
+        }
+
+        .sns_list > a:nth-child(3) {
+            background-image: url(img/apple_logo_icon.svg);
+        }
+
+        .sns_list > a:last-child {
+            background-image: url(img/samsung_logo_icon.svg);
+        }
+
+        #wrap {
+            width: 100%;
+            max-width: 1024px;
+            min-width: 360px;
+            background-color: var(--bg);
+        }
+
+        header {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            /* 자식 요소에 absolute가 적용되어 위치값이 들어가는 순간 flex 속성으로 적용 불가 */
+            height: 48px;
+            align-items: center;
+        }
+
+        .sr-only {
+            display: none;
+        }
+
+        /* border - border-width, boder-style, border-color
+        border: 1px solid black; -> 1px 검은 선이 생김
+        또는 border-width: 1px; border-style: solid; border-color: black;과 같은 식으로 따로 주는 것도 가능함 */
+
+        .prev_btn {
+            width: 48px;
+            height: 48px;
+            /* background-color: red; */
+            /* background-image: url(img/back_icon.svg); -> 배경 이미지 넣기
+            background-repeat: no-repeat;
+            background-position: center/
+            background-attachment: scroll;
+            background-size: auto; */
+            /* background-repeat - 배경 반복
+            background-attactment - 배경 고정
+            background-position - 배경 위치
+            background-size - 배경 크기 조절 */
+            background: transparent url(img/back_icon.svg)
+            no-repeat scroll center / auto;
+            /* 축약형 */
+            /* auto는 원본 이미지 크기(지정하지 않으면 이 값으로 들어감(기본값)), 100%는 프레임 크기에 맞춤
+            px과 같은 단위로도 크기 지정 가능 */
+            position: absolute;
+            left: 0;
+        }
+
+        /* 가운데 정렬하는 방법
+        1. 부모가 flex일 때 row인 경우 justify-content: center;
+        column인 경우 align-items:center;
+        2. text-align 속성
+        조건: 요소가 block 요소이고 inline 요소들을 정리할 때
+        3. margin:auto 속성
+        조건: block 요소 자체를 가운데 정렬하고 싶을 때 */
+    </style>
+</head>
+<body>
+    <!-- id는 하나만 존재할 수 있고 여러 개 지정 불가 -->
+    <div id="wrap">
+        <header>
+            <h1>로그인</h1>
+            <!-- class의 경우 여러 번 사용 가능, 여러 개 지정 가능 -->
+            <button class="prev_btn"><span class="sr-only">이전 버튼</span></button>
+        </header>
+        <main>
+            <h2 class="title">
+                <span>안녕하세요 :)</span>
+                <span>버거킹입니다.</span>
+            </h2>
+            <!-- form - 사용자가 정보를 입력해서 전송하는 영역 -->
+            <form action="#">
+                <!-- 이메일 로그인 -->
+                <!-- fieldset - 관련 있는 입력 요소들을 하나의 그룹으로 묶는 것 -->
+                <fieldset>
+                    <!-- legend - 그 fieldset 그룹의 제목 -->
+                    <legend class="sr-only">로그인 화면</legend>
+                    <label for="email" class="email">이메일 로그인</label>
+                    <!-- 아이디 -->
+                    <div class="input_box">
+                        <input type="email" id="email" name="email" placeholder="아이디(이메일)를 입력해 주세요.">
+                    </div>
+                    <!-- 비밀번호 -->
+                    <div class="input_box rela">
+                        <input type="password" name="password" placeholder="비밀번호를 입력해 주세요.">
+                        <button class="pw_btn"><span class="sr-only">비밀번호 보기</span></button>
+                    </div>
+                    <div class="login_option">
+                        <label>
+                            <input type="checkbox" class="check sr-only" checked>
+                            <span>자동 로그인</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="check sr-only">
+                            <span>아이디 저장</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="login_btn">로그인</button>
+                </fieldset>
+            </form>
+            <div class="login_link">
+                <a href="#">아이디 찾기</a>
+                <a href="password.html">비밀번호 재설정</a>
+                <a href="#">회원가입</a>
+            </div>
+            <div class="sns_login">
+                <p>SNS로 간편하게 로그인</p>
+                <div class="sns_list">
+                    <a href="#"><span class="sr-only">카카오 로그인</span></a>
+                    <a href="#"><span class="sr-only">네이버 로그인</span></a>
+                    <a href="#"><span class="sr-only">애플 로그인</span></a>
+                    <a href="#"><span class="sr-only">삼성카드 로그인</span></a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

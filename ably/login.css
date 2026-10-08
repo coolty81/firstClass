@@ -1,7 +1,7 @@
 :root {
     --font: "Pretendard Variable", sans-serif;
     --primary: #1F1F1F;
-    --focus: #E21F2C;
+    --errorColor: #E21F2C;
     --baseBorder: #DDDDDD;
     --inputBg: #FFFFFF;
     --button: #EEEEEE;
@@ -118,7 +118,7 @@ fieldset {
 }
 
 .input_box input:focus {
-    border-color: var(--focus);
+    border-color: var(--primary);
 }
 
 .pw_btn {

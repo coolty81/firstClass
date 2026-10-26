@@ -41,3 +41,99 @@ body {
         height: 100dvh;
     }
 }
+
+/* =========================
+   Figma Hero Swiper Controls
+   ========================= */
+
+.hero-sec .swiper-button-prev,
+.hero-sec .swiper-button-next {
+    position: absolute;
+    top: auto;
+    bottom: 160px;
+    width: 8px;
+    height: 14px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.hero-sec .swiper-button-prev {
+    left: max(calc((100% - 1720px) / 2), 20px);
+}
+
+.hero-sec .swiper-button-next {
+    left: max(calc((100% - 1720px) / 2 + 118px), 138px);
+}
+
+.hero-sec .swiper-button-prev::after,
+.hero-sec .swiper-button-next::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 1.5px solid #1E1E1E;
+    border-right: 1.5px solid #1E1E1E;
+}
+
+.hero-sec .swiper-button-prev::after {
+    transform: rotate(-135deg);
+}
+
+.hero-sec .swiper-button-next::after {
+    transform: rotate(45deg);
+}
+
+.hero-sec .swiper-pagination {
+    position: absolute;
+    left: max(calc((100% - 1720px) / 2 + 26px), 46px);
+    bottom: 166px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    width: auto;
+    height: 2px;
+    transform: none;
+    z-index: 5;
+}
+
+.hero-sec .swiper-pagination-bullet {
+    width: 34px;
+    height: 2px;
+    margin: 0 !important;
+    padding: 0;
+    border-radius: 0;
+    opacity: 1;
+    background: #DDDDDD;
+}
+
+.hero-sec .swiper-pagination-bullet-active {
+    background: #666666;
+}
+
+@media (max-width: 1024px) {
+    .hero-sec .swiper-button-prev,
+    .hero-sec .swiper-button-next {
+        bottom: 48px;
+    }
+
+    .hero-sec .swiper-button-prev {
+        left: 50%;
+        margin-left: -63px;
+    }
+
+    .hero-sec .swiper-button-next {
+        left: 50%;
+        margin-left: 55px;
+    }
+
+    .hero-sec .swiper-pagination {
+        left: 50%;
+        bottom: 54px;
+        transform: translateX(-50%);
+    }
+}

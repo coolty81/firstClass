@@ -15,11 +15,8 @@
         <header>제목공간</header>
         <main>
             <div class="hero-sec">
-                <!-- Slider main container -->
                 <div class="swiper visual">
-                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                        <!-- Slides -->
                         <div class="swiper-slide">
                             <img src="img/visual01.png" alt="티센트 소개 배너" class="pc">
                             <img src="img/m_visual01.png" alt="모바일 티센트 소개 배너" class="mo">
@@ -29,40 +26,39 @@
                             <img src="img/m_visual02.png" alt="모바일 티센트 강의 배너" class="mo">
                         </div>
                     </div>
-                    <!-- If we need pagination -->
+
+                    <!-- Figma 형태의 선형 pagination -->
                     <div class="swiper-pagination"></div>
 
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
+                    <!-- Figma 형태의 좌우 이동 버튼 -->
+                    <button type="button" class="swiper-button-prev">
+                        <span class="sr-only">이전 배너</span>
+                    </button>
+                    <button type="button" class="swiper-button-next">
+                        <span class="sr-only">다음 배너</span>
+                    </button>
                 </div>
             </div>
         </main>
         <footer>&copy;</footer>
     </div>
+
     <script>
         const swiper = new Swiper('.hero-sec > .swiper', {
-            // Optional parameters
             direction: 'horizontal',
             loop: true,
 
-            // If we need pagination
             pagination: {
                 el: '.visual .swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '" aria-label="' + (index + 1) + '번째 배너"></span>';
+                },
             },
 
-            // Navigation arrows
             navigation: {
                 nextEl: '.visual .swiper-button-next',
                 prevEl: '.visual .swiper-button-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.visual .swiper-scrollbar',
             },
         });
     </script>

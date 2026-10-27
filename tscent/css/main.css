@@ -123,12 +123,12 @@ body {
 
     .hero-sec .swiper-button-prev {
         left: 50%;
-        margin-left: -63px;
+        margin-left: -73px;
     }
 
     .hero-sec .swiper-button-next {
         left: 50%;
-        margin-left: 55px;
+        margin-left: 65px;
     }
 
     .hero-sec .swiper-pagination {

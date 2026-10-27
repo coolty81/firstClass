@@ -66,7 +66,7 @@ body {
 }
 
 .hero-sec .swiper-button-next {
-    left: max(calc((100% - 1720px) / 2 + 118px), 178px);
+    left: max(calc((100% - 1720px) / 2 + 158px), 178px);
 }
 
 /* .hero-sec .swiper-button-prev::after,

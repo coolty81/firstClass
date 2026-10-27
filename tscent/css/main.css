@@ -66,7 +66,7 @@ body {
 }
 
 .hero-sec .swiper-button-next {
-    left: max(calc((100% - 1720px) / 2 + 118px), 138px);
+    left: max(calc((100% - 1720px) / 2 + 118px), 178px);
 }
 
 /* .hero-sec .swiper-button-prev::after,
@@ -123,12 +123,12 @@ body {
 
     .hero-sec .swiper-button-prev {
         left: 50%;
-        margin-left: -73px;
+        margin-left: -72px;
     }
 
     .hero-sec .swiper-button-next {
         left: 50%;
-        margin-left: 65px;
+        margin-left: 64px;
     }
 
     .hero-sec .swiper-pagination {

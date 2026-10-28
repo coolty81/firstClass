@@ -78,18 +78,19 @@ header > div:last-child > p {
     top: 0; transform: translate(100px, 200px);
     display: flex;
     flex-direction: column;
+    gap: 18px;
 }
 
 .hero-sec .swiper-slide span {
     color: var(--text-inverse);
 }
 
-.hero-sec .swiper-slide span:first-child {
+.hero-sec .swiper-slide > span:first-child, .hero-sec .swiper-slide > span:last-child {
     font-size: 1rem;
     line-height: 100%;
 }
 
-.hero-sec .swiper-slide span:nth-child(2) {
+.hero-sec .swiper-slide > span:nth-child(2) {
     font-size: 4rem;
     line-height: 110%;
 }

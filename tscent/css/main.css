@@ -78,6 +78,7 @@ header > div:last-child > p {
     top: 0; transform: translate(100px, 200px);
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 18px;
 }
 

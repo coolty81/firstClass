@@ -76,12 +76,18 @@ header > div:last-child > p {
     flex-direction: column;
 }
 
+.hero-sec .swiper-slide span {
+    color: var(--text-inverse);
+}
+
 .hero-sec .swiper-slide span:first-child {
     font-size: 16px;
+    line-height: 100%;
 }
 
 .hero-sec .swiper-slide span:nth-child(2) {
     font-size: 64px;
+    line-height: 110%;
 }
 
 .hero-sec .swiper img {

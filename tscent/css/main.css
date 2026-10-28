@@ -1,6 +1,40 @@
+:root {
+    /* Figma Variables - Primitives */
+    --color-white: #FFFFFF;
+    --color-black: #1E1E1E;
+    --color-tea-green: #6B7A5A;
+    --color-warm-beige: #F7F5EE;
+    --color-gray-600: #666666;
+    --color-gray-300: #DDDDDD;
+    --color-tea-brown: #B37A56;
+
+    /* Figma Variables - Semantic */
+    --background-default: var(--color-white);
+    --background-subtle: var(--color-warm-beige);
+
+    --surface-default: var(--color-white);
+    --surface-subtle: var(--color-warm-beige);
+
+    --text-primary: var(--color-black);
+    --text-secondary: var(--color-gray-600);
+    --text-inverse: var(--color-white);
+
+    --border-default: var(--color-gray-300);
+
+    --action-primary: var(--color-black);
+    --action-secondary: var(--color-tea-green);
+    --action-disabled: var(--color-gray-300);
+
+    --accent-tea: var(--color-tea-green);
+    --accent-warm: var(--color-tea-brown);
+
+    /* Typography */
+    --font: "Pretendard Variable", sans-serif;
+}
+
 body {
     background-color: yellow;
-    font-family: "Pretendard Variable", sans-serif;
+    font-family: var(--font);
 }
 
 .mo {

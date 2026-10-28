@@ -45,6 +45,11 @@ header {
     z-index: 10;
 }
 
+header > div {
+    display:flex;
+    gap:64px;
+}
+
 .mo {
     display: none;
 }

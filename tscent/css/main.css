@@ -271,3 +271,573 @@ header div+div img {
         transform: translateX(-50%);
     }
 }
+
+/* =========================
+   Main Content Sections
+   Figma Main: 1720px inner
+   ========================= */
+
+main > section {
+    width: 100%;
+}
+
+.section-inner {
+    width: min(1720px, calc(100% - 200px));
+    margin: 0 auto;
+}
+
+.section-label {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.2;
+    border-bottom: 1px solid var(--text-primary);
+    padding-bottom: 4px;
+}
+
+.brand-sec {
+    min-height: 916px;
+    padding: 100px 0;
+    background: var(--background-default);
+}
+
+.brand-sec .section-inner {
+    display: grid;
+    grid-template-columns: 1fr 800px;
+    gap: 120px;
+    align-items: center;
+    min-height: 716px;
+}
+
+.brand-copy {
+    padding-top: 117px;
+}
+
+.brand-heading {
+    margin-top: 34px;
+}
+
+.brand-heading h2 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: clamp(3rem, 4.1vw, 5rem);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+}
+
+.brand-lead {
+    max-width: 520px;
+    margin-top: 42px;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    line-height: 1.55;
+}
+
+.brand-desc {
+    max-width: 560px;
+    margin-top: 20px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.brand-heading .text-link {
+    margin-top: 44px;
+}
+
+.brand-image {
+    width: 800px;
+    height: 696px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.brand-image img,
+.featured-image img,
+.tea-image img,
+.culture-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-sec {
+    min-height: 1270px;
+    padding: 100px 0;
+    background: var(--background-default);
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 32px;
+}
+
+.section-head h2 {
+    margin: 18px 0 0;
+    color: var(--text-primary);
+    font-size: clamp(2.8rem, 4vw, 4.5rem);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
+.featured-product {
+    display: grid;
+    grid-template-columns: 800px minmax(0, 579px);
+    justify-content: start;
+    gap: 60px;
+    margin-top: 60px;
+    padding-left: 0;
+}
+
+.featured-image {
+    width: 800px;
+    height: 800px;
+    margin: 0;
+    overflow: hidden;
+    background: var(--surface-subtle);
+}
+
+.product-copy {
+    align-self: center;
+    max-width: 579px;
+    padding-top: 40px;
+}
+
+.product-number,
+.item-number {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    line-height: 1;
+}
+
+.product-brand {
+    margin-top: 28px;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+
+.product-copy h3 {
+    margin: 10px 0 0;
+    color: var(--text-primary);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.product-price {
+    margin-top: 20px;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.product-desc {
+    margin-top: 34px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.product-info {
+    display: grid;
+    gap: 16px;
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-default);
+}
+
+.product-info > div {
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    gap: 24px;
+}
+
+.product-info dt,
+.product-info dd {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.product-info dt {
+    color: var(--text-secondary);
+}
+
+.product-info dd {
+    color: var(--text-primary);
+}
+
+.outline-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 154px;
+    height: 50px;
+    margin-top: 42px;
+    padding: 0 20px;
+    border: 1px solid var(--text-primary);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.tea-tools-sec {
+    min-height: 1090px;
+    padding: 100px 0;
+    background: var(--background-subtle);
+}
+
+.tea-head {
+    align-items: flex-end;
+}
+
+.tea-head > p {
+    max-width: 560px;
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.category-tabs {
+    display: flex;
+    gap: 30px;
+    margin-top: 54px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-default);
+}
+
+.category-tabs a {
+    position: relative;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.category-tabs a.is-active {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.category-tabs a.is-active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -21px;
+    height: 2px;
+    background: var(--accent-tea);
+}
+
+.tea-feature {
+    display: grid;
+    grid-template-columns: 495px 800px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.tea-copy {
+    max-width: 495px;
+    padding-left: 0;
+}
+
+.tea-copy h3 {
+    margin-top: 22px;
+    color: var(--text-primary);
+    font-size: 2.3rem;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.tea-copy p {
+    margin-top: 28px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.tea-copy .text-link {
+    margin-top: 34px;
+}
+
+.tea-image {
+    width: 800px;
+    height: 600px;
+    margin: 0;
+    overflow: hidden;
+    background: var(--surface-default);
+}
+
+.culture-sec {
+    min-height: 1318px;
+    padding: 100px 0;
+    background: var(--background-default);
+}
+
+.culture-feature {
+    display: grid;
+    grid-template-columns: 756px minmax(0, 1fr);
+    min-height: 950px;
+    margin-top: 60px;
+}
+
+.culture-image {
+    width: 756px;
+    height: 950px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.culture-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 950px;
+    padding: 100px;
+    background: var(--surface-subtle);
+}
+
+.culture-card h3 {
+    margin-top: 24px;
+    color: var(--text-primary);
+    font-size: clamp(2rem, 2.8vw, 3.2rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+}
+
+.culture-date {
+    margin-top: 24px;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.culture-card p:not(.culture-date) {
+    max-width: 580px;
+    margin-top: 30px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.culture-card .outline-btn {
+    align-self: flex-start;
+    margin-top: 48px;
+}
+
+.culture-list-sec {
+    min-height: 700px;
+    padding: 100px 0;
+    background: var(--background-default);
+}
+
+.culture-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 2px solid var(--border-default);
+}
+
+.culture-list li {
+    position: relative;
+    display: grid;
+    grid-template-columns: 42px 1fr 60px;
+    align-items: center;
+    gap: 32px;
+    min-height: 130px;
+    border-bottom: 2px solid var(--border-default);
+}
+
+.culture-list li > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.culture-en {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
+
+.culture-list h2 {
+    margin-top: 8px;
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.culture-list p {
+    margin-top: 8px;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+.round-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--text-primary);
+    border-radius: 50%;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+}
+
+@media (max-width: 1200px) {
+    .section-inner {
+        width: min(100% - 120px, 1720px);
+    }
+
+    .brand-sec .section-inner,
+    .featured-product,
+    .tea-feature,
+    .culture-feature {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .brand-image,
+    .featured-image,
+    .tea-image,
+    .culture-image {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .brand-copy,
+    .product-copy,
+    .tea-copy {
+        padding-top: 0;
+    }
+
+    .culture-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .culture-card {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-inner {
+        width: calc(100% - 100px);
+    }
+
+    .brand-sec,
+    .featured-sec,
+    .tea-tools-sec,
+    .culture-sec,
+    .culture-list-sec {
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .brand-image,
+    .featured-image,
+    .tea-image {
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .culture-image {
+        height: auto;
+        aspect-ratio: 4 / 5;
+    }
+
+    .culture-card {
+        padding: 64px 50px;
+    }
+
+    .tea-head {
+        display: block;
+    }
+
+    .tea-head > p {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .culture-list li {
+        grid-template-columns: 32px 1fr 50px;
+        gap: 20px;
+        min-height: 110px;
+    }
+
+    .round-arrow {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 640px) {
+    .section-inner {
+        width: calc(100% - 40px);
+    }
+
+    .brand-heading h2 {
+        font-size: 2.8rem;
+    }
+
+    .section-head {
+        display: block;
+    }
+
+    .section-head > a {
+        margin-top: 24px;
+    }
+
+    .featured-product {
+        margin-top: 42px;
+    }
+
+    .product-copy h3 {
+        font-size: 1.65rem;
+    }
+
+    .category-tabs {
+        gap: 20px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .culture-card {
+        padding: 48px 30px;
+    }
+
+    .culture-list li {
+        grid-template-columns: 26px 1fr;
+        gap: 14px;
+        padding: 22px 0;
+    }
+
+    .culture-list li > .round-arrow {
+        grid-column: 2;
+    }
+
+    .culture-list p {
+        font-size: 0.875rem;
+    }
+}
+

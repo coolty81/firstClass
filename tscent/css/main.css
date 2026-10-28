@@ -81,16 +81,16 @@ header > div:last-child > p {
     gap: 18px;
 }
 
-.hero-sec .swiper-slide span {
+.hero-sec .swiper-slide div span {
     color: var(--text-inverse);
 }
 
-.hero-sec .swiper-slide > span:first-child, .hero-sec .swiper-slide > span:last-child {
+.hero-sec .swiper-slide div > span:first-child, .hero-sec .swiper-slide div > span:last-child {
     font-size: 1rem;
     line-height: 100%;
 }
 
-.hero-sec .swiper-slide > span:nth-child(2) {
+.hero-sec .swiper-slide div > span:nth-child(2) {
     font-size: 4rem;
     line-height: 110%;
 }

@@ -32,6 +32,10 @@
     --font: "Pretendard Variable", sans-serif;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     background-color: var(--background-default);
     font-family: var(--font);
@@ -81,12 +85,12 @@ header > div:last-child > p {
 }
 
 .hero-sec .swiper-slide span:first-child {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 100%;
 }
 
 .hero-sec .swiper-slide span:nth-child(2) {
-    font-size: 64px;
+    font-size: 4rem;
     line-height: 110%;
 }
 

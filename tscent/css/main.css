@@ -43,6 +43,9 @@ header {
     height: 85px;
     background-color: var(--background-default);
     z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
 }
 
 header > div {

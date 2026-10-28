@@ -415,7 +415,7 @@ main > section {
     height: 800px;
     margin: 0;
     overflow: hidden;
-    background: var(--surface-subtle);
+    /* background: var(--surface-subtle); */
 }
 
 .product-copy {

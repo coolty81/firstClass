@@ -97,10 +97,14 @@ body {
 
 .hero-sec .swiper-button-prev {
     left: max(calc((100% - 1720px) / 2), 20px);
+    background-image: url(../img/direction-left.svg);
+    color: transparent;
 }
 
 .hero-sec .swiper-button-next {
     left: max(calc((100% - 1720px) / 2 + 158px), 178px);
+    background-image: url(../img/direction-right.svg);
+    color: transparent;
 }
 
 /* .hero-sec .swiper-button-prev::after,

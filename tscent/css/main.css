@@ -50,7 +50,7 @@ header {
 
 header > div {
     display:flex;
-    gap:64px;
+    gap:34px;
 }
 
 .mo {

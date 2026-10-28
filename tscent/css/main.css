@@ -58,7 +58,7 @@ header > div {
     gap:34px;
 }
 
-header > div:last-child > p {
+header > div:last-child > span {
     color: var(--text-secondary);
 }
 

@@ -33,7 +33,7 @@
 }
 
 body {
-    background-color: yellow;
+    background-color: var(--background-default);
     font-family: var(--font);
 }
 

@@ -54,6 +54,10 @@ header > div {
     gap:34px;
 }
 
+header > div:last-child > p {
+    color: var(--text-secondary);
+}
+
 .mo {
     display: none;
 }

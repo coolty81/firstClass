@@ -21,11 +21,25 @@
                 <span><a href="#">Notice</a></span>
             </div>
             <div>
-                <span><a href="#">검색</a></span>
+                <span><a href="javascript:showPanel()">검색</a></span>
                 <span><a href="#">로그인</a></span>
                 <span><a href="#">회원가입</a></span>
                 <span><a href="#">장바구니 0</a></span>
                 <img src="img/icon-menu.svg" alt="메뉴 아이콘">
+            </div>
+            <div id="search" style="display: none;">
+                <form action="#">
+                    <div>
+                        <input type="text" placeholder="검색어를 입력해주세요.">
+                        <!-- <input type="submit" name="search" value="검색"> -->
+                        <div>
+                            <span>관심 키워드</span>
+                            <span><a href="#">아리산</a></span>
+                            <span><a href="#">월광백</a></span>
+                            <span><a href="#">보이차</a></span>
+                        </div>
+                    </div>
+                </form>
             </div>
         </header>
         <main>
@@ -296,6 +310,12 @@
                 prevEl: '.visual .swiper-button-prev',
             },
         });
+
+        function showPanel() {
+            const searchMenu = document.querySelector('#search');
+            if(searchMenu.style.display == 'none') searchMenu.style.display = 'flex';
+            else searchMenu.style.display = 'none';
+        }
     </script>
 </body>
 </html>

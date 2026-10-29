@@ -21,7 +21,7 @@
                 <span><a href="#">Notice</a></span>
             </div>
             <div>
-                <span><a href="javascript:showPanel()">검색</a></span>
+                <span><a href="javascript:showPanel()" id="showPanel">검색</a></span>
                 <span><a href="#">로그인</a></span>
                 <span><a href="#">회원가입</a></span>
                 <span><a href="#">장바구니 0</a></span>
@@ -313,8 +313,15 @@
 
         function showPanel() {
             const searchMenu = document.querySelector('#search');
-            if(searchMenu.style.display == 'none') searchMenu.style.display = 'flex';
-            else searchMenu.style.display = 'none';
+            const showPanel = document.querySelector('#showPanel');
+            if(searchMenu.style.display == 'none') { 
+                searchMenu.style.display = 'flex';
+                showPanel.style.color = '#B37A56';
+            }
+            else {
+                searchMenu.style.display = 'none';
+                showPanel.style.color = '#1E1E1E';
+            }
         }
     </script>
 </body>

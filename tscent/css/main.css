@@ -81,7 +81,8 @@ header div+div img {
 .hero-sec .swiper-slide > div {
     position: absolute;
     top: 50%;
-    transform: translateY(50%);
+    left: 100px;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     align-items: flex-start;

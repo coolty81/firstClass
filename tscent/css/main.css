@@ -62,9 +62,14 @@ header > div:last-child > span {
     color: var(--text-secondary);
 }
 
-header div+div img {
+header div:last-child > img {
     width: 50px;
     display: none;
+}
+
+header > div:last-child {
+    font-size: 14px;
+    gap: 20px;
 }
 
 .mo {

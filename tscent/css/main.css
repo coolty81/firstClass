@@ -112,7 +112,7 @@ header div+div img {
 .hero-sec .swiper-slide div > button {
     border: 1px solid var(--color-white);
     padding: 7px 10px;
-    color: white;
+    color: var(--color-white);
     border-radius: 6px;
 }
 
@@ -156,17 +156,16 @@ header div+div img {
     }
 
     .hero-sec .swiper-slide > div {
-        top: 50%;
+        left: 0;
         padding: 0 50px;
-        transform: translateY(-50%);
     }
 
     .hero-sec .swiper-slide div > span:first-child, .hero-sec .swiper-slide div > span:last-child {
-        font-size: 0.8rem;
+        font-size: clamp(0.8rem, 2vw, 1.2rem);
     }
 
     .hero-sec .swiper-slide div > span:nth-child(2) {
-        font-size: 1.8rem;
+        font-size: clamp(1.6rem, 6vw, 3rem);
     }
 }
 
@@ -992,4 +991,3 @@ main > section {
         line-height: 1.4;
     }
 }
-

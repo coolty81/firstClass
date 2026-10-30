@@ -862,9 +862,10 @@ main > section {
     }
 
     .section-head {
-        display: block;
+        display: flex;
         gap: 18px;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .section-head > a {

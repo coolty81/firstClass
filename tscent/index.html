@@ -24,8 +24,8 @@
                 <span><a href="javascript:showPanel()" id="showPanel">검색</a></span>
                 <span><a href="#">로그인</a></span>
                 <span><a href="#">회원가입</a></span>
-                <span><a href="#">장바구니 0</a></span>
-                <img src="img/icon-menu.svg" alt="메뉴 아이콘">
+                <span><a href="#">장바구니</a></span>
+                <a href="javascript:showMenu()"><img src="img/icon-menu.svg" alt="메뉴 아이콘"></a>
             </div>
             <div id="search" style="display: none;">
                 <form action="#">
@@ -44,6 +44,19 @@
         </header>
         <main>
             <div class="hero-sec">
+                <div id="moMenu" style="transform: translateX(100%);">
+                    <div>
+                        <a href="javascript:showMenu()"><img src="img/icon-close.svg" alt="메뉴 닫기 버튼"></a>
+                        <span><a href="#">차·도구</a></span>
+                        <span><a href="#">문화·이해</a></span>
+                        <span><a href="#">About</a></span>
+                        <span><a href="#">Notice</a></span>
+                        <span><a href="#">검색</a></span>
+                        <span><a href="#">로그인</a></span>
+                        <span><a href="#">회원가입</a></span>
+                        <span><a href="#">장바구니</a></span>
+                    </div>
+                </div>
                 <div class="swiper visual">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -105,7 +118,7 @@
             <section class="brand-sec">
                 <div class="section-inner">
                     <div class="brand-copy">
-                        <span class="section-label">BRAND</span>
+                        <span class="section-label">01 / BRAND</span>
                         <div class="brand-heading">
                             <h2>티센트는<br>차의 여백을<br>큐레이션합니다.</h2>
                             <p class="brand-lead">티센트는 ‘티하우스 하다’가 운영하는 프리미엄 잎차 브랜드입니다.</p>
@@ -123,7 +136,7 @@
                 <div class="section-inner">
                     <div class="section-head">
                         <div>
-                            <span class="section-label">FEATURED</span>
+                            <span class="section-label">02 / FEATURED</span>
                             <h2>대표 상품</h2>
                         </div>
                         <a href="#" class="text-link">모두 보기 ↗</a>
@@ -162,7 +175,7 @@
                 <div class="section-inner">
                     <div class="section-head tea-head">
                         <div>
-                            <span class="section-label">TEA &amp; TOOLS</span>
+                            <span class="section-label">03 / TEA &amp; TOOLS</span>
                             <h2>차 · 도구</h2>
                         </div>
                         <p>자연에서 얻은 찻잎과 섬세한 다구, 정성을 담은 선물 세트까지.</p>
@@ -192,7 +205,7 @@
                 <div class="section-inner">
                     <div class="section-head">
                         <div>
-                            <span class="section-label">CULTURE &amp; UNDERSTANDING</span>
+                            <span class="section-label">04 / CULTURE &amp; UNDERSTANDING</span>
                             <h2>문화 · 이해</h2>
                         </div>
                         <p>티하우스 하다는 차를 중심으로 한 경험과 이야기가 머무는 오프라인 공간입니다.</p>
@@ -322,6 +335,12 @@
                 searchMenu.style.display = 'none';
                 showPanel.style.color = '#666666';
             }
+        }
+
+        function showMenu() {
+            const menu = document.querySelector('#moMenu');
+            if(menu.style.transform === 'translateX(100%)') menu.style.transform = 'translateX(0%)';
+            else menu.style.transform = 'translateX(100%)';
         }
     </script>
 </body>

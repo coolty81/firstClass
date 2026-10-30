@@ -119,6 +119,37 @@ header > div:nth-child(2) {
     right: 50dvw;
 }
 
+#moMenu {
+    width:70vw;
+    height: 100vh;
+    background-color: var(--color-white);
+    position: fixed;
+    right: 0;
+    z-index: 10;
+    padding: 50px;
+    transition: 1s;
+    border: 1px solid var(--border-default);
+}
+
+#moMenu > div img {
+    width: 50px;
+}
+
+#moMenu > div {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#moMenu > div > span {
+    line-height: 100%;
+    font-size: 1rem;
+}
+
+#moMenu > div > span:nth-child(5)~span {
+    color: var(--text-secondary);
+}
+
 .mo {
     display: none;
 }
@@ -138,13 +169,13 @@ header > div:nth-child(2) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
+    gap: 16px;
 }
 
 .hero-sec .swiper-slide > div > div {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 8px;
 }
 
 .hero-sec .swiper-slide div span {
@@ -152,22 +183,19 @@ header > div:nth-child(2) {
 }
 
 .hero-sec .swiper-slide div > span:first-child, .hero-sec .swiper-slide div > span:last-child {
-    font-size: 1.5rem;
-    line-height: 1.3;
+    font-size: 1rem;
+    line-height: 100%;
 }
 
 .hero-sec .swiper-slide div > span:nth-child(2) {
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 110%;
 }
 
 .hero-sec .swiper-slide div > button {
-    font-size: 1.2rem;
     border: 1px solid var(--color-white);
     padding: 7px 10px;
-    line-height: 100%;
-    color: var(--text-inverse);
-    background: rgba(0, 0, 0, 0.15);
+    color: var(--color-white);
     border-radius: 6px;
 }
 
@@ -385,7 +413,7 @@ main > section {
 .brand-heading h2 {
     margin: 0;
     color: var(--text-primary);
-    font-size: clamp(3rem, 3.1vw, 5rem);
+    font-size: clamp(3rem, 4.1vw, 5rem);
     font-weight: 500;
     line-height: 1.12;
     letter-spacing: -0.04em;
@@ -450,7 +478,7 @@ main > section {
 .section-head h2 {
     margin: 18px 0 0;
     color: var(--text-primary);
-     font-size: clamp(2.8rem, 4vw, 3.5rem);
+    font-size: clamp(2.8rem, 4vw, 4.5rem);
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: -0.04em;
@@ -565,7 +593,7 @@ main > section {
 }
 
 .tea-head {
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 .tea-head > p {
@@ -580,7 +608,7 @@ main > section {
 .category-tabs {
     display: flex;
     gap: 30px;
-    margin-top: 40px;
+    margin-top: 54px;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--border-default);
 }
@@ -862,10 +890,7 @@ main > section {
     }
 
     .section-head {
-        display: flex;
-        gap: 18px;
-        flex-direction: column;
-        align-items: flex-start;
+        display: block;
     }
 
     .section-head > a {
@@ -951,7 +976,7 @@ main > section {
 .footer-contact,
 .footer-nav a {
     color: var(--text-inverse);
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 1;
 }
@@ -1045,7 +1070,7 @@ main > section {
     .footer-contact,
     .footer-nav a,
     .copyright {
-        font-size: 1rem;
+        font-size: 0.95rem;
         line-height: 1.4;
     }
 }

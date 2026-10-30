@@ -945,7 +945,7 @@ main > section {
 .footer-contact,
 .footer-nav a {
     color: var(--text-inverse);
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1;
 }

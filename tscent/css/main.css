@@ -1043,7 +1043,7 @@ main > section {
     .footer-contact,
     .footer-nav a,
     .copyright {
-        font-size: 0.95rem;
+        font-size: 1rem;
         line-height: 1.4;
     }
 }

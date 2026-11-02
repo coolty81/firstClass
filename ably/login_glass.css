@@ -1,0 +1,206 @@
+/* Glassmorphism theme
+   기존 login.css 아래에 연결해 기본 스타일을 덮어씁니다. */
+:root {
+    --glass-text: #26334a;
+    --glass-muted: #718096;
+    --glass-line: rgba(255, 255, 255, 0.72);
+    --glass-surface: rgba(255, 255, 255, 0.48);
+    --glass-surface-strong: rgba(255, 255, 255, 0.68);
+    --glass-accent: #7189e8;
+    --glass-shadow: 0 12px 32px rgba(70, 91, 150, 0.12);
+}
+
+/* 흐릿한 컬러 배경 */
+body {
+    color: var(--glass-text);
+    background:
+        radial-gradient(ellipse at 12% 18%, rgba(255, 190, 218, 0.72), transparent 38%),
+        radial-gradient(ellipse at 88% 28%, rgba(159, 211, 255, 0.76), transparent 42%),
+        radial-gradient(ellipse at 55% 90%, rgba(194, 184, 255, 0.68), transparent 40%),
+        #edf2ff;
+}
+
+#wrap {
+    background: transparent;
+}
+
+/* 상단 영역 */
+header {
+    margin-top: 48px;
+    border: 1px solid var(--glass-line);
+    border-radius: 0 0 22px 22px;
+    background: var(--glass-surface);
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+    box-shadow: var(--glass-shadow);
+}
+
+h1 {
+    color: var(--glass-text);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.prev_btn {
+    left: 12px;
+    border: 1px solid var(--glass-line);
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 4px 14px rgba(70, 91, 150, 0.12);
+}
+
+/* 로고를 반투명 유리 패널 위에 배치 */
+.ably_logo {
+    box-sizing: content-box;
+    padding: 18px 22px;
+    border: 1px solid var(--glass-line);
+    border-radius: 22px;
+    background: var(--glass-surface);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    box-shadow: var(--glass-shadow);
+}
+
+/* 입력 영역 */
+.input_area > label {
+    color: var(--glass-text);
+    font-weight: 700;
+}
+
+.input_box input[type="email"],
+.input_box input[type="password"] {
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.58);
+    color: var(--glass-text);
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.75),
+                0 6px 18px rgba(70, 91, 150, 0.08);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    transition: border-color 0.2s ease, background-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.input_box input::placeholder {
+    color: var(--glass-muted);
+}
+
+.input_box input:focus {
+    border-color: rgba(113, 137, 232, 0.8);
+    outline: 3px solid rgba(113, 137, 232, 0.18);
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 8px 22px rgba(70, 91, 150, 0.13);
+}
+
+/* 체크 옵션 */
+.login_option span {
+    color: var(--glass-text);
+    font-weight: 500;
+}
+
+.login_option .check + span::before {
+    border: 1px solid rgba(113, 137, 232, 0.35);
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.58);
+    background-image: none;
+}
+
+.login_option .check:checked + span::before {
+    border-color: var(--glass-accent);
+    background: var(--glass-accent);
+    background-image: none;
+    box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.9);
+}
+
+/* 로그인 버튼 */
+.login_btn {
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.78);
+    border-radius: 15px;
+    color: #fff;
+    background: linear-gradient(135deg, #8299f0, #7184d8);
+    box-shadow: 0 9px 22px rgba(100, 122, 211, 0.28),
+                inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease,
+                filter 0.2s ease;
+}
+
+.login_btn:hover,
+.login_btn:focus-visible {
+    filter: brightness(1.06);
+    transform: translateY(-2px);
+    box-shadow: 0 13px 26px rgba(100, 122, 211, 0.34),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.login_btn:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 12px rgba(100, 122, 211, 0.2);
+}
+
+/* 계정 관련 링크 */
+.login_link {
+    color: var(--glass-text);
+}
+
+.login_link a::after {
+    background-color: rgba(87, 105, 145, 0.35);
+    opacity: 1;
+}
+
+/* SNS 로그인 구분선과 버튼 */
+.sns_login > p {
+    color: var(--glass-muted);
+    font-weight: 500;
+}
+
+.sns_login > p::before,
+.sns_login > p::after {
+    height: 1px;
+    background-color: rgba(87, 105, 145, 0.24);
+    opacity: 1;
+}
+
+.sns_list > a {
+    border: 1px solid var(--glass-line);
+    border-radius: 16px;
+    background-color: var(--glass-surface-strong);
+    box-shadow: 0 7px 18px rgba(70, 91, 150, 0.12);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sns_list > a:hover,
+.sns_list > a:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 11px 22px rgba(70, 91, 150, 0.18);
+}
+
+@media (max-width: 480px) {
+    header {
+        margin-top: 24px;
+    }
+
+    main {
+        padding-top: 48px;
+    }
+
+    .ably_logo {
+        margin-bottom: 56px;
+    }
+
+    .sns_list {
+        gap: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,493 @@
+/* TSCENT About Page
+   Shared tokens and global styles are inherited from main.css.
+*/
+
+#about-main {
+    padding-top: 85px;
+    background: var(--background-default);
+}
+
+#about-main .section-inner {
+    width: min(1720px, calc(100% - 200px));
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 34px;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    line-height: 1.3;
+}
+
+.breadcrumb [aria-current="page"] {
+    color: var(--text-primary);
+}
+
+.about-intro {
+    padding: 0 0 100px;
+    background: var(--background-default);
+}
+
+.about-intro-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(420px, 800px);
+    align-items: center;
+    gap: 100px;
+    margin-top: 70px;
+}
+
+.about-intro-copy h1 {
+    margin-top: 34px;
+    color: var(--text-primary);
+    font-size: clamp(3rem, 3.1vw, 5rem);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+}
+
+.about-lead {
+    margin-top: 42px;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    line-height: 1.55;
+}
+
+.about-description,
+.about-hada-copy > p:not(.about-lead) {
+    margin-top: 20px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.about-image-placeholder,
+.hada-image-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 0;
+    padding: 24px;
+    background: var(--surface-subtle);
+    border: 1px solid var(--border-default);
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.about-image-placeholder {
+    width: 100%;
+    min-height: 520px;
+    aspect-ratio: 4 / 3;
+    border-radius: 14px;
+}
+
+.about-image-placeholder span,
+.hada-image-placeholder span {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+}
+
+.about-image-placeholder small,
+.hada-image-placeholder small {
+    font-size: 0.95rem;
+}
+
+.about-hada {
+    padding: 100px 0;
+    background: var(--background-subtle);
+}
+
+.about-hada-grid {
+    display: grid;
+    grid-template-columns: minmax(420px, 756px) minmax(0, 1fr);
+    align-items: stretch;
+    gap: 0;
+}
+
+.hada-image-placeholder {
+    min-height: 760px;
+    aspect-ratio: 4 / 5;
+}
+
+.about-hada-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    background: var(--surface-default);
+}
+
+.about-hada-copy h2,
+.contact-heading h2 {
+    margin-top: 24px;
+    color: var(--text-primary);
+    font-size: clamp(2rem, 2.8vw, 3.2rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+}
+
+.about-hada-copy .about-lead {
+    margin-top: 30px;
+}
+
+.about-hada-copy > p:not(.about-lead) {
+    margin-top: 18px;
+}
+
+.hada-info {
+    display: grid;
+    gap: 10px;
+    margin-top: 38px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-default);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.hada-info > span {
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hada-info p {
+    color: var(--text-secondary);
+}
+
+.hada-info a {
+    width: fit-content;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--text-primary);
+    padding-bottom: 3px;
+}
+
+.info-divider {
+    padding: 0 4px;
+    color: var(--text-secondary);
+}
+
+.about-contact {
+    padding: 100px 0;
+    background: var(--background-default);
+}
+
+.about-contact .section-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 120px;
+}
+
+.contact-content > p {
+    max-width: 620px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.contact-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-default);
+}
+
+.contact-detail > span {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.contact-detail > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.contact-detail > a span {
+    font-size: 1rem;
+}
+
+/* Header controls reuse the existing TSCENT header layout. */
+.header-brand-nav,
+.header-util {
+    display: flex;
+    align-items: center;
+}
+
+.header-brand-nav {
+    gap: 34px;
+}
+
+.header-brand-nav > a img {
+    width: 94px;
+}
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.header-util {
+    gap: 20px;
+    font-size: 14px;
+}
+
+.header-util button {
+    color: var(--text-secondary);
+}
+
+.header-util a[aria-current="page"],
+.desktop-nav a[aria-current="page"] {
+    color: var(--text-primary);
+}
+
+#search[hidden] {
+    display: none;
+}
+
+#search {
+    display: flex;
+}
+
+#search form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#search form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#search input[type="search"] {
+    width: 50dvw;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--action-primary);
+}
+
+.search-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.search-keywords span:first-child {
+    color: var(--text-primary);
+}
+
+.search-close {
+    position: absolute;
+    right: 100px;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.mobile-menu-open {
+    display: none;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    width: 70vw;
+    height: 100vh;
+    padding: 50px;
+    border: 1px solid var(--border-default);
+    background: var(--color-white);
+    transform: translateX(100%);
+    transition: transform 1s;
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+}
+
+.mobile-menu-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.mobile-menu-close {
+    align-self: flex-start;
+    width: 50px;
+}
+
+.mobile-menu-inner nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+    #about-main .section-inner {
+        width: min(100% - 120px, 1720px);
+    }
+
+    .about-intro-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 48px;
+    }
+
+    .about-image-placeholder {
+        max-width: 800px;
+        min-height: 0;
+    }
+
+    .about-hada-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .hada-image-placeholder {
+        width: 100%;
+        min-height: 0;
+        aspect-ratio: 4 / 5;
+    }
+
+    .about-hada-copy {
+        padding: 64px 50px;
+    }
+
+    .about-contact .section-inner {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #about-main .section-inner {
+        width: calc(100% - 100px);
+    }
+
+    #about-main .about-intro,
+    #about-main .about-hada,
+    #about-main .about-contact {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .breadcrumb {
+        padding-top: 0;
+    }
+
+    .about-intro-grid {
+        margin-top: 56px;
+    }
+
+    .header-brand-nav .desktop-nav {
+        display: none;
+    }
+
+    .header-util > span {
+        display: none;
+    }
+
+    .mobile-menu-open {
+        display: block;
+        width: 50px;
+    }
+
+    .about-contact .section-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    #about-main .section-inner {
+        width: calc(100% - 40px);
+    }
+
+    #about-main .about-intro,
+    #about-main .about-hada,
+    #about-main .about-contact {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .breadcrumb {
+        font-size: 0.8rem;
+    }
+
+    .about-intro-grid {
+        gap: 36px;
+        margin-top: 42px;
+    }
+
+    .about-intro-copy h1 {
+        font-size: 2.8rem;
+    }
+
+    .about-lead {
+        margin-top: 28px;
+        font-size: 1.125rem;
+    }
+
+    .about-image-placeholder {
+        aspect-ratio: 4 / 3;
+    }
+
+    .about-hada-copy {
+        padding: 48px 30px;
+    }
+
+    .about-hada-copy h2,
+    .contact-heading h2 {
+        font-size: 2rem;
+    }
+
+    .hada-info {
+        margin-top: 28px;
+    }
+
+    .about-contact .section-inner {
+        gap: 32px;
+    }
+
+    .contact-detail {
+        margin-top: 28px;
+    }
+
+    .contact-detail > a {
+        font-size: 1rem;
+    }
+
+    .mobile-menu {
+        width: 85vw;
+        padding: 36px 30px;
+    }
+
+    #search form {
+        justify-content: flex-start;
+        padding: 0 20px;
+    }
+
+    #search input[type="search"] {
+        width: calc(100vw - 40px);
+    }
+
+    .search-close {
+        top: -24px;
+        right: 20px;
+    }
+}

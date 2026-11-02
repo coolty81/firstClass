@@ -1,0 +1,194 @@
+/* Neo Brutalism theme
+   기존 login.css 아래에 연결해 기본 스타일을 덮어씁니다. */
+:root {
+    --neo-ink: #171717;
+    --neo-paper: #fffdf5;
+    --neo-yellow: #ffe34d;
+    --neo-pink: #ff6b9d;
+    --neo-blue: #73d7ff;
+    --neo-green: #b8f36b;
+}
+
+/* 화면 전체 */
+body {
+    color: var(--neo-ink);
+    background-color: var(--neo-paper);
+}
+
+#wrap {
+    background-color: var(--neo-paper);
+}
+
+/* 상단 제목 */
+header {
+    border-bottom: 3px solid var(--neo-ink);
+}
+
+h1 {
+    font-weight: 800;
+    letter-spacing: -0.06em;
+}
+
+.prev_btn {
+    border: 2px solid var(--neo-ink);
+    background-color: var(--neo-yellow);
+    box-shadow: 3px 3px 0 var(--neo-ink);
+}
+
+/* 로고 영역 */
+.ably_logo {
+    padding: 8px;
+    border: 3px solid var(--neo-ink);
+    background-color: var(--neo-pink);
+    box-shadow: 6px 6px 0 var(--neo-ink);
+}
+
+/* 입력 영역 */
+.input_area > label {
+    display: inline-block;
+    width: fit-content;
+    padding: 7px 10px;
+    margin-bottom: 5px;
+    border: 2px solid var(--neo-ink);
+    background-color: var(--neo-blue);
+    font-weight: 800;
+}
+
+.input_box input[type="email"],
+.input_box input[type="password"] {
+    border: 3px solid var(--neo-ink);
+    border-radius: 0;
+    background-color: #fff;
+    box-shadow: 4px 4px 0 var(--neo-ink);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.input_box input::placeholder {
+    color: #777;
+}
+
+.input_box input:focus {
+    border-color: var(--neo-ink);
+    outline: 3px solid var(--neo-pink);
+    outline-offset: 2px;
+    box-shadow: 2px 2px 0 var(--neo-ink);
+    transform: translate(2px, 2px);
+}
+
+/* 체크 옵션 */
+.login_option {
+    flex-wrap: wrap;
+}
+
+.login_option span {
+    font-weight: 700;
+}
+
+.login_option .check + span::before {
+    border: 2px solid var(--neo-ink);
+    background-color: #fff;
+    background-image: none;
+}
+
+.login_option .check:checked + span::before {
+    background-color: var(--neo-yellow);
+    background-image: none;
+    box-shadow: inset 0 0 0 5px #fff;
+}
+
+/* 주요 로그인 버튼 */
+.login_btn {
+    height: 54px;
+    border: 3px solid var(--neo-ink);
+    border-radius: 0;
+    color: var(--neo-ink);
+    background-color: var(--neo-yellow);
+    box-shadow: 6px 6px 0 var(--neo-ink);
+    font-weight: 900;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    cursor: pointer;
+}
+
+.login_btn:hover,
+.login_btn:focus-visible {
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0 var(--neo-ink);
+}
+
+.login_btn:active {
+    transform: translate(6px, 6px);
+    box-shadow: none;
+}
+
+/* 계정 관련 링크 */
+.login_link {
+    flex-wrap: wrap;
+    font-weight: 700;
+}
+
+.login_link a {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.login_link a::after {
+    width: 2px;
+    background-color: var(--neo-ink);
+    opacity: 1;
+}
+
+/* SNS 로그인 */
+.sns_login > p {
+    font-weight: 800;
+}
+
+.sns_login > p::before,
+.sns_login > p::after {
+    height: 3px;
+    background-color: var(--neo-ink);
+    opacity: 1;
+}
+
+.sns_list > a {
+    border: 3px solid var(--neo-ink);
+    background-color: var(--neo-green);
+    box-shadow: 4px 4px 0 var(--neo-ink);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.sns_list > a:nth-child(even) {
+    background-color: var(--neo-blue);
+}
+
+.sns_list > a:hover,
+.sns_list > a:focus-visible {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--neo-ink);
+}
+
+@media (max-width: 480px) {
+    header {
+        margin-top: 24px;
+    }
+
+    main {
+        padding-top: 48px;
+    }
+
+    .ably_logo {
+        margin-bottom: 56px;
+    }
+
+    .sns_list {
+        gap: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}

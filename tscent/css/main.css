@@ -251,7 +251,7 @@ header > div:nth-child(2) {
 
     .hero-sec .swiper-slide div > span:nth-child(2) {
         font-size: clamp(1.6rem, 6vw, 3rem);
-        line-height: 110%;
+        line-height: 1.1;
     }
 }
 

@@ -304,6 +304,10 @@
     display: none;
 }
 
+.mobile-menu-open img {
+    display: block;
+}
+
 .mobile-menu {
     position: fixed;
     top: 0;

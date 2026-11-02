@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../font/css/pretendardvariable.css">
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./login_theme.css">
+    <link id="themeStylesheet" rel="stylesheet">
+    <script src="./login_theme.js" defer></script>
 </head>
 <body>
     <div id="wrap">
@@ -16,6 +19,16 @@
                 <span class="sr-only">이전 버튼</span>
             </button>
         </header>
+
+        <div class="theme_switcher">
+            <label for="themeSelect">디자인 테마</label>
+            <select id="themeSelect" name="theme">
+                <option value="">기본 디자인</option>
+                <option value="neo">Neo Brutalism</option>
+                <option value="glass">Glassmorphism</option>
+                <option value="pixel">Pixel Art</option>
+            </select>
+        </div>
 
         <main>
             <div class="ably_logo">

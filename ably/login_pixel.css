@@ -1,0 +1,234 @@
+/* Pixel Art theme
+   기존 login.css 아래에 연결해 기본 스타일을 덮어씁니다. */
+:root {
+    --pixel-ink: #202044;
+    --pixel-paper: #fff8dc;
+    --pixel-blue: #5b8cff;
+    --pixel-pink: #ff7aa8;
+    --pixel-yellow: #ffdc5e;
+    --pixel-green: #83d982;
+    --pixel-shadow: #202044;
+}
+
+/* 8비트 게임 화면을 연상시키는 배경과 글꼴 */
+body {
+    color: var(--pixel-ink);
+    background-color: #dce8ff;
+    font-family: "Courier New", monospace;
+    font-weight: 700;
+}
+
+#wrap {
+    background-color: var(--pixel-paper);
+    border-left: 4px solid var(--pixel-ink);
+    border-right: 4px solid var(--pixel-ink);
+}
+
+/* 픽셀 느낌의 상단 영역 */
+header {
+    margin-top: 48px;
+    border-bottom: 4px solid var(--pixel-ink);
+    background-color: var(--pixel-yellow);
+}
+
+h1 {
+    font-family: "Courier New", monospace;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    text-shadow: 2px 2px 0 #fff;
+}
+
+.prev_btn {
+    left: 10px;
+    border: 3px solid var(--pixel-ink);
+    background-color: var(--pixel-pink);
+    box-shadow: 4px 4px 0 var(--pixel-shadow);
+}
+
+/* 로고를 게임 아이템처럼 표현 */
+.ably_logo {
+    padding: 12px;
+    border: 4px solid var(--pixel-ink);
+    border-radius: 0;
+    background-color: #fff;
+    box-shadow: 6px 6px 0 var(--pixel-shadow);
+}
+
+.ably_logo img {
+    image-rendering: pixelated;
+}
+
+/* 입력창: 직각 모서리와 계단형 그림자 */
+.input_area > label {
+    display: inline-block;
+    width: fit-content;
+    padding: 7px 10px;
+    margin-bottom: 5px;
+    border: 3px solid var(--pixel-ink);
+    background-color: var(--pixel-green);
+    font-family: "Courier New", monospace;
+    font-weight: 900;
+}
+
+.input_box input[type="email"],
+.input_box input[type="password"] {
+    border: 3px solid var(--pixel-ink);
+    border-radius: 0;
+    background-color: #fff;
+    color: var(--pixel-ink);
+    font-family: "Courier New", monospace;
+    font-size: 1.35rem;
+    box-shadow: 4px 4px 0 var(--pixel-shadow);
+}
+
+.input_box input::placeholder {
+    color: #77779a;
+    font-size: 1.25rem;
+}
+
+.input_box input:focus {
+    border-color: var(--pixel-ink);
+    outline: 3px dashed var(--pixel-pink);
+    outline-offset: 3px;
+    box-shadow: 2px 2px 0 var(--pixel-shadow);
+}
+
+/* 픽셀형 체크박스 */
+.login_option {
+    flex-wrap: wrap;
+}
+
+.login_option span {
+    font-family: "Courier New", monospace;
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.login_option .check + span::before {
+    border: 3px solid var(--pixel-ink);
+    border-radius: 0;
+    background-color: #fff;
+    background-image: none;
+}
+
+.login_option .check:checked + span::before {
+    border-color: var(--pixel-ink);
+    background-color: var(--pixel-yellow);
+    background-image: none;
+    box-shadow: inset 0 0 0 5px #fff;
+}
+
+/* 눌리는 게임 버튼 */
+.login_btn {
+    height: 52px;
+    border: 4px solid var(--pixel-ink);
+    border-radius: 0;
+    color: var(--pixel-ink);
+    background-color: var(--pixel-blue);
+    font-family: "Courier New", monospace;
+    font-size: 1.6rem;
+    font-weight: 900;
+    box-shadow: 0 6px 0 var(--pixel-shadow);
+    cursor: pointer;
+    transition: transform 0.08s steps(2), box-shadow 0.08s steps(2);
+}
+
+.login_btn:hover,
+.login_btn:focus-visible {
+    background-color: var(--pixel-yellow);
+}
+
+.login_btn:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 var(--pixel-shadow);
+}
+
+/* 계정 관련 링크 */
+.login_link {
+    flex-wrap: wrap;
+    font-family: "Courier New", monospace;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.login_link a {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.login_link a::after {
+    width: 3px;
+    background-color: var(--pixel-ink);
+    opacity: 1;
+}
+
+/* SNS 버튼도 게임 아이콘처럼 */
+.sns_login > p {
+    color: var(--pixel-ink);
+    font-family: "Courier New", monospace;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.sns_login > p::before,
+.sns_login > p::after {
+    height: 3px;
+    background-color: var(--pixel-ink);
+    opacity: 1;
+}
+
+.sns_list {
+    gap: 20px;
+}
+
+.sns_list > a {
+    border: 3px solid var(--pixel-ink);
+    border-radius: 0;
+    background-color: var(--pixel-yellow);
+    box-shadow: 4px 4px 0 var(--pixel-shadow);
+    image-rendering: pixelated;
+    transition: transform 0.08s steps(2), box-shadow 0.08s steps(2);
+}
+
+.sns_list > a:nth-child(even) {
+    background-color: var(--pixel-pink);
+}
+
+.sns_list > a:hover,
+.sns_list > a:focus-visible {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--pixel-shadow);
+}
+
+.sns_list > a:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+@media (max-width: 480px) {
+    header {
+        margin-top: 24px;
+    }
+
+    main {
+        padding-top: 48px;
+    }
+
+    .ably_logo {
+        margin-bottom: 56px;
+    }
+
+    .sns_list {
+        gap: 14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -85,7 +85,7 @@
     border-radius: 14px;
 }
 
-.about-image-placeholder img {
+.about-image-placeholder > img {
     width: 90%;
 }
 

@@ -72,7 +72,7 @@ header > div:nth-child(2) {
     gap: 20px;
 }
 
-/* #search {
+#search {
     width: 100%;
     height: 100px;
     background-color: var(--color-white);
@@ -117,7 +117,7 @@ header > div:nth-child(2) {
 #search input+span {
     position: absolute;
     right: 50dvw;
-} */
+}
 
 /* Header controls reuse the existing TSCENT header layout. */
 .header-brand-nav,
@@ -168,7 +168,7 @@ header > div:nth-child(2) {
     color: var(--text-primary);
 }
 
-#search[hidden] {
+/* #search[hidden] {
     display: none;
 }
 
@@ -213,7 +213,7 @@ header > div:nth-child(2) {
     right: 100px;
     color: var(--text-secondary);
     font-size: 0.875rem;
-}
+} */
 
 #moMenu {
     width:70vw;

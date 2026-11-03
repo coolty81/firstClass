@@ -88,6 +88,7 @@
 .about-image-placeholder > img,
 .hada-image-placeholder > img {
     width: 90%;
+    border-radius: 14px;
 }
 
 .about-image-placeholder span,

@@ -62,9 +62,12 @@ header > div+div > span {
     color: var(--text-secondary);
 }
 
+header div+div a {
+    display: none;
+}
+
 header div+div img {
     width: 50px;
-    display: none;
 }
 
 header > div:nth-child(2) {
@@ -236,7 +239,7 @@ header > div:nth-child(2) {
         display: none;
     }
 
-    header div+div img {
+    header div+div a {
         display: block;
     }
 

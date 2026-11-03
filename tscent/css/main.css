@@ -196,7 +196,7 @@ header > div:nth-child(2) {
 
 .hero-sec .swiper-slide div > button {
     border: 1px solid var(--color-white);
-    padding: 7px 10px;
+    padding: 17px 30px;
     color: var(--color-white);
     border-radius: 6px;
     font-size: 1.2rem;
@@ -584,7 +584,7 @@ main > section {
     min-width: 154px;
     height: 50px;
     margin-top: 42px;
-    padding: 0 20px;
+    padding: 17px 30px;
     border: 1px solid var(--text-primary);
     border-radius: 6px;
     color: var(--text-primary);

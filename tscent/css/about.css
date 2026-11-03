@@ -85,7 +85,8 @@
     border-radius: 14px;
 }
 
-.about-image-placeholder > img {
+.about-image-placeholder > img,
+.hada-image-placeholder > img {
     width: 90%;
 }
 

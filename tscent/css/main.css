@@ -55,7 +55,7 @@ header {
 
 header > div {
     display:flex;
-    gap:34px;
+    /* gap:34px; */
 }
 
 header > div+div > span {

@@ -55,7 +55,7 @@ header {
 
 header > div {
     display:flex;
-    /* gap:34px; */
+    gap:34px;
 }
 
 header > div+div > span {
@@ -80,7 +80,7 @@ header > div:nth-child(2) {
     top: 85px;
     left: 0;
     border-top: 1px solid var(--border-default);
-    -- display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     z-index: 10;
@@ -118,102 +118,6 @@ header > div:nth-child(2) {
     position: absolute;
     right: 50dvw;
 }
-
-/* Header controls reuse the existing TSCENT header layout. */
-.header-brand-nav,
-.header-util {
-    display: flex;
-    align-items: center;
-}
-
-.header-brand-nav {
-    gap: 34px;
-}
-
-.header-brand-nav > a img {
-    width: 94px;
-}
-
-.desktop-nav {
-    display: flex;
-    align-items: center;
-    gap: 34px;
-}
-
-.header-util {
-    gap: 20px;
-    font-size: 14px;
-}
-
-.header-util button {
-    color: var(--text-secondary);
-}
-
-.header-util a[aria-current="page"],
-.desktop-nav a[aria-current="page"] {
-    color: var(--text-primary);
-}
-
-.header-util {
-    gap: 20px;
-    font-size: 14px;
-}
-
-.header-util button {
-    color: var(--text-secondary);
-}
-
-.header-util a[aria-current="page"],
-.desktop-nav a[aria-current="page"] {
-    color: var(--text-primary);
-}
-
-/* #search[hidden] {
-    display: none;
-}
-
-#search {
-    display: flex;
-}
-
-#search form {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-#search form > div {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-#search input[type="search"] {
-    width: 50dvw;
-    padding: 8px 0;
-    border-bottom: 1px solid var(--action-primary);
-}
-
-.search-keywords {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    color: var(--text-secondary);
-    font-size: 0.875rem;
-}
-
-.search-keywords span:first-child {
-    color: var(--text-primary);
-}
-
-.search-close {
-    position: absolute;
-    right: 100px;
-    color: var(--text-secondary);
-    font-size: 0.875rem;
-} */
 
 #moMenu {
     width:70vw;
@@ -285,7 +189,6 @@ header > div:nth-child(2) {
 
 .hero-sec .swiper-slide div > span:nth-child(2) {
     font-size: 4.5rem;
-    line-height: 1.1;
 }
 
 .hero-sec .swiper-slide div > button {
@@ -329,16 +232,12 @@ header > div:nth-child(2) {
         padding: 0 50px;
     }
 
-    /* header > div > span {
+    header > div > span {
         display: none;
     }
 
     header div+div img {
         display: block;
-    } */
-
-    .header-brand-nav .desktop-nav {
-        display: none;
     }
 
     .hero-sec .swiper-slide > div {
@@ -352,7 +251,6 @@ header > div:nth-child(2) {
 
     .hero-sec .swiper-slide div > span:nth-child(2) {
         font-size: clamp(1.6rem, 6vw, 3rem);
-        line-height: 1.1;
     }
 }
 
@@ -517,7 +415,7 @@ main > section {
 .brand-heading h2 {
     margin: 0;
     color: var(--text-primary);
-    font-size: clamp(3rem, 3.1vw, 5rem);
+    font-size: clamp(3rem, 4.1vw, 5rem);
     font-weight: 500;
     line-height: 1.12;
     letter-spacing: -0.04em;
@@ -582,7 +480,7 @@ main > section {
 .section-head h2 {
     margin: 18px 0 0;
     color: var(--text-primary);
-    font-size: clamp(2.8rem, 4vw, 3.5rem);
+    font-size: clamp(2.8rem, 4vw, 4.5rem);
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: -0.04em;
@@ -697,7 +595,7 @@ main > section {
 }
 
 .tea-head {
-     align-items: flex-start;
+    align-items: flex-end;
 }
 
 .tea-head > p {
@@ -712,7 +610,7 @@ main > section {
 .category-tabs {
     display: flex;
     gap: 30px;
-    margin-top: 40px;
+    margin-top: 54px;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--border-default);
 }
@@ -995,8 +893,6 @@ main > section {
 
     .section-head {
         display: block;
-        gap: 18px;
-        flex-direction: column;
     }
 
     .section-head > a {

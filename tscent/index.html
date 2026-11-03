@@ -9,36 +9,42 @@
     <link rel="stylesheet" href="../font/css/pretendardvariable.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="../npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/about.js"></script>
 </head>
 <body>
     <div id="wrap">
-        <header>
-            <div>
-                <img src="img/logo.svg" alt="티센트 로고 이미지">
-                <span><a href="#">차·도구</a></span>
-                <span><a href="#">문화·이해</a></span>
-                <span><a href="./about.html">About</a></span>
-                <span><a href="#">Notice</a></span>
+       <header>
+            <div class="header-brand-nav">
+                <a href="index.html" aria-label="티센트 메인으로 이동">
+                    <img src="img/logo.svg" alt="티센트 로고">
+                </a>
+                <nav class="desktop-nav" aria-label="주요 메뉴">
+                    <span><a href="index.html">차·도구</a></span>
+                    <span><a href="index.html">문화·이해</a></span>
+                    <span><a href="about.html" aria-current="page">About</a></span>
+                    <span><a href="index.html">Notice</a></span>
+                </nav>
             </div>
-            <div>
-                <span><a href="javascript:showPanel()" id="showPanel">검색</a></span>
-                <span><a href="#">로그인</a></span>
-                <span><a href="#">회원가입</a></span>
-                <span><a href="#">장바구니</a></span>
-                <a href="javascript:showMenu()"><img src="img/icon-menu.svg" alt="메뉴 아이콘"></a>
+            <div class="header-util">
+                <span><button type="button" id="showPanel" aria-expanded="false" aria-controls="search">검색</button></span>
+                <span><a href="about.html#contact">문의</a></span>
+                <a class="mobile-menu-open" href="#mobile-menu" id="openMenu" aria-label="메뉴 열기" aria-expanded="false">
+                    <img src="img/icon-menu.svg" alt="">
+                </a>
             </div>
-            <div id="search" style="display: none;">
-                <form action="#">
+            <div id="search" hidden>
+                <form action="#" method="get" role="search">
                     <div>
-                        <input type="text" placeholder="검색어를 입력해주세요.">
-                        <!-- <input type="submit" name="search" value="검색"> -->
-                        <div>
+                        <label class="sr-only" for="site-search">검색어</label>
+                        <input id="site-search" type="search" placeholder="검색어를 입력해주세요.">
+                        <div class="search-keywords">
                             <span>관심 키워드</span>
-                            <span><a href="#">아리산</a></span>
-                            <span><a href="#">월광백</a></span>
-                            <span><a href="#">보이차</a></span>
+                            <span>아리산</span>
+                            <span>월광백</span>
+                            <span>보이차</span>
                         </div>
                     </div>
+                    <button type="button" id="closeSearch" class="search-close">닫기</button>
                 </form>
             </div>
         </header>

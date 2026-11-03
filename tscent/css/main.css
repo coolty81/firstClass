@@ -119,6 +119,20 @@ header > div:nth-child(2) {
     right: 50dvw;
 } */
 
+.header-util {
+    gap: 20px;
+    font-size: 14px;
+}
+
+.header-util button {
+    color: var(--text-secondary);
+}
+
+.header-util a[aria-current="page"],
+.desktop-nav a[aria-current="page"] {
+    color: var(--text-primary);
+}
+
 #search[hidden] {
     display: none;
 }

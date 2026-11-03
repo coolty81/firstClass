@@ -85,6 +85,10 @@
     border-radius: 14px;
 }
 
+.about-image-placeholder img {
+    width: 90%;
+}
+
 .about-image-placeholder span,
 .hada-image-placeholder span {
     font-size: 0.8rem;

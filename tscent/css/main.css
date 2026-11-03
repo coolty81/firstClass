@@ -120,13 +120,13 @@ header > div:nth-child(2) {
 }
 
 #moMenu {
-    width:70vw;
+    width: 85vw;
     height: 100vh;
     background-color: var(--color-white);
     position: fixed;
     right: 0;
     z-index: 10;
-    padding: 50px;
+    padding: 36px 30px;
     transition: 1s;
     border: 1px solid var(--border-default);
 }

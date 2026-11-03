@@ -83,12 +83,12 @@
     min-height: 520px;
     aspect-ratio: 4 / 3;
     border-radius: 14px;
-    background-image: url('img/visual01.png');
+    background-image: url('../img/visual01.png');
     background-size: cover;
 }
 
 .hada-image-placeholder {
-    background-image: url('img/about_image01(trim).png');
+    background-image: url('../img/about_image01(trim).png');
     background-size: cover;
 }
 

@@ -72,7 +72,7 @@ header > div:nth-child(2) {
     gap: 20px;
 }
 
-#search {
+/* #search {
     width: 100%;
     height: 100px;
     background-color: var(--color-white);
@@ -80,13 +80,13 @@ header > div:nth-child(2) {
     top: 85px;
     left: 0;
     border-top: 1px solid var(--border-default);
-    /* display: flex; */
+    -- display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
 }
 
-/* #search form > div {
+#search form > div {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -118,6 +118,41 @@ header > div:nth-child(2) {
     position: absolute;
     right: 50dvw;
 } */
+
+/* Header controls reuse the existing TSCENT header layout. */
+.header-brand-nav,
+.header-util {
+    display: flex;
+    align-items: center;
+}
+
+.header-brand-nav {
+    gap: 34px;
+}
+
+.header-brand-nav > a img {
+    width: 94px;
+}
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.header-util {
+    gap: 20px;
+    font-size: 14px;
+}
+
+.header-util button {
+    color: var(--text-secondary);
+}
+
+.header-util a[aria-current="page"],
+.desktop-nav a[aria-current="page"] {
+    color: var(--text-primary);
+}
 
 .header-util {
     gap: 20px;

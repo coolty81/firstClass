@@ -17,15 +17,15 @@
                 <img src="img/logo.svg" alt="티센트 로고 이미지">
                 <span><a href="#">차·도구</a></span>
                 <span><a href="#">문화·이해</a></span>
-                <span><a href="#">About</a></span>
+                <span><a href="./about.html">About</a></span>
                 <span><a href="#">Notice</a></span>
             </div>
             <div>
                 <span><a href="javascript:showPanel()" id="showPanel">검색</a></span>
                 <span><a href="#">로그인</a></span>
                 <span><a href="#">회원가입</a></span>
-                <span><a href="#">장바구니 0</a></span>
-                <img src="img/icon-menu.svg" alt="메뉴 아이콘">
+                <span><a href="#">장바구니</a></span>
+                <a href="javascript:showMenu()"><img src="img/icon-menu.svg" alt="메뉴 아이콘"></a>
             </div>
             <div id="search" style="display: none;">
                 <form action="#">
@@ -44,11 +44,24 @@
         </header>
         <main>
             <div class="hero-sec">
+                <div id="moMenu" style="transform: translateX(100%);">
+                    <div>
+                        <a href="javascript:showMenu()"><img src="img/icon-close.svg" alt="메뉴 닫기 버튼"></a>
+                        <span><a href="#">차·도구</a></span>
+                        <span><a href="#">문화·이해</a></span>
+                        <span><a href="./about.html">About</a></span>
+                        <span><a href="#">Notice</a></span>
+                        <span><a href="#">검색</a></span>
+                        <span><a href="#">로그인</a></span>
+                        <span><a href="#">회원가입</a></span>
+                        <span><a href="#">장바구니</a></span>
+                    </div>
+                </div>
                 <div class="swiper visual">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                                <img src="img/visual01(fix).png" alt="티센트 소개 배너" class="pc">
-                                <img src="img/m_visual01.png" alt="모바일 티센트 소개 배너" class="mo">
+                                <img src="img/visual01(fix1).png" alt="티센트 소개 배너" class="pc">
+                                <img src="img/m_visual01(fix).png" alt="모바일 티센트 소개 배너" class="mo">
                             <div>
                                 <div>
                                     <span>TSCENT</span>
@@ -61,8 +74,8 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                                <img src="img/visual02(fix).png" alt="티센트 강의 배너" class="pc">
-                                <img src="img/m_visual02.png" alt="모바일 티센트 강의 배너" class="mo">
+                                <img src="img/visual02(fix1).png" alt="티센트 강의 배너" class="pc">
+                                <img src="img/m_visual02(fix).png" alt="모바일 티센트 강의 배너" class="mo">
                             <div>
                                 <div>
                                     <span>CULTURE & UNDERSTANDING</span>
@@ -75,8 +88,8 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                                <img src="img/visual03(fix).png" alt="티센트 찻잎 배너" class="pc">
-                                <img src="img/m_visual03.png" alt="모바일 티센트 찻잎 배너" class="mo">
+                                <img src="img/visual03(fix1).png" alt="티센트 찻잎 배너" class="pc">
+                                <img src="img/m_visual03(fix).png" alt="모바일 티센트 찻잎 배너" class="mo">
                             <div>
                                 <div>
                                     <span>LEAF TEA</span>
@@ -266,7 +279,7 @@
 
                     <nav class="footer-nav" aria-label="티센트 주요 정보">
                         <ul>
-                            <li><a href="#">About</a></li>
+                            <li><a href="./about.html">About</a></li>
                             <li><a href="#">Notice</a></li>
                             <li><a href="#">이용약관</a></li>
                         </ul>
@@ -322,6 +335,12 @@
                 searchMenu.style.display = 'none';
                 showPanel.style.color = '#666666';
             }
+        }
+
+        function showMenu() {
+            const menu = document.querySelector('#moMenu');
+            if(menu.style.transform === 'translateX(100%)') menu.style.transform = 'translateX(0%)';
+            else menu.style.transform = 'translateX(100%)';
         }
     </script>
 </body>

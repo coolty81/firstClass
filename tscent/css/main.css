@@ -86,7 +86,7 @@ header > div:nth-child(2) {
     z-index: 10;
 }
 
-#search form > div {
+/* #search form > div {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -117,6 +117,53 @@ header > div:nth-child(2) {
 #search input+span {
     position: absolute;
     right: 50dvw;
+} */
+
+#search[hidden] {
+    display: none;
+}
+
+#search {
+    display: flex;
+}
+
+#search form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#search form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#search input[type="search"] {
+    width: 50dvw;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--action-primary);
+}
+
+.search-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.search-keywords span:first-child {
+    color: var(--text-primary);
+}
+
+.search-close {
+    position: absolute;
+    right: 100px;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
 }
 
 #moMenu {

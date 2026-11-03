@@ -329,12 +329,16 @@ header > div:nth-child(2) {
         padding: 0 50px;
     }
 
-    header > div > span {
+    /* header > div > span {
         display: none;
     }
 
     header div+div img {
         display: block;
+    } */
+
+    .header-brand-nav .desktop-nav {
+        display: none;
     }
 
     .hero-sec .swiper-slide > div {

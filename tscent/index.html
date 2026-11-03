@@ -9,66 +9,46 @@
     <link rel="stylesheet" href="../font/css/pretendardvariable.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="../npm/swiper/swiper-bundle.min.js"></script>
-    <script src="js/about.js"></script>
 </head>
 <body>
     <div id="wrap">
-       <header>
-            <div class="header-brand-nav">
-                <a href="index.html" aria-label="티센트 메인으로 이동">
-                    <img src="img/logo.svg" alt="티센트 로고">
-                </a>
-                <nav class="desktop-nav" aria-label="주요 메뉴">
-                    <span><a href="index.html">차·도구</a></span>
-                    <span><a href="index.html">문화·이해</a></span>
-                    <span><a href="about.html" aria-current="page">About</a></span>
-                    <span><a href="index.html">Notice</a></span>
-                </nav>
+        <header>
+            <div>
+                <img src="img/logo.svg" alt="티센트 로고 이미지">
+                <span><a href="#">차·도구</a></span>
+                <span><a href="#">문화·이해</a></span>
+                <span><a href="#">About</a></span>
+                <span><a href="#">Notice</a></span>
             </div>
-            <div class="header-util">
-                <span><button type="button" id="showPanel" aria-expanded="false" aria-controls="search">검색</button></span>
-                <span><a href="about.html#contact">문의</a></span>
-                <a class="mobile-menu-open" href="#mobile-menu" id="openMenu" aria-label="메뉴 열기" aria-expanded="false">
-                    <img src="img/icon-menu.svg" alt="">
-                </a>
+            <div>
+                <span><a href="javascript:showPanel()" id="showPanel">검색</a></span>
+                <span><a href="#">로그인</a></span>
+                <span><a href="#">회원가입</a></span>
+                <span><a href="#">장바구니 0</a></span>
+                <img src="img/icon-menu.svg" alt="메뉴 아이콘">
             </div>
-            <div id="search" hidden>
-                <form action="#" method="get" role="search">
+            <div id="search" style="display: none;">
+                <form action="#">
                     <div>
-                        <label class="sr-only" for="site-search">검색어</label>
-                        <input id="site-search" type="search" placeholder="검색어를 입력해주세요.">
-                        <div class="search-keywords">
+                        <input type="text" placeholder="검색어를 입력해주세요.">
+                        <!-- <input type="submit" name="search" value="검색"> -->
+                        <div>
                             <span>관심 키워드</span>
-                            <span>아리산</span>
-                            <span>월광백</span>
-                            <span>보이차</span>
+                            <span><a href="#">아리산</a></span>
+                            <span><a href="#">월광백</a></span>
+                            <span><a href="#">보이차</a></span>
                         </div>
                     </div>
-                    <button type="button" id="closeSearch" class="search-close">닫기</button>
                 </form>
             </div>
         </header>
-        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-            <div class="mobile-menu-inner">
-                <button type="button" id="closeMenu" class="mobile-menu-close" aria-label="메뉴 닫기">
-                    <img src="img/icon-close.svg" alt="">
-                </button>
-                <nav aria-label="모바일 주요 메뉴">
-                    <a href="index.html">차·도구</a>
-                    <a href="index.html">문화·이해</a>
-                    <a href="about.html" aria-current="page">About</a>
-                    <a href="index.html">Notice</a>
-                    <a href="about.html#contact">문의</a>
-                </nav>
-            </div>
-        </div>
         <main>
             <div class="hero-sec">
                 <div class="swiper visual">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                                <img src="img/visual01(fix1).png" alt="티센트 소개 배너" class="pc">
-                                <img src="img/m_visual01(fix).png" alt="모바일 티센트 소개 배너" class="mo">
+                                <img src="img/visual01(fix).png" alt="티센트 소개 배너" class="pc">
+                                <img src="img/m_visual01.png" alt="모바일 티센트 소개 배너" class="mo">
                             <div>
                                 <div>
                                     <span>TSCENT</span>
@@ -81,8 +61,8 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                                <img src="img/visual02(fix1).png" alt="티센트 강의 배너" class="pc">
-                                <img src="img/m_visual02(fix).png" alt="모바일 티센트 강의 배너" class="mo">
+                                <img src="img/visual02(fix).png" alt="티센트 강의 배너" class="pc">
+                                <img src="img/m_visual02.png" alt="모바일 티센트 강의 배너" class="mo">
                             <div>
                                 <div>
                                     <span>CULTURE & UNDERSTANDING</span>
@@ -95,8 +75,8 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                                <img src="img/visual03(fix1).png" alt="티센트 찻잎 배너" class="pc">
-                                <img src="img/m_visual03(fix).png" alt="모바일 티센트 찻잎 배너" class="mo">
+                                <img src="img/visual03(fix).png" alt="티센트 찻잎 배너" class="pc">
+                                <img src="img/m_visual03.png" alt="모바일 티센트 찻잎 배너" class="mo">
                             <div>
                                 <div>
                                     <span>LEAF TEA</span>
@@ -286,7 +266,7 @@
 
                     <nav class="footer-nav" aria-label="티센트 주요 정보">
                         <ul>
-                            <li><a href="./about.html">About</a></li>
+                            <li><a href="#">About</a></li>
                             <li><a href="#">Notice</a></li>
                             <li><a href="#">이용약관</a></li>
                         </ul>
@@ -342,12 +322,6 @@
                 searchMenu.style.display = 'none';
                 showPanel.style.color = '#666666';
             }
-        }
-
-        function showMenu() {
-            const menu = document.querySelector('#moMenu');
-            if(menu.style.transform === 'translateX(100%)') menu.style.transform = 'translateX(0%)';
-            else menu.style.transform = 'translateX(100%)';
         }
     </script>
 </body>

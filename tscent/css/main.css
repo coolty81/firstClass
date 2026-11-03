@@ -311,7 +311,7 @@ header > div:nth-child(2) {
 .hero-sec .swiper-pagination {
     position: absolute;
     /* left: max(calc((100% - 1720px) / 2 + 26px), 46px); */
-    left: 120px;
+    left: 100px;
     bottom: 166px;
     display: flex;
     align-items: center;

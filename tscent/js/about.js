@@ -33,6 +33,7 @@ searchToggle?.addEventListener("click", () => {
 
 mobileSearchToggle?.addEventListener("click", () => {
     setSearch(searchPanel.hidden);
+    setMobileMenu(true);
 });
 
 searchClose?.addEventListener("click", () => setSearch(false));

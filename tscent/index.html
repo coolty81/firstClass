@@ -25,7 +25,7 @@
                 <span><a href="#">로그인</a></span>
                 <span><a href="#">회원가입</a></span>
                 <span><a href="#">장바구니</a></span>
-                <a href="javascript:showMenu()"><img src="img/icon-menu.svg" alt="메뉴 아이콘"></a>
+                <img src="img/icon-menu.svg" alt="메뉴 아이콘" id="menuIcon">
             </div>
             <div id="search" style="display: none;">
                 <form action="#" name="form">
@@ -326,9 +326,12 @@
             },
         });
 
+        const searchMenu = document.querySelector('#search');
+        const showPanel = document.querySelector('#showPanel');
+        const menu = document.querySelector('#moMenu');
+        const menuIcon = document.querySelector('#menuIcon');
+        
         function showPanel() {
-            const searchMenu = document.querySelector('#search');
-            const showPanel = document.querySelector('#showPanel');
             if(searchMenu.style.display == 'none') { 
                 searchMenu.style.display = 'flex';
                 showPanel.style.color = '#B37A56';
@@ -340,15 +343,12 @@
             }
         }
 
-        function showMenu() {
-            const menu = document.querySelector('#moMenu');
+        menuIcon.addEventListener('click', () => {
             if(menu.style.transform === 'translateX(100%)') menu.style.transform = 'translateX(0%)';
             else menu.style.transform = 'translateX(100%)';
-        }
+        });
 
         document.querySelector("#closeSearch").addEventListener("click", () => {
-            const searchMenu = document.querySelector('#search');
-            const showPanel = document.querySelector('#showPanel');
             searchMenu.style.display = 'none';
             showPanel.style.color = '#666666';
         });

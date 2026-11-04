@@ -47,7 +47,7 @@
             <div class="hero-sec">
                 <div id="moMenu" style="transform: translateX(100%);">
                     <div>
-                        <a href="javascript:showMenu()"><img src="img/icon-close.svg" alt="메뉴 닫기 버튼"></a>
+                        <img src="img/icon-close.svg" id="closeMenu" alt="메뉴 닫기 버튼">
                         <span><a href="#">차·도구</a></span>
                         <span><a href="#">문화·이해</a></span>
                         <span><a href="./about.html">About</a></span>
@@ -330,8 +330,9 @@
         const searchPanel = document.querySelector('#searchPanel');
         const menu = document.querySelector('#moMenu');
         const menuIcon = document.querySelector('#menuIcon');
+        const closeMenu = document.querySelector('#closeMenu');
         
-        function showPanel() {
+        searchPanel.addEventListener('click', () => {
             if(searchMenu.style.display == 'none') { 
                 searchMenu.style.display = 'flex';
                 searchPanel.style.color = '#B37A56';
@@ -341,16 +342,20 @@
                 searchMenu.style.display = 'none';
                 searchPanel.style.color = '#666666';
             }
-        }
+        });
+
+        document.querySelector("#closeSearch").addEventListener("click", () => {
+            searchMenu.style.display = 'none';
+            searchPanel.style.color = '#666666';
+        });
 
         menuIcon.addEventListener('click', () => {
             if(menu.style.transform === 'translateX(100%)') menu.style.transform = 'translateX(0%)';
             else menu.style.transform = 'translateX(100%)';
         });
 
-        document.querySelector("#closeSearch").addEventListener("click", () => {
-            searchMenu.style.display = 'none';
-            searchPanel.style.color = '#666666';
+        closeMenu.addEventListener('click', () => {
+            menu.style.transform = 'translateX(100%)';
         });
     </script>
 </body>

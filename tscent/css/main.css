@@ -127,6 +127,12 @@ header > div:nth-child(2) {
     right: 50dvw;
 }
 
+#closeSearch {
+    position: absolute;
+    right: 100px;
+    font-size: 0.875rem;
+}
+
 #moMenu {
     width: 85vw;
     height: 100vh;

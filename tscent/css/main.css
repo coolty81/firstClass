@@ -723,6 +723,10 @@ main > section {
     background: var(--background-default);
 }
 
+.culture-sec .section-head > p {
+    margin-top: 20px;
+}
+
 .culture-feature {
     display: grid;
     grid-template-columns: 756px minmax(0, 1fr);

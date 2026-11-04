@@ -746,7 +746,7 @@ main > section {
     flex-direction: column;
     justify-content: center;
     min-height: 950px;
-    padding: 100px;
+    padding: 50px;
     background: var(--surface-subtle);
     border-radius: 0 14px 14px 0;
 }
@@ -872,8 +872,13 @@ main > section {
         grid-template-columns: 1fr;
     }
 
+    .culture-image img {
+        border-radius: 14px 14px 0 0;
+    }
+
     .culture-card {
         min-height: auto;
+        border-radius: 0 0 14px 14px;
     }
 
     .tea-image {
@@ -905,10 +910,6 @@ main > section {
     .culture-image {
         height: auto;
         aspect-ratio: 4 / 5;
-    }
-
-    .culture-image img {
-        border-radius: 14px;
     }
 
     .culture-card {

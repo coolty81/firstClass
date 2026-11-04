@@ -83,10 +83,13 @@ header > div:nth-child(2) {
     top: 85px;
     left: 0;
     border-top: 1px solid var(--border-default);
-    /* display: flex; */
+    z-index: 10;
+}
+
+#search form {
+    display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
 }
 
 #search form > div {

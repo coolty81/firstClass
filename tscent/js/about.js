@@ -1,5 +1,6 @@
 const searchPanel = document.querySelector("#search");
 const searchToggle = document.querySelector("#showPanel");
+const mobileSearchToggle = document.querySelector("#moblie-showPanel");
 const searchClose = document.querySelector("#closeSearch");
 const mobileMenu = document.querySelector("#mobile-menu");
 const openMenuButton = document.querySelector("#openMenu");
@@ -25,6 +26,10 @@ function setMobileMenu(open) {
     openMenuButton.setAttribute("aria-expanded", String(open));
     document.body.style.overflow = open ? "hidden" : "";
 }
+
+searchToggle?.addEventListener("click", () => {
+    setSearch(searchPanel.hidden);
+});
 
 searchToggle?.addEventListener("click", () => {
     setSearch(searchPanel.hidden);

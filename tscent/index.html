@@ -28,9 +28,9 @@
                 <a href="javascript:showMenu()"><img src="img/icon-menu.svg" alt="메뉴 아이콘"></a>
             </div>
             <div id="search" style="display: none;">
-                <form action="#">
+                <form action="#" name="form">
                     <div>
-                        <input type="text" placeholder="검색어를 입력해주세요.">
+                        <input type="text" placeholder="검색어를 입력해주세요." name="search">
                         <!-- <input type="submit" name="search" value="검색"> -->
                         <div>
                             <span>관심 키워드</span>
@@ -331,6 +331,7 @@
             if(searchMenu.style.display == 'none') { 
                 searchMenu.style.display = 'flex';
                 showPanel.style.color = '#B37A56';
+                document.form.search.focus();
             }
             else {
                 searchMenu.style.display = 'none';

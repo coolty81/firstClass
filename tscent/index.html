@@ -32,6 +32,7 @@
                     <div>
                         <input type="text" placeholder="검색어를 입력해주세요." name="search">
                         <!-- <input type="submit" name="search" value="검색"> -->
+                        <input type="button" value="닫기" id="closeSearch">
                         <div>
                             <span>관심 키워드</span>
                             <span><a href="#">아리산</a></span>
@@ -344,6 +345,13 @@
             if(menu.style.transform === 'translateX(100%)') menu.style.transform = 'translateX(0%)';
             else menu.style.transform = 'translateX(100%)';
         }
+
+        document.querySelector("#closeSearch").addEventListener("click", () => {
+            const searchMenu = document.querySelector('#search');
+            const showPanel = document.querySelector('#showPanel');
+            searchMenu.style.display = 'none';
+            showPanel.style.color = '#666666';
+        });
     </script>
 </body>
 </html>

@@ -111,6 +111,7 @@ header > div:nth-child(2) {
 #search input[type="text"] {
     border-bottom: 1px solid var(--action-primary);
     width: 50dvw;
+    padding: 8px 0;
 }
 
 #search input[type="text"]::placeholder {

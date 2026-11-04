@@ -92,6 +92,7 @@ header > div:nth-child(2) {
 #search form > div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 8px;
 }
 

@@ -90,6 +90,7 @@
 .hada-image-placeholder {
     background-image: url('../img/about_image01(trim).png');
     background-size: cover;
+    border-radius: 14px 0 0 14px;
 }
 
 .about-image-placeholder span,
@@ -126,6 +127,7 @@
     justify-content: center;
     padding: 80px;
     background: var(--surface-default);
+    border-radius: 0 14px 14px 0;
 }
 
 .about-hada-copy h2,
@@ -374,10 +376,12 @@
         width: 100%;
         min-height: 0;
         aspect-ratio: 4 / 5;
+        border-radius: 14px 14px 0 0;
     }
 
     .about-hada-copy {
         padding: 64px 50px;
+        border-radius: 0 0 14px 14px;
     }
 
     .about-contact .section-inner {

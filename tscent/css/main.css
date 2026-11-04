@@ -100,6 +100,10 @@ header > div:nth-child(2) {
     gap: 16px;
 }
 
+#search form > div > div span {
+    font-size: 14px;
+}
+
 #search form > div > div span:first-child {
     color: var(--text-primary);
 }

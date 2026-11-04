@@ -270,6 +270,17 @@ header > div:nth-child(2) {
     }
 }
 
+@media (max-width: 640px) {
+    #search input[type="text"] {
+        width: calc(100vw - 40px);  
+    }
+
+    #closeSearch {
+        top: 48px;
+        right: 20px;
+    }
+}
+
 /* =========================
    Figma Hero Swiper Controls
    ========================= */

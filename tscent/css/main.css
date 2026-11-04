@@ -893,7 +893,7 @@ main > section {
         aspect-ratio: 4 / 3;
     }
 
-    tea-image img {
+    .tea-image {
         margin-top: 34px;
     }
 

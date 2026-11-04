@@ -870,6 +870,10 @@ main > section {
     .culture-card {
         min-height: auto;
     }
+
+    .tea-image {
+        margin-top: 34px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -891,10 +895,6 @@ main > section {
     .tea-image {
         height: auto;
         aspect-ratio: 4 / 3;
-    }
-
-    .tea-image {
-        margin-top: 34px;
     }
 
     .culture-image {

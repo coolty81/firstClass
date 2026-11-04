@@ -166,6 +166,9 @@ header > div:nth-child(2) {
     color: var(--text-secondary);
 }
 
+#closeMenu {
+    cursor: pointer;
+
 .mo {
     display: none;
 }

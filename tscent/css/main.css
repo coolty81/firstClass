@@ -58,7 +58,7 @@ header > div {
     gap:34px;
 }
 
-header > div+div > span {
+header > div+div > span, #searchPanel {
     color: var(--text-secondary);
 }
 
@@ -248,7 +248,7 @@ header > div:nth-child(2) {
         padding: 0 50px;
     }
 
-    header > div > span {
+    header > div > span, #searchPanel {
         display: none;
     }
 

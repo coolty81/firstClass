@@ -282,6 +282,10 @@ header > div:nth-child(2) {
     }
 }
 
+.sr-only {
+    display: none;
+}
+
 /* =========================
    Figma Hero Swiper Controls
    ========================= */

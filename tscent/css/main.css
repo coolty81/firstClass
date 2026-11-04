@@ -494,6 +494,10 @@ main > section {
     object-fit: cover;
 }
 
+.culture-image img {
+    border-radius: 14px 0 0 14px;
+}
+
 .brand-image img,
 .featured-image img,
 .tea-image img {
@@ -740,6 +744,7 @@ main > section {
     min-height: 950px;
     padding: 100px;
     background: var(--surface-subtle);
+    border-radius: 0 14px 14px 0;
 }
 
 .culture-card h3 {
@@ -893,8 +898,13 @@ main > section {
         aspect-ratio: 4 / 5;
     }
 
+    .culture-image img {
+        border-radius: 14px;
+    }
+
     .culture-card {
         padding: 64px 50px;
+        border-radius: 14px;
     }
 
     .tea-head {

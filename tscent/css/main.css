@@ -1058,7 +1058,7 @@ main > section {
 .copyright {
     margin: 0;
     color: var(--text-secondary);
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1;
 }

@@ -926,7 +926,8 @@ main > section {
     }
 
     .culture-list li {
-        grid-template-columns: 32px 1fr 50px;
+        /* grid-template-columns: 32px 1fr 50px; */
+        grid-template-columns: 1fr 50px;
         gap: 20px;
         min-height: 110px;
     }

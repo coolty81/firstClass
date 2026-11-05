@@ -202,10 +202,10 @@
 
 .contact-detail {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    /* gap: 12px; */
     /* margin-top: 36px;
     padding-top: 20px; */
+    justify-content: space-between;
     padding: 20px 0;
     border-top: 1px solid var(--border-default);
 } 
@@ -214,12 +214,18 @@
     border-bottom: 1px solid var(--border-default);
 }
 
-.contact-detail > span {
+.contact-detail > div {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.contact-detail > div span {
     color: var(--text-secondary);
     font-size: 0.875rem;
 }
 
-.contact-detail > a {
+.contact-detail > div a {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -229,7 +235,7 @@
     line-height: 1.4;
 }
 
-.contact-detail > a span {
+.contact-detail > span {
     font-size: 1.25rem;
     width: 60px;
     height: 60px;

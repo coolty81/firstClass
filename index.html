@@ -11,18 +11,26 @@
             border: 1px solid black;
             border-radius: 6px;
         }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
     </style>
 </head>
 <body>
     <h1>Hello GitHub!</h1>
-    <button onclick="location.href='BK/login.html'">버거킹 로그인 UI</button>
-    <button onclick="location.href='BK/password.html'">버거킹 비밀번호 변경 UI 1</button><br>
-    <button onclick="location.href='BK/password2.html'">버거킹 비밀번호 변경 UI 2</button><br>
-    <button onclick="location.href='ably/login.html'">에이블리 로그인 UI, Neo Brutalism, Glassmorphism, Pixel Art</button><br>
-    <!-- <a href="ably/login_neo.html">에이블리 로그인 UI - Neo Brutalism</a><br> -->
-    <!-- <a href="ably/login_glass.html">에이블리 로그인 UI - Glassmorphism</a><br> -->
-    <!-- <a href="ably/login_pixel.html">에이블리 로그인 UI - Pixel Art</a><br> -->
-    <button onclick="location.href='tscent/index.html'">티센트 리뉴얼 사이트</button>
+    <div class="container">
+        <button onclick="location.href='BK/login.html'">버거킹 로그인 UI</button>
+        <button onclick="location.href='BK/password.html'">버거킹 비밀번호 변경 UI 1</button>
+        <button onclick="location.href='BK/password2.html'">버거킹 비밀번호 변경 UI 2</button>
+        <button onclick="location.href='ably/login.html'">에이블리 로그인 UI, Neo Brutalism, Glassmorphism, Pixel Art</button>
+        <!-- <a href="ably/login_neo.html">에이블리 로그인 UI - Neo Brutalism</a><br> -->
+        <!-- <a href="ably/login_glass.html">에이블리 로그인 UI - Glassmorphism</a><br> -->
+        <!-- <a href="ably/login_pixel.html">에이블리 로그인 UI - Pixel Art</a><br> -->
+        <button onclick="location.href='tscent/index.html'">티센트 리뉴얼 사이트</button>
+    </div>
     <!-- Repository - 프로젝트를 보관하는 공간(공간마다 배포 주소가 생김) -->
     <!-- Commit - 지금 상태를 저장하는 기록 -->
 </body>

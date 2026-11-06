@@ -188,7 +188,7 @@
 
                     <div class="category-tabs" role="tablist" aria-label="차와 도구 카테고리">
                         <a href="#" class="is-active" role="tab" aria-selected="true">잎차</a>
-                        <a href="#" role="tab" aria-selected="false">다도구</a>
+                        <a href="javascript:changeTab(1)" role="tab" aria-selected="false">다도구</a>
                         <a href="#" role="tab" aria-selected="false">선물세트</a>
                     </div>
 
@@ -375,6 +375,17 @@
             menu.style.transform = 'translateX(100%)';
             }
         });
+
+        function chageTab(tabNo) {
+            const image = document.querySelector('.tea-image').children[0];
+            const menu = document.querySelector('.category-tabs');
+            let selectedTabs = 0;
+            if(tabNo == 1) {
+                menu.children[selectedTabs].className = '';
+                menu.children[tabNo].className = 'is-active';
+                image.src = 'img/visual01(trim).png';
+            }
+        }
     </script>
 </body>
 </html>

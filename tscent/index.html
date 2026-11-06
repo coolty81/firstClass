@@ -376,10 +376,10 @@
             }
         });
 
+        let selectedTabs = 0;
         function changeTab(tabNo) {
             const image = document.querySelector('.tea-image').children[0];
             const menu = document.querySelector('.category-tabs');
-            let selectedTabs = 0;
             menu.children[selectedTabs].className = '';
             menu.children[tabNo].className = 'is-active';
             selectedTabs = tabNo;

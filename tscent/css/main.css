@@ -76,20 +76,12 @@ header > div+div {
     gap: 20px;
 }
 
-header .main-menu {
-    cursor: pointer;
-}
-
-header .main-menu:hover {
-    color: var(--accent-warm)
-}
-
 header .sub-menu {
     width: 136px;
     padding: 14px 16px;
     display: none;
     flex-direction: column;
-    /* align-items: flex-start; */
+    align-items: flex-start;
     gap: 24px;
     border: 1px solid var(--border-default);
     background-color: var(--background-default);
@@ -97,12 +89,31 @@ header .sub-menu {
     position: absolute;
 }
 
+header .main-menu, #moMenu .main-menu {
+    cursor: pointer;
+}
+
+header .main-menu:hover {
+    color: var(--accent-warm)
+}
+
 header .sub-menu li {
     color: var(--text-secondary)
 }
 
 header .sub-menu li:hover {
-    color: var(--accent-warm);
+    color: var(--accent-warm)
+}
+
+#moMenu .sub-menu {
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+#moMenu .sub-menu li {
+    color: var(--text-secondary);
 }
 
 #search {
@@ -283,7 +294,7 @@ header .sub-menu li:hover {
         padding: 0 50px;
     }
 
-    .main-menu, #searchPanel, header > div > span {
+    header .main-menu, #searchPanel, header > div > span {
         display: none;
     }
 

@@ -71,9 +71,34 @@ header div+div img {
     width: 50px;
 }
 
-header > div:nth-child(2) {
+header > div+div {
     font-size: 14px;
     gap: 20px;
+}
+
+header .sub-menu {
+    width: 136px;
+    padding: 14px 16px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border: 1px solid var(--border-default);
+    background-color: var(--background-default);
+    border-radius: 6px;
+    position: absolute;
+}
+
+header .main-menu:hover {
+    color: var(--accent-warm)
+}
+
+header .sub-menu li {
+    color: var(--text-secondary)
+}
+
+header .sub-menu li:hover {
+    color: var(--accent-warm)
 }
 
 #search {
@@ -254,7 +279,7 @@ header > div:nth-child(2) {
         padding: 0 50px;
     }
 
-    header > div > span, #searchPanel {
+    .main-menu, #searchPanel, header > div > span {
         display: none;
     }
 

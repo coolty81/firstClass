@@ -76,6 +76,14 @@ header > div+div {
     gap: 20px;
 }
 
+header .main-menu {
+    cursor: pointer;
+}
+
+header .main-menu:hover {
+    color: var(--accent-warm)
+}
+
 header .sub-menu {
     width: 136px;
     padding: 14px 16px;
@@ -87,10 +95,6 @@ header .sub-menu {
     background-color: var(--background-default);
     border-radius: 6px;
     position: absolute;
-}
-
-header .main-menu:hover {
-    color: var(--accent-warm)
 }
 
 header .sub-menu li {

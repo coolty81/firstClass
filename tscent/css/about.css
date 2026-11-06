@@ -202,12 +202,10 @@
 
 .contact-detail {
     display: flex;
-    /* gap: 12px; */
-    /* margin-top: 36px;
-    padding-top: 20px; */
     justify-content: space-between;
-    padding: 20px 0;
     border-top: 1px solid var(--border-default);
+    min-height: 120px;
+    align-items: center;
 } 
 
 .contact-detail:last-child {

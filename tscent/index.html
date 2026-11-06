@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="../font/css/pretendardvariable.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main(git).css">
     <script src="../npm/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
@@ -17,10 +17,41 @@
                 <a href="index.html" aria-label="티센트 메인으로 이동">
                     <img src="img/logo.svg" alt="티센트 로고">
                 </a>
-                <span><a href="#">차·도구</a></span>
-                <span><a href="#">문화·이해</a></span>
-                <span><a href="./about.html">About</a></span>
-                <span><a href="#">Notice</a></span>
+                <!-- <span><a href="#">차·도구</a></span> -->
+                <!-- <span><a href="#">문화·이해</a></span> -->
+                <!-- <span><a href="./about.html">About</a></span> -->
+                <!-- <span><a href="#">Notice</a></span> -->
+                <ul class="main-menu">
+                    <li>차·도구</li>
+                    <ul class="sub-menu">
+                        <li><a href="#">다도구</a></li>
+                        <li><a href="#">잎차</a></li>
+                        <li><a href="#">선물세트</a></li>
+                    </ul>
+                </ul>
+                <ul class="main-menu">
+                    <li>문화·이해</li>
+                    <ul class="sub-menu">
+                        <li><a href="#">티코스</a></li>
+                        <li><a href="#">전시</a></li>
+                        <li><a href="#">체험</a></li>
+                        <li><a href="#">강의</a></li>
+                    </ul>
+                </ul>
+                <ul class="main-menu">
+                    <li>About</li>
+                    <ul class="sub-menu">
+                        <li><a href="./about.html">회사 정보</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </ul>
+                <ul class="main-menu">
+                    <li>Notice</li>
+                    <ul class="sub-menu">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">Journal</a></li>
+                    </ul>
+                </ul>
             </div>
             <div>
                 <button id="searchPanel">검색</button>
@@ -446,6 +477,19 @@
                 img.alt = '찻잎이 담긴 상자 이미지';
             }
         }
+
+        const mainmenu = document.querySelectorAll('.main-menu');
+        mainmenu.forEach((menu) => {
+            menu.addEventListener('mouseover', () => {
+                menu.children[1].style.display = 'flex';
+            });
+        });
+
+        mainmenu.forEach((menu) => {
+            menu.addEventListener('mouseout', () => {
+                menu.children[1].style.display = 'none';
+            });
+        });
     </script>
 </body>
 </html>

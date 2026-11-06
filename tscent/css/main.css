@@ -105,14 +105,14 @@ header .sub-menu li:hover {
     color: var(--accent-warm)
 }
 
-#moMenu .sub-menu {
+#moMenu .sub-menu, nav .sub-menu {
     display: none;
     flex-direction: column;
     gap: 18px;
     margin-top: 18px;
 }
 
-#moMenu .sub-menu li {
+#moMenu .sub-menu li, nav .sub-menu li {
     color: var(--text-secondary);
 }
 

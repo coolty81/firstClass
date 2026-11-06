@@ -67,7 +67,7 @@ mainmenu.forEach((menu) => {
     });
 });
 
-const mo_mainmenu = document.querySelectorAll('#moMenu .main-menu');
+const mo_mainmenu = document.querySelectorAll('nav .main-menu');
 mo_mainmenu.forEach((menu) => {
     menu.addEventListener('click', () => {
         if(menu.children[1].style.display == 'flex') {

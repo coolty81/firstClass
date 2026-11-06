@@ -81,14 +81,37 @@
                 <div id="moMenu" style="transform: translateX(100%);">
                     <div>
                         <img src="img/icon-close.svg" id="closeMenu" alt="메뉴 닫기 버튼">
-                        <span><a href="#">차·도구</a></span>
-                        <span><a href="#">문화·이해</a></span>
-                        <span><a href="./about.html">About</a></span>
-                        <span><a href="#">Notice</a></span>
-                        <!-- <span><a href="#">검색</a></span>
-                        <span><a href="#">로그인</a></span>
-                        <span><a href="#">회원가입</a></span>
-                        <span><a href="#">장바구니</a></span> -->
+                        <ul class="main-menu">
+                            <li>▶ 차·도구</li>
+                            <ul class="sub-menu">
+                                <li><a href="#">다도구</a></li>
+                                <li><a href="#">잎차</a></li>
+                                <li><a href="#">선물세트</a></li>
+                            </ul>
+                        </ul>
+                        <ul class="main-menu">
+                            <li>▶ 문화·이해</li>
+                            <ul class="sub-menu">
+                                <li><a href="#">티코스</a></li>
+                                <li><a href="#">전시</a></li>
+                                <li><a href="#">체험</a></li>
+                                <li><a href="#">강의</a></li>
+                            </ul>
+                        </ul>
+                        <ul class="main-menu">
+                            <li>▶ About</li>
+                            <ul class="sub-menu">
+                                <li><a href="./about.html">회사 정보</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </ul>
+                        <ul class="main-menu">
+                            <li>▶ Notice</li>
+                            <ul class="sub-menu">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">Journal</a></li>
+                            </ul>
+                        </ul>
                         <button id="mobile-searchPanel">검색</button>
                         <a href="about.html#contact">문의</a>
                     </div>
@@ -478,16 +501,30 @@
             }
         }
 
-        const mainmenu = document.querySelectorAll('.main-menu');
-        mainmenu.forEach((menu) => {
+        const header_mainmenu = document.querySelectorAll('header .main-menu');
+        header_mainmenu.forEach((menu) => {
             menu.addEventListener('mouseover', () => {
                 menu.children[1].style.display = 'flex';
             });
         });
 
-        mainmenu.forEach((menu) => {
+        header_mainmenu.forEach((menu) => {
             menu.addEventListener('mouseout', () => {
                 menu.children[1].style.display = 'none';
+            });
+        });
+
+        const mo_mainmenu = document.querySelectorAll('#moMenu .main-menu');
+        mo_mainmenu.forEach((menu) => {
+            menu.addEventListener('click', () => {
+                if(menu.children[1].style.display == 'flex') {
+                    menu.children[1].style.display = 'none';
+                    menu.children[0].innerText = '▶ '+menu.children[0].innerText.split(' ')[1];
+                }
+                else {
+                    menu.children[1].style.display = 'flex';
+                    menu.children[0].innerText = '▼ '+menu.children[0].innerText.split(' ')[1];
+                }
             });
         });
     </script>

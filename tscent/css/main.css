@@ -663,12 +663,12 @@ main > section {
     line-height: 1.3;
 }
 
-.category-tabs a.is-active {
+.category-tabs button.is-active {
     color: var(--text-primary);
     font-weight: 600;
 }
 
-.category-tabs a.is-active::after {
+.category-tabs button.is-active::after {
     content: "";
     position: absolute;
     left: 0;

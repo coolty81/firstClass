@@ -148,9 +148,22 @@
                     </div>
 
                     <div class="featured-product">
-                        <figure class="featured-image">
-                            <img src="img/visual03(fix).png" alt="대만 아리산 탄배오룡 대표 상품 이미지">
-                        </figure>
+                        <div>
+                            <figure class="featured-image">
+                                <img src="img/visual03(fix).png" alt="대만 아리산 탄배오룡 대표 상품 이미지">
+                            </figure>
+                            <div>
+                                <figure class="featured-sub-image is-active" onclick="changeImg(0)">
+                                    <img src="img/featured01.png" alt="대만 아리산 탄배오룡 상품 이미지">
+                                </figure>
+                                <figure class="featured-sub-image" onclick="changeImg(1)">
+                                    <img src="img/featured02.png" alt="잎차 이미지">
+                                </figure>
+                                <figure class="featured-sub-image" onclick="changeImg(2)">
+                                    <img src="img/featured03.png" alt="찻잎이 담긴 상자 이미지">
+                                </figure>
+                            </div>
+                        </div>
 
                         <div class="product-copy">
                             <!-- <span class="product-number">01</span> -->
@@ -376,16 +389,16 @@
             }
         });
 
-        let selectedTabs = 0;
+        let selectedTab = 0;
         function changeTab(tabNo) {
             const image = document.querySelector('.tea-image > img');
             const menu = document.querySelector('.category-tabs');
             const h3 = document.querySelector('.tea-copy > h3');
             const p = document.querySelector('.tea-copy > p');
             const a = document.querySelector('.tea-copy > a');
-            menu.children[selectedTabs].className = '';
+            menu.children[selectedTab].className = '';
             menu.children[tabNo].className = 'is-active';
-            selectedTabs = tabNo;
+            selectedTab = tabNo;
             if(tabNo == 0) {
                 image.src = 'img/visual03(fix).png';
                 image.alt = '티센트 잎차 이미지';
@@ -408,6 +421,29 @@
                 h3.innerText = '선물세트 · 膳物';
                 p.innerText = '차와 다도구를 정성스럽게 구성한 선물 세트입니다.\n일상 속 차의 시간을 다른 사람과 나누는 방법을 제안합니다.';
                 a.innerText = '선물세트 모두 보기 ↗';
+            }
+        }
+
+        let selectedImg = 0;
+        function changeImg(imgNo) {
+            const figure = document.querySelectorAll('.featured-sub-image');
+            const img = document.querySelector('.featured-image > img');
+            figure[selectedImg].className = 'featured-sub-image';
+            figure[imgNo].className = 'featured-sub-image is-active';
+            selectedImg = imgNo;
+            if(imgNo == 0) {
+                img.src = 'img/visual03(fix).png';
+                img.alt = '대만 아리산 탄배오룡 대표 상품 이미지';
+            }
+
+            else if(imgNo == 1) {
+                img.src = 'img/featured02.png';
+                img.alt = '잎차 이미지';
+            }
+
+            if(imgNo == 2) {
+                img.src = 'img/featured03.png';
+                img.alt = '찻잎이 담긴 상자 이미지';
             }
         }
     </script>

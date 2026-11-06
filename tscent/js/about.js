@@ -53,3 +53,16 @@ document.addEventListener("keydown", (event) => {
         setMobileMenu(false);
     }
 });
+
+const mainmenu = document.querySelectorAll('.main-menu');
+mainmenu.forEach((menu) => {
+    menu.addEventListener('mouseover', () => {
+        menu.children[1].style.display = 'flex';
+    });
+});
+
+mainmenu.forEach((menu) => {
+    menu.addEventListener('mouseout', () => {
+        menu.children[1].style.display = 'none';
+    });
+});

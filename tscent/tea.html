@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="티센트가 큐레이션한 잎차와 다섯 가지 향 시리즈를 만나보세요.">
+    <title>잎차 | TSCENT</title>
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../font/css/pretendardvariable.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tea.css">
+    <script src="js/tea.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div>
+                <a href="index.html" aria-label="티센트 메인으로 이동">
+                    <img src="img/logo.svg" alt="티센트 로고">
+                </a>
+                <ul class="main-menu">
+                    <li>차·도구</li>
+                    <ul class="sub-menu">
+                        <li><a href="tea.html" aria-current="page">잎차</a></li>
+                        <li><a href="index.html">다도구</a></li>
+                        <li><a href="index.html">선물세트</a></li>
+                    </ul>
+                </ul>
+                <ul class="main-menu">
+                    <li>문화·이해</li>
+                    <ul class="sub-menu">
+                        <li><a href="index.html">티코스</a></li>
+                        <li><a href="index.html">전시</a></li>
+                        <li><a href="index.html">체험</a></li>
+                        <li><a href="index.html">강의</a></li>
+                    </ul>
+                </ul>
+                <ul class="main-menu">
+                    <li>About</li>
+                    <ul class="sub-menu">
+                        <li><a href="about.html">회사 정보</a></li>
+                        <li><a href="index.html">FAQ</a></li>
+                    </ul>
+                </ul>
+                <ul class="main-menu">
+                    <li>Notice</li>
+                    <ul class="sub-menu">
+                        <li><a href="index.html">공지사항</a></li>
+                        <li><a href="index.html">Journal</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div>
+                <button id="searchPanel" type="button" aria-expanded="false" aria-controls="search">검색</button>
+                <span><a href="index.html">로그인</a></span>
+                <span><a href="index.html">회원가입</a></span>
+                <span><a href="index.html">장바구니</a></span>
+                <img src="img/icon-menu.svg" alt="메뉴 아이콘" id="menuIcon">
+            </div>
+            <div id="search" style="display:none;">
+                <form action="#" name="form" role="search">
+                    <div>
+                        <label class="sr-only" for="tea-search">검색어</label>
+                        <input type="text" placeholder="검색어를 입력해주세요." name="search" id="tea-search">
+                        <input type="button" value="닫기" id="closeSearch">
+                        <div>
+                            <span>관심 키워드</span>
+                            <span>아리산</span>
+                            <span>월광백</span>
+                            <span>보이차</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <main class="tea-page">
+            <div class="mobile-menu-panel" id="moMenu" style="transform:translateX(100%);" aria-hidden="true">
+                <div>
+                    <img src="img/icon-close.svg" id="closeMenu" alt="메뉴 닫기 버튼">
+                    <span><a href="tea.html" aria-current="page">잎차</a></span>
+                    <span><a href="index.html">다도구</a></span>
+                    <span><a href="index.html">선물세트</a></span>
+                    <span><a href="index.html">문화·이해</a></span>
+                    <span><a href="about.html">About</a></span>
+                    <button type="button" id="mobile-searchPanel">검색</button>
+                </div>
+            </div>
+
+            <section class="tea-hero">
+                <div class="section-inner">
+                    <nav class="breadcrumb" aria-label="브레드크럼">
+                        <a href="index.html">Home</a>
+                        <span aria-hidden="true">/</span>
+                        <a href="index.html">차·도구</a>
+                        <span aria-hidden="true">/</span>
+                        <span aria-current="page">잎차</span>
+                    </nav>
+                    <div class="tea-hero-layout">
+                        <figure class="tea-hero-image" role="img" aria-label="티센트 잎차를 보여주는 대표 이미지가 들어갈 자리">
+                            <span>IMAGE PLACEHOLDER</span>
+                            <small>잎차 컬렉션 대표 이미지</small>
+                        </figure>
+                        <div class="tea-hero-copy">
+                            <span class="section-label">TEA COLLECTION</span>
+                            <h1>잎차<br>葉茶</h1>
+                            <p class="tea-hero-lead">자연이 빚은 향과 맛을 한 잔에 담다.</p>
+                            <p>티센트의 잎차는 아시아 각지의 자연과 산지에서 자란 찻잎을 엄선해 소개합니다. 산의 기운을 담은 차부터 꽃과 과일의 향을 더한 블렌딩까지, 다섯 가지 향 시리즈를 통해 차가 가진 다채로운 풍미를 만나보세요.</p>
+                            <a class="outline-btn tea-hero-cta" href="#tea-products">잎차 만나보기 <span aria-hidden="true">↘</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tea-collection" id="tea-products">
+                <div class="section-inner">
+                    <div class="section-head tea-collection-head">
+                        <div>
+                            <span class="section-label">LEAF TEA</span>
+                            <h2>다섯 가지 향의 여정</h2>
+                        </div>
+                        <p>차의 산지와 향, 그리고 마시는 순간의 감각에 따라<br>티센트의 잎차를 살펴보세요.</p>
+                    </div>
+                    <nav class="tea-series-tabs" aria-label="잎차 시리즈 바로가기">
+                        <a href="#hyangsan" class="is-active">향산</a>
+                        <a href="#hyangjeok">향적</a>
+                        <a href="#hyangyu">향유</a>
+                        <a href="#hyanggok">향곡</a>
+                        <a href="#hyangmi">향미</a>
+                    </nav>
+
+                <section class="tea-series" id="hyangsan" data-series="hyangsan">
+                    <div class="tea-series-heading">
+                        <div>
+                            <span class="section-label">香山</span>
+                            <h2>향산</h2>
+                        </div>
+                        <div class="tea-series-intro">
+                            <h3>산과 향이 머무는 곳</h3>
+                            <p>산의 향기를 담은 차 시리즈입니다. 해발 1,600m 이상의 맑고 서늘한 환경에서 천천히 자란 찻잎의 고유한 향을 만나보세요.</p>
+                        </div>
+                    </div>
+                    <div class="tea-product-grid">
+                                <button class="outline-btn tea-buy-button" type="button" data-product="대만 아리산 고산오룡">구매하기 <span aria-hidden="true">↗</span></button>
+                                <button class="outline-btn tea-buy-button" type="button" data-product="대만 아리산 탄배오룡">구매하기 <span aria-hidden="true">↗</span></button>
+                    </div>
+                </section>
+
+                <section class="tea-series" id="hyangjeok" data-series="hyangjeok">
+                    <div class="tea-series-heading">
+                        <div>
+                            <span class="section-label">香寂</span>
+                            <h2>향적</h2>
+                        </div>
+                        <div class="tea-series-intro">
+                            <h3>적막 속의 향기</h3>
+                            <p>고요한 시간 속에서 차가 가진 깊이와 여운을 느낄 수 있는 시리즈입니다.</p>
+                        </div>
+                    </div>
+                    <div class="tea-product-grid">
+                                <button class="outline-btn tea-buy-button" type="button" data-product="2018 봄, 망지 고수생차">구매하기 <span aria-hidden="true">↗</span></button>
+                                <button class="outline-btn tea-buy-button" type="button" data-product="2018 봄, 유락산 고수숙차">구매하기 <span aria-hidden="true">↗</span></button>
+                    </div>
+                </section>
+
+                <section class="tea-series" id="hyangyu" data-series="hyangyu">
+                    <div class="tea-series-heading">
+                        <div>
+                            <span class="section-label">香遊</span>
+                            <h2>향유</h2>
+                        </div>
+                        <div class="tea-series-intro">
+                            <h3>향기로 즐기는 시간</h3>
+                            <p>다양한 산지에서 만들어진 꽃향과 과일향, 부드러운 꿀향이 조화롭게 이어지는 시리즈입니다.</p>
+                        </div>
+                    </div>
+                    <div class="tea-product-grid">
+                                <button class="outline-btn tea-buy-button" type="button" data-product="2023 봄, 진년 월광백">구매하기 <span aria-hidden="true">↗</span></button>
+                    </div>
+                </section>
+
+                <section class="tea-series" id="hyanggok" data-series="hyanggok">
+                    <div class="tea-series-heading">
+                        <div>
+                            <span class="section-label">香谷</span>
+                            <h2>향곡</h2>
+                        </div>
+                        <div class="tea-series-intro">
+                            <h3>깊은 골짜기의 맑은 향</h3>
+                            <p>산지의 자연과 차가 지닌 맑고 단정한 풍미를 담은 시리즈입니다.</p>
+                        </div>
+                    </div>
+                    <div class="tea-product-grid">
+                                <button class="outline-btn tea-buy-button" type="button" data-product="하동 화개 녹차">구매하기 <span aria-hidden="true">↗</span></button>
+                                <button class="outline-btn tea-buy-button" type="button" data-product="제주 프리미엄 말차">구매하기 <span aria-hidden="true">↗</span></button>
+                                <button class="outline-btn tea-buy-button" type="button" data-product="하동 화개 백차">구매하기 <span aria-hidden="true">↗</span></button>
+                                <button class="outline-btn tea-buy-button" type="button" data-product="제주 거문오름 호지차">구매하기 <span aria-hidden="true">↗</span></button>
+                    </div>
+                </section>
+
+                <section class="tea-series" id="hyangmi" data-series="hyangmi">
+                    <div class="tea-series-heading">
+                        <div>
+                            <span class="section-label">香味</span>
+                            <h2>향미</h2>
+                        </div>
+                        <div class="tea-series-intro">
+                            <h3>일상의 감각을 여는 조화로운 블렌딩</h3>
+                            <p>차와 자연의 재료를 조화롭게 더해 일상에 새로운 감각을 전하는 블렌디드 차 시리즈입니다.</p>
+                        </div>
+                    </div>
+                    <div class="tea-product-grid">
+                                <button class="outline-btn tea-buy-button" type="button" data-product="목련호지차">구매하기 <span aria-hidden="true">↗</span></button>
+                                <button class="outline-btn tea-buy-button" type="button" data-product="유자홍차">구매하기 <span aria-hidden="true">↗</span></button>
+                                <button class="outline-btn tea-buy-button" type="button" data-product="돌배계피차">구매하기 <span aria-hidden="true">↗</span></button>
+                    </div>
+                </section>
+                    <aside class="tea-store-only" id="store-only">
+                        <span class="section-label">IN-STORE ONLY</span>
+                        <h2>매장에서 만나는 차</h2>
+                        <p><strong>박하차</strong> — 경남 사천의 청정 자연에서 정성스럽게 기른 토종 박하로 만든 허브차입니다.</p>
+                        <span class="store-only-label">매장 전용</span>
+                    </aside>
+                    <div class="tea-purchase-notice" id="purchase-notice" role="status" aria-live="polite"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <img src="img/logo.svg" alt="티센트">
+                        <p>차 한 잔에 깃든 일상의 여백.</p>
+                    </div>
+                    <address class="footer-contact">
+                        <p>회사 티하우스 하다 睱茶</p>
+                        <p>서울특별시 강남구 선릉로146길 54, 1층</p>
+                        <p><a href="tel:0260531570">02-6053-1570</a> · <a href="mailto:tscent.tea@gmail.com">tscent.tea@gmail.com</a></p>
+                    </address>
+                    <nav class="footer-nav" aria-label="티센트 주요 정보">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="index.html">Notice</a></li>
+                            <li><a href="about.html#contact">문의</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-nav" aria-label="티센트 기타 정보">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="tea.html">잎차</a></li>
+                            <li><a href="index.html">문화·이해</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-line" aria-hidden="true"></div>
+                <p class="copyright">© 2025 tscent. UI prototype.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

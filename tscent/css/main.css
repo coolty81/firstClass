@@ -89,7 +89,7 @@ header .sub-menu {
     padding: 14px 16px;
     display: none;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap: 24px;
     border: 1px solid var(--border-default);
     background-color: var(--background-default);
@@ -102,7 +102,7 @@ header .sub-menu li {
 }
 
 header .sub-menu li:hover {
-    color: var(--accent-warm)
+    color: var(--accent-warm);
 }
 
 #search {

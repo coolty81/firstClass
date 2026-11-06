@@ -187,9 +187,9 @@
                     </div>
 
                     <div class="category-tabs" role="tablist" aria-label="차와 도구 카테고리">
-                        <a href="#" class="is-active" role="tab" aria-selected="true">잎차</a>
+                        <a href="javascript:changeTab(0)" class="is-active" role="tab" aria-selected="true">잎차</a>
                         <a href="javascript:changeTab(1)" role="tab" aria-selected="false">다도구</a>
-                        <a href="#" role="tab" aria-selected="false">선물세트</a>
+                        <a href="javascript:changeTab(2)" role="tab" aria-selected="false">선물세트</a>
                     </div>
 
                     <div class="tea-feature">
@@ -380,10 +380,19 @@
             const image = document.querySelector('.tea-image').children[0];
             const menu = document.querySelector('.category-tabs');
             let selectedTabs = 0;
-            if(tabNo == 1) {
-                menu.children[selectedTabs].className = '';
-                menu.children[tabNo].className = 'is-active';
+            menu.children[selectedTabs].className = '';
+            menu.children[tabNo].className = 'is-active';
+            selectedTabs = tabNo;
+            if(tabNo == 0) {
+                image.src = 'img/visual03(fix).png';
+            }
+            
+            else if(tabNo == 1) {
                 image.src = 'img/visual01(trim).png';
+            }
+
+            else if(tabNo == 2) {
+                image.src = 'img/featured03.png';
             }
         }
     </script>

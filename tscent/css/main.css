@@ -54,8 +54,9 @@ header {
 }
 
 header > div {
-    display:flex;
-    gap:34px;
+    display: flex;
+    gap: 34px;
+    align-items: center;
 }
 
 header > div+div > span, #searchPanel {

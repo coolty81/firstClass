@@ -32,7 +32,8 @@
 
 .tea-hero-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(420px, 700px);
+    /* grid-template-columns: minmax(0, 1fr) minmax(420px, 700px); */
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 100px;
     margin-top: 60px;

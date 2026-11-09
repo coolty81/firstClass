@@ -54,6 +54,19 @@ document.addEventListener("keydown", (event) => {
     }
 });
 
+const header_mainmenu = document.querySelectorAll('header .main-menu');
+header_mainmenu.forEach((menu) => {
+    menu.addEventListener('mouseover', () => {
+        menu.className = 'main-menu isOpen';
+    });
+});
+
+header_mainmenu.forEach((menu) => {
+    menu.addEventListener('mouseout', () => {
+        menu.className = 'main-menu';
+    });
+});
+
 const mo_mainmenu = document.querySelectorAll('#mobile-menu .main-menu');
 mo_mainmenu.forEach((menu) => {
     menu.addEventListener('click', () => {

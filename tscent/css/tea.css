@@ -386,7 +386,7 @@
 }
 
 @media (max-width: 1024px) {
-    .tea-page .section-inner {
+    .tea-page .tea-hero .section-inner {
         /* width: calc(100% - 100px); */
         padding: 0 50px;
     }

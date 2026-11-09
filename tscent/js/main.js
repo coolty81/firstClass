@@ -25,14 +25,12 @@ const searchPanel = document.querySelector('#searchPanel');
 const mobileSearchPanel = document.querySelector('#mobile-searchPanel');
 
 searchPanel.addEventListener('click', () => {
-    if(searchMenu.style.display == 'none') { 
-        searchMenu.style.display = 'flex';
-        searchPanel.style.color = '#B37A56';
+    if(!searchMenu.className.includes('isOpen')) { 
+        searchMenu.className = 'search isOpen';
         document.form.search.focus();
     }
     else {
-        searchMenu.style.display = 'none';
-        searchPanel.style.color = '#666666';
+        searchMenu.className = 'search';
     }
 });
 

@@ -386,9 +386,10 @@
 }
 
 @media (max-width: 1024px) {
-    /* .tea-page .section-inner {
-        width: calc(100% - 100px);
-    } */
+    .tea-page .section-inner {
+        /* width: calc(100% - 100px); */
+        padding: 0 50px;
+    }
 
     .tea-hero,
     .tea-collection {

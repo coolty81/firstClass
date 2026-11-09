@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    padding-top: 34px;
+    margin: 34px 0;
     color: var(--text-secondary);
     font-size: 0.875rem;
     line-height: 1.3;
@@ -34,6 +34,7 @@
     display: flex;
     align-items: center;
     width: 100%;
+    gap: 48px;
 }
 
 .tea-hero-image {
@@ -55,6 +56,7 @@
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
+    width: 100%;
 }
 
 .tea-hero-image span,
@@ -370,11 +372,6 @@
         padding: 0 50px;
     }
 
-    .tea-hero-layout {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 48px;
-    }
-
     .tea-hero-copy {
         max-width: 800px;
     }
@@ -471,6 +468,7 @@
     .tea-hero-layout {
         gap: 36px;
         margin-top: 40px;
+        flex-direction: column;
     }
 
     .tea-hero-copy h1 {

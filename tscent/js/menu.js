@@ -1,26 +1,6 @@
-const searchMenu = document.querySelector('#search');
-const searchPanel = document.querySelector('#searchPanel');
-const mobileSearchPanel = document.querySelector('#mobile-searchPanel');
 const menu = document.querySelector('#mobile-menu');
 const menuIcon = document.querySelector('#menuIcon');
 const closeMenu = document.querySelector('#closeMenu');
-
-searchPanel.addEventListener('click', () => {
-if(searchMenu.style.display == 'none') { 
-    searchMenu.style.display = 'flex';
-    searchPanel.style.color = '#B37A56';
-    document.form.search.focus();
-}
-else {
-    searchMenu.style.display = 'none';
-    searchPanel.style.color = '#666666';
-}
-});
-
-document.querySelector("#closeSearch").addEventListener("click", () => {
-    searchMenu.style.display = 'none';
-    searchPanel.style.color = '#666666';
-});
 
 menuIcon.addEventListener('click', () => {
     if(menu.style.transform === 'translateX(100%)') menu.style.transform = 'translateX(0%)';

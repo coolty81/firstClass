@@ -41,13 +41,13 @@ mobileSearchPanel.addEventListener('click', () => {
 });
 
 document.querySelector("#closeSearch").addEventListener("click", () => {
-    searchMenu.style.display = 'none';
+    searchMenu.className = 'search';
     searchPanel.style.color = '#666666';
 });
 
 document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
-        searchMenu.style.display = 'none';
+        searchMenu.className = 'search';
         searchPanel.style.color = '#666666';
         menu.style.transform = 'translateX(100%)';
     }

@@ -11,6 +11,10 @@
     margin: 0 auto;
 } */
 
+.tea-page .tea-hero .section-inner {
+    width: 100%;
+}
+
 .tea-hero {
     padding: 0 0 100px;
     background: var(--background-default);

@@ -81,7 +81,6 @@
 }
 
 .tea-hero-copy h1 {
-    margin-top: 24px;
     color: var(--text-primary);
     font-size: clamp(3rem, 4.1vw, 5rem);
     font-weight: 500;
@@ -90,21 +89,19 @@
 }
 
 .tea-hero-lead {
-    margin-top: 32px;
     color: var(--text-primary);
     font-size: 1.25rem;
     line-height: 1.55;
 }
 
 .tea-hero-copy > p:not(.tea-hero-lead) {
-    margin-top: 20px;
     color: var(--text-secondary);
     font-size: 1rem;
     line-height: 1.75;
 }
 
-.tea-hero-cta {
-    margin-top: 34px;
+.tea-hero-cta.outline-btn {
+    margin: 0;
 }
 
 .tea-hero-cta span {
@@ -486,7 +483,6 @@
     }
 
     .tea-hero-lead {
-        margin-top: 24px;
         font-size: 1.125rem;
     }
 

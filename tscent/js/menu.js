@@ -28,13 +28,13 @@ document.addEventListener("keydown", (event) => {
 const header_mainmenu = document.querySelectorAll('header .main-menu');
 header_mainmenu.forEach((menu) => {
     menu.addEventListener('mouseover', () => {
-        menu.children[1].style.display = 'flex';
+        menu.className = 'main-menu isOpen';
     });
 });
 
 header_mainmenu.forEach((menu) => {
     menu.addEventListener('mouseout', () => {
-        menu.children[1].style.display = 'none';
+        menu.className = 'main-menu';
     });
 });
 

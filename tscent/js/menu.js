@@ -41,13 +41,11 @@ header_mainmenu.forEach((menu) => {
 const mo_mainmenu = document.querySelectorAll('#mobile-menu .main-menu');
 mo_mainmenu.forEach((menu) => {
     menu.addEventListener('click', () => {
-        if(menu.children[1].style.display == 'flex') {
-            menu.children[1].style.display = 'none';
-            menu.children[0].innerText = '▶ '+menu.children[0].innerText.split(' ')[1];
+        if(!menu.className.includes('isOpen')) {
+            menu.className = 'main-menu isOpen';
         }
         else {
-            menu.children[1].style.display = 'flex';
-            menu.children[0].innerText = '▼ '+menu.children[0].innerText.split(' ')[1];
+            menu.className = 'main-menu';
         }
     });
 });

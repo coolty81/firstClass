@@ -77,6 +77,10 @@ header > div+div {
     gap: 20px;
 }
 
+header .main-menu > li {
+    padding: 14px 0;
+}
+
 header .sub-menu {
     width: 136px;
     padding: 14px 16px;
@@ -89,6 +93,7 @@ header .sub-menu {
     border-radius: 6px;
     position: absolute;
     z-index: 11;
+    top: 80%;
 }
 
 header .main-menu, #mobile-menu .main-menu {
@@ -116,6 +121,14 @@ header .sub-menu li:hover {
 
 #mobile-menu .sub-menu li, nav .sub-menu li {
     color: var(--text-secondary);
+}
+
+#mobile-menu .isOpen .sub-menu {
+    display: flex;
+}
+
+#mobile-menu .isOpen > li {
+    color: var(--accent-warm);
 }
 
 #search {

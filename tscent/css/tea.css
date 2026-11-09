@@ -54,6 +54,9 @@
     background: var(--surface-subtle);
     color: var(--text-secondary);
     text-align: center;
+    background-image: url(../img/tea_image/tea_image01.webp);
+    background-size: cover;
+    background-position-y: center;
 }
 
 .tea-hero-image span,
@@ -223,6 +226,78 @@
     background: var(--surface-default);
     color: var(--text-secondary);
     text-align: center;
+}
+
+.tea-product-image:nth-child(1) {
+    background-image: url('../img/tea_image/tea_image01.webp');
+    background-size: cover;
+    background-position-y: center;
+}
+
+.tea-product-image:nth-child(2) {
+    background-image: url('../img/tea_image/tea_image02.webp');
+    background-size: cover;
+    background-position-y: center;
+}
+
+.tea-product-image:nth-child(3) {
+    background-image: url('../img/tea_image/tea_image03.webp');
+    background-size: cover;
+    background-position-y: center;
+}
+
+.tea-product-image:nth-child(4) {
+    background-image: url('../img/tea_image/tea_image04.webp');
+    background-size: cover;
+    background-position-y: center;
+}
+
+.tea-product-image:nth-child(5) {
+    background-image: url('../img/tea_image/tea_image05.webp');
+    background-size: cover;
+    background-position-y: center;
+}
+
+.tea-product-image:nth-child(6) {
+    background-image: url('../img/tea_image/tea_image06.webp');
+    background-size: cover;
+    background-position-y: center;
+}
+
+.tea-product-image:nth-child(7) {
+    background-image: url('../img/tea_image/tea_image07.webp');
+    background-size: cover;
+    background-position-y: center;
+}
+
+.tea-product-image:nth-child(8) {
+    background-image: url('../img/tea_image/tea_image08.webp');
+    background-size: cover;
+    background-position-y: center;
+}
+
+.tea-product-image:nth-child(9) {
+    background-image: url('../img/tea_image/tea_image09.webp');
+    background-size: cover;
+    background-position-y: center;
+}
+
+.tea-product-image:nth-child(10) {
+    background-image: url('../img/tea_image/tea_image10.webp');
+    background-size: cover;
+    background-position-y: center;
+}
+
+.tea-product-image:nth-child(11) {
+    background-image: url('../img/tea_image/tea_image11.webp');
+    background-size: cover;
+    background-position-y: center;
+}
+
+.tea-product-image:nth-child(12) {
+    background-image: url('../img/tea_image/tea_image12.webp');
+    background-size: cover;
+    background-position-y: center;
 }
 
 .tea-product-copy {

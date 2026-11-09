@@ -1,7 +1,7 @@
 const searchMenu = document.querySelector('#search');
 const searchPanel = document.querySelector('#searchPanel');
 const mobileSearchPanel = document.querySelector('#mobile-searchPanel');
-const menu = document.querySelector('#moMenu');
+const menu = document.querySelector('#mobile-menu');
 const menuIcon = document.querySelector('#menuIcon');
 const closeMenu = document.querySelector('#closeMenu');
 

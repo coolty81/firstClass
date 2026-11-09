@@ -6,10 +6,10 @@
     background: var(--background-default);
 }
 
-.tea-page .section-inner {
+/* .tea-page .section-inner {
     width: min(1720px, calc(100% - 200px));
     margin: 0 auto;
-}
+} */
 
 .tea-hero {
     padding: 0 0 100px;

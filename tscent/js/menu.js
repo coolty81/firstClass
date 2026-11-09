@@ -11,7 +11,7 @@ header_mainmenu.forEach((menu) => {
     });
 });
 
-const mo_mainmenu = document.querySelectorAll('#moMenu .main-menu');
+const mo_mainmenu = document.querySelectorAll('#mobile-menu .main-menu');
 mo_mainmenu.forEach((menu) => {
     menu.addEventListener('click', () => {
         if(menu.children[1].style.display == 'flex') {

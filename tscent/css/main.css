@@ -106,7 +106,7 @@ header .sub-menu li:hover {
     color: var(--accent-warm)
 }
 
-#moMenu .sub-menu, nav .sub-menu {
+#moMenu .sub-menu {
     display: none;
     flex-direction: column;
     gap: 18px;

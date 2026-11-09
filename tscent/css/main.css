@@ -144,9 +144,13 @@ header .sub-menu li:hover {
     left: 0;
     border-top: 1px solid var(--border-default);
     z-index: 10;
-    /* display: flex; */
+    display: none;
     justify-content: center;
     align-items: center;
+}
+
+#search.isOpen {
+    display: flex;
 }
 
 #search form > div {

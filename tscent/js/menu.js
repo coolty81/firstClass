@@ -3,12 +3,12 @@ const menuIcon = document.querySelector('#menuIcon');
 const closeMenu = document.querySelector('#closeMenu');
 
 menuIcon.addEventListener('click', () => {
-    if(menu.style.transform === 'translateX(100%)') menu.style.transform = 'translateX(0%)';
-    else menu.style.transform = 'translateX(100%)';
+    if(!menu.className.includes('isOpen')) menu.className = 'isOpen';
+    else menu.className = '';
 });
 
 closeMenu.addEventListener('click', () => {
-menu.style.transform = 'translateX(100%)';
+    menu.className = '';
 });
 
 const header_mainmenu = document.querySelectorAll('header .main-menu');

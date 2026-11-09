@@ -53,3 +53,15 @@ document.addEventListener("keydown", (event) => {
         setMobileMenu(false);
     }
 });
+
+const mo_mainmenu = document.querySelectorAll('#mobile-menu .main-menu');
+mo_mainmenu.forEach((menu) => {
+    menu.addEventListener('click', () => {
+        if(!menu.className.includes('isOpen')) {
+            menu.className = 'main-menu isOpen';
+        }
+        else {
+            menu.className = 'main-menu';
+        }
+    });
+});

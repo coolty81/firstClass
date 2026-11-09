@@ -96,6 +96,10 @@ header .sub-menu {
     top: 80%;
 }
 
+header .isOpen .sub-menu {
+    display: flex;   
+}
+
 header .main-menu, #mobile-menu .main-menu {
     cursor: pointer;
 }

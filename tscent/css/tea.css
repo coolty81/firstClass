@@ -13,6 +13,7 @@
 
 .tea-page .tea-hero .section-inner {
     width: 100%;
+    padding: 0 100px;
 }
 
 .tea-hero {
@@ -371,10 +372,9 @@
 }
 
 @media (max-width: 1200px) {
-    .tea-page .section-inner {
-        /* width: min(100% - 120px, 1720px); */
-        padding: 0 50px;
-    }
+    /* .tea-page .section-inner {
+        width: min(100% - 120px, 1720px);
+    } */
 
     .tea-hero-copy {
         max-width: 800px;
@@ -392,7 +392,7 @@
 
     .tea-hero,
     .tea-collection {
-        padding-top: 80px;
+        /* padding-top: 80px; */
         padding-bottom: 80px;
     }
 

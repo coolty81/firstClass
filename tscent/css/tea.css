@@ -61,7 +61,7 @@
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
-    width: 100%;
+    width: 50%;
 }
 
 .tea-hero-image span,
@@ -409,6 +409,10 @@
         margin-top: 48px;
         flex-direction: column;
     }
+
+   .tea-hero-image {
+        width: 100%;
+   }
 
     header > div > .main-menu {
         display: none;

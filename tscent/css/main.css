@@ -116,6 +116,14 @@ header .sub-menu li:hover {
     color: var(--accent-warm)
 }
 
+.hero-sec #mobile-menu {
+    transform: trnaslateX(100%);
+}
+
+.hero-sec #mobile-menu.isOpen {
+    transform: trnaslateX(0%);
+}
+
 #mobile-menu .sub-menu, #mobile-menu .sub-menu {
     display: none;
     flex-direction: column;

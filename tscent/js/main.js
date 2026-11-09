@@ -37,7 +37,7 @@ searchPanel.addEventListener('click', () => {
 mobileSearchPanel.addEventListener('click', () => {
     searchMenu.style.display = 'flex';
     document.form.search.focus();
-    menu.style.transform = 'translateX(100%)';
+    menu.className = '';
 });
 
 document.querySelector("#closeSearch").addEventListener("click", () => {
@@ -49,7 +49,7 @@ document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
         searchMenu.className = 'search';
         searchPanel.style.color = '#666666';
-        menu.style.transform = 'translateX(100%)';
+        menu.className = '';
     }
 });
 

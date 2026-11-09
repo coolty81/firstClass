@@ -382,9 +382,9 @@
 }
 
 @media (max-width: 1024px) {
-    .tea-page .section-inner {
+    /* .tea-page .section-inner {
         width: calc(100% - 100px);
-    }
+    } */
 
     .tea-hero,
     .tea-collection {
@@ -398,6 +398,7 @@
 
     .tea-hero-layout {
         margin-top: 48px;
+        flex-direction: column;
     }
 
     header > div > .main-menu {
@@ -455,9 +456,9 @@
 }
 
 @media (max-width: 640px) {
-    .tea-page .section-inner {
+    /* .tea-page .section-inner {
         width: calc(100% - 40px);
-    }
+    } */
 
     .tea-hero,
     .tea-collection {
@@ -468,7 +469,6 @@
     .tea-hero-layout {
         gap: 36px;
         margin-top: 40px;
-        flex-direction: column;
     }
 
     .tea-hero-copy h1 {

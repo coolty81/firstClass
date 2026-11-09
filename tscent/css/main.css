@@ -90,7 +90,7 @@ header .sub-menu {
     position: absolute;
 }
 
-header .main-menu, #moMenu .main-menu {
+header .main-menu, #mobile-menu .main-menu {
     cursor: pointer;
 }
 
@@ -106,14 +106,14 @@ header .sub-menu li:hover {
     color: var(--accent-warm)
 }
 
-#moMenu .sub-menu, #mobile-menu .sub-menu {
+#mobile-menu .sub-menu, #mobile-menu .sub-menu {
     display: none;
     flex-direction: column;
     gap: 18px;
     margin-top: 18px;
 }
 
-#moMenu .sub-menu li, nav .sub-menu li {
+#mobile-menu .sub-menu li, nav .sub-menu li {
     color: var(--text-secondary);
 }
 
@@ -177,7 +177,7 @@ header .sub-menu li:hover {
     color: var(--text-secondary);
 }
 
-#moMenu {
+#mobile-menu {
     width: 85vw;
     height: 100vh;
     background-color: var(--color-white);
@@ -189,22 +189,22 @@ header .sub-menu li:hover {
     border: 1px solid var(--border-default);
 }
 
-#moMenu > div img {
+#mobile-menu > div img {
     width: 50px;
 }
 
-#moMenu > div {
+#mobile-menu > div {
     display: flex;
     flex-direction: column;
     gap: 32px;
     align-items: flex-start;
 }
 
-#moMenu > div > span {
+#mobile-menu > div > span {
     font-size: 1rem;
 }
 
-#moMenu > div > span:nth-child(5)~span {
+#mobile-menu > div > span:nth-child(5)~span {
     color: var(--text-secondary);
 }
 

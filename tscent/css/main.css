@@ -88,6 +88,7 @@ header .sub-menu {
     background-color: var(--background-default);
     border-radius: 6px;
     position: absolute;
+    z-index: 11;
 }
 
 header .main-menu, #mobile-menu .main-menu {

@@ -400,10 +400,6 @@
         width: 50px;
         cursor: pointer;
     }
-
-    .mobile-menu-panel button {
-        color: var(--text-secondary);
-    }
 }
 
 @media (max-width: 640px) {

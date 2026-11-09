@@ -26,30 +26,30 @@ const mobileSearchPanel = document.querySelector('#mobile-searchPanel');
 
 searchPanel.addEventListener('click', () => {
     if(!searchMenu.className.includes('isOpen')) { 
-        searchMenu.className = 'search isOpen';
+        searchMenu.classList.add('isOpen');
         document.form.search.focus();
     }
     else {
-        searchMenu.className = 'search';
+        searchMenu.classList.remove('isOpen');
     }
 });
 
 mobileSearchPanel.addEventListener('click', () => {
-    searchMenu.style.display = 'flex';
+    searchMenu.classList.add('isOpen');
     document.form.search.focus();
-    menu.className = '';
+    menu.classList.remove('isOpen');
 });
 
 document.querySelector("#closeSearch").addEventListener("click", () => {
-    searchMenu.className = 'search';
+    searchMenu.classList.remove('isOpen');
     searchPanel.style.color = '#666666';
 });
 
 document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
-        searchMenu.className = 'search';
+        searchMenu.classList.remove('isOpen');
         searchPanel.style.color = '#666666';
-        menu.className = '';
+        menu.classList.remove('isOpen');
     }
 });
 
@@ -92,8 +92,8 @@ let selectedImg = 0;
 function changeImg(imgNo) {
     const figure = document.querySelectorAll('.featured-sub-image');
     const img = document.querySelector('.featured-image > img');
-    figure[selectedImg].className = 'featured-sub-image';
-    figure[imgNo].className = 'featured-sub-image is-active';
+    figure[selectedImg].classList.remove('is-active');
+    figure[imgNo].classList.add('is-active');
     selectedImg = imgNo;
     if(imgNo == 0) {
         img.src = 'img/visual03(fix).png';

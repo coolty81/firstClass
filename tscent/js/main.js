@@ -36,9 +36,23 @@ searchPanel.addEventListener('click', () => {
     }
 });
 
+mobileSearchPanel.addEventListener('click', () => {
+    searchMenu.style.display = 'flex';
+    document.form.search.focus();
+    menu.style.transform = 'translateX(100%)';
+});
+
 document.querySelector("#closeSearch").addEventListener("click", () => {
     searchMenu.style.display = 'none';
     searchPanel.style.color = '#666666';
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        searchMenu.style.display = 'none';
+        searchPanel.style.color = '#666666';
+        menu.style.transform = 'translateX(100%)';
+    }
 });
 
 let selectedTab = 0;

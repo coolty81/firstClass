@@ -223,7 +223,7 @@
     font-size: 0.875rem;
 }
 
-.contact-detail > div a {
+.contact-detail > div span+span {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -496,9 +496,9 @@
         gap: 32px;
     }
 
-    .contact-detail {
+    /* .contact-detail {
         margin-top: 28px;
-    }
+    } */
 
     .contact-detail > a {
         font-size: 1rem;

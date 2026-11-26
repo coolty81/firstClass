@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="차와 다과를 함께 즐기며 계절의 흐름을 느끼는 티센트의 티코스를 소개합니다.">
+    <title>티코스 | TSCENT</title>
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../font/css/pretendardvariable.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tea-course.css">
+    <script src="js/tea-course.js" defer></script>
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <div>
+            <a href="index.html" aria-label="티센트 메인으로 이동"><img src="img/logo.svg" alt="티센트 로고"></a>
+            <ul class="main-menu"><li>차·도구</li><ul class="sub-menu">
+                <li><a href="teaware.html">다도구</a></li><li><a href="tea.html">잎차</a></li><li><a href="gift.html">선물세트</a></li>
+            </ul></ul>
+            <ul class="main-menu"><li>문화·이해</li><ul class="sub-menu">
+                <li><a href="tea-course.html" aria-current="page">티코스</a></li><li><a href="#">전시</a></li><li><a href="#">체험</a></li><li><a href="#">강의</a></li>
+            </ul></ul>
+            <ul class="main-menu"><li>About</li><ul class="sub-menu"><li><a href="about.html">회사 정보</a></li><li><a href="#">FAQ</a></li></ul></ul>
+            <ul class="main-menu"><li>Notice</li><ul class="sub-menu"><li><a href="#">공지사항</a></li><li><a href="#">Journal</a></li></ul></ul>
+        </div>
+        <div>
+            <button id="searchPanel" type="button" aria-expanded="false" aria-controls="search">검색</button>
+            <span><a href="#">로그인</a></span><span><a href="#">회원가입</a></span><span><a href="#">장바구니</a></span>
+            <img src="img/icon-menu.svg" alt="메뉴 열기" id="menuIcon">
+        </div>
+        <div id="search" style="display:none;">
+            <form action="#" role="search" name="form"><div>
+                <label class="sr-only" for="course-search">검색어</label>
+                <input type="search" id="course-search" name="search" placeholder="검색어를 입력해주세요.">
+                <button type="button" id="closeSearch">닫기</button>
+                <div><span>관심 키워드</span><span>아리산</span><span>월광백</span><span>보이차</span></div>
+            </div></form>
+        </div>
+    </header>
+
+    <div id="mobile-menu"><div>
+        <img src="img/icon-close.svg" id="closeMenu" alt="메뉴 닫기">
+        <ul class="main-menu"><li>차·도구</li><ul class="sub-menu"><li><a href="teaware.html">다도구</a></li><li><a href="tea.html">잎차</a></li><li><a href="gift.html">선물세트</a></li></ul></ul>
+        <ul class="main-menu"><li>문화·이해</li><ul class="sub-menu"><li><a href="tea-course.html" aria-current="page">티코스</a></li><li><a href="#">전시</a></li><li><a href="#">체험</a></li><li><a href="#">강의</a></li></ul></ul>
+        <ul class="main-menu"><li>About</li><ul class="sub-menu"><li><a href="about.html">회사 정보</a></li><li><a href="#">FAQ</a></li></ul></ul>
+        <ul class="main-menu"><li>Notice</li><ul class="sub-menu"><li><a href="#">공지사항</a></li><li><a href="#">Journal</a></li></ul></ul>
+        <button id="mobile-searchPanel" type="button">검색</button><a href="about.html#contact">문의</a>
+    </div></div>
+
+    <main class="tea-course-page">
+        <section class="course-hero">
+            <div class="section-inner">
+                <nav class="breadcrumb" aria-label="브레드크럼">
+                    <a href="index.html">Home</a><span aria-hidden="true">/</span>
+                    <a href="index.html#culture">문화·이해</a><span aria-hidden="true">/</span>
+                    <span aria-current="page">티코스</span>
+                </nav>
+                <div class="course-hero-layout">
+                    <div class="course-hero-copy">
+                        <span class="section-label">TEA COURSE · 茶席</span>
+                        <h1>계절을 마주하는<br>차 한 잔의 시간</h1>
+                        <p class="course-lead">차와 다과를 함께 즐기며 계절의 흐름을 느끼는 시간.</p>
+                        <p>한 잔의 차가 전하는 온기 속에서 몸과 마음을 잠시 쉬어갑니다. 조화로운 풍미와 계절의 재료를 통해 자연의 변화를 섬세하게 경험하고, 차와 다과가 어우러지는 찻자리의 여유를 만나보세요.</p>
+                        <a class="text-link" href="#current-course">진행 일정 살펴보기 <span aria-hidden="true">↓</span></a>
+                    </div>
+                    <figure class="course-hero-image image-placeholder" role="img" aria-label="차와 다과가 놓인 계절 찻자리 이미지 자리">
+                        <figcaption class="sr-only">차와 다과가 놓인 계절 찻자리 이미지</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-introduction">
+            <div class="section-inner">
+                <div class="course-intro-heading">
+                    <span class="section-label">01 / ABOUT TEA COURSE</span>
+                    <h2>차와 계절이 만나는<br>작은 찻자리</h2>
+                </div>
+                <div class="course-intro-content">
+                    <p>티코스는 차 한 잔을 마시는 일을 넘어, 차와 다과의 조화 속에서 계절의 감각을 천천히 발견하는 경험입니다.</p>
+                    <p>계절에 어울리는 차와 재료를 살펴보고, 향과 맛이 이어지는 흐름을 따라갑니다. 바쁜 일상에서 잠시 벗어나 차가 건네는 여백과 함께 지금의 계절을 느껴보세요.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="current-course" id="current-course">
+            <div class="section-inner">
+                <div class="section-head current-course-head">
+                    <div><span class="section-label">02 / CURRENT PROGRAM</span><h2>현재 진행 중인 티코스</h2></div>
+                    <p>모집 일정과 신청 가능 여부는<br>티센트 공식 안내에서 확인할 수 있습니다.</p>
+                </div>
+
+                <div class="course-status-panel">
+                    <div class="course-status-copy">
+                        <span class="course-status-label"><span aria-hidden="true"></span> SCHEDULE UPDATE</span>
+                        <h3>새로운 티코스 일정을<br>준비하고 있습니다.</h3>
+                        <p>2026년 11월 26일 기준, 공식 홈페이지에서 현재 신청 가능한 티코스의 일정과 접수 상태를 확인하지 못했습니다. 일정이 확정되면 공식 티코스 안내 페이지에서 최신 내용을 확인해 주세요.</p>
+                        <a class="outline-btn course-apply-btn" href="https://tscent-tea.com/blogs/tea-course" target="_blank" rel="noopener noreferrer">공식 일정 확인 및 신청 <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <figure class="course-status-image image-placeholder" role="img" aria-label="새로운 티코스 대표 이미지 자리">
+                        <figcaption class="sr-only">새로운 티코스 대표 이미지</figcaption>
+                    </figure>
+                </div>
+
+                <div class="recent-course">
+                    <div class="recent-course-heading">
+                        <span class="section-label">RECENT PROGRAM · ARCHIVE</span>
+                        <span class="course-ended">종료된 프로그램</span>
+                    </div>
+                    <div class="recent-course-content">
+                        <div>
+                            <p class="recent-course-date">2026.06.19 – 11.06</p>
+                            <h3>추분, 한로, 상강</h3>
+                            <p class="recent-course-lead">깊어가는 가을의 운치를 차와 다과로 경험하는 시즈널 티코스.</p>
+                        </div>
+                        <div class="recent-course-description">
+                            <p>공식 홈페이지에 소개된 최근 티코스는 추분에서 한로, 상강으로 이어지는 계절의 흐름을 담았습니다. 아와반차와 배, 쿠키센차와 포도로 시작해 대만 고산우롱차와 동정오룡, 봉황단총 압시향을 즐기고, 따뜻한 제주 말차 또는 연자차로 마무리하는 구성입니다.</p>
+                            <p class="course-data-note">위 일정은 공식 홈페이지에서 확인된 과거 프로그램으로, 현재 신청할 수 있는 일정이 아닙니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-visit">
+            <div class="section-inner">
+                <div class="course-visit-copy">
+                    <span class="section-label">03 / TEA HOUSE HADA</span>
+                    <h2>차가 머무는 공간,<br>티하우스 하다</h2>
+                    <p>티코스는 티하우스 하다에서 차와 다과, 계절의 감각을 함께 나누는 오프라인 경험으로 진행됩니다. 방문 전 공식 안내에서 일정과 장소, 참여 방법을 확인해 주세요.</p>
+                    <a class="text-link" href="about.html">티하우스 하다 알아보기 ↗</a>
+                </div>
+                <figure class="course-visit-image image-placeholder" role="img" aria-label="티하우스 하다 공간 이미지 자리">
+                    <figcaption class="sr-only">티하우스 하다 공간 이미지</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand"><img src="img/logo.svg" alt="티센트"><p>차 한 잔에 깃든 일상의 여백.</p></div>
+                <address class="footer-contact"><p>회사 티하우스 하다 睱茶</p><p>서울특별시 강남구 선릉로146길 54, 1층</p><p><a href="tel:02-6053-1570">02-6053-1570</a> · <a href="mailto:tscent.tea@gmail.com">tscent.tea@gmail.com</a></p></address>
+                <nav class="footer-nav" aria-label="티센트 주요 정보"><ul><li><a href="about.html">About</a></li><li><a href="#">Notice</a></li><li><a href="#">이용약관</a></li></ul></nav>
+                <nav class="footer-nav" aria-label="티센트 기타 정보"><ul><li><a href="#">Journal</a></li><li><a href="#">FAQ</a></li><li><a href="#">개인정보처리방침</a></li></ul></nav>
+            </div>
+            <div class="footer-line" aria-hidden="true"></div>
+            <p class="copyright">© 2025 tscent. UI prototype. | 이 사이트는 개인 포트폴리오 용도로 제작되었습니다.</p>
+        </div>
+    </footer>
+</div>
+<script src="js/menu.js"></script>
+</body>
+</html>

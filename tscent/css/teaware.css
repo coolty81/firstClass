@@ -1,0 +1,76 @@
+/* TSCENT Teaware Collection
+   Design tokens and shared components are inherited from main.css.
+*/
+.teaware-page { padding-top: 85px; background: var(--background-default); }
+.teaware-hero { padding: 0 0 100px; background: var(--background-default); }
+.teaware-hero .section-inner { width: min(1720px, calc(100% - 200px)); margin: 0 auto; }
+.teaware-page .breadcrumb { display:flex; align-items:center; gap:12px; margin:34px 0; color:var(--text-secondary); font-size:.875rem; line-height:1.3; }
+.teaware-page .breadcrumb [aria-current="page"] { color:var(--text-primary); }
+.teaware-hero-layout { display:grid; grid-template-columns:minmax(0, 1.15fr) minmax(360px, .85fr); align-items:center; gap:64px; }
+.image-placeholder { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; padding:24px; border:1px solid var(--border-default); border-radius:14px; background:var(--surface-subtle); color:var(--text-secondary); text-align:center; }
+.image-placeholder span { font-size:.8rem; letter-spacing:.08em; }
+.image-placeholder small { font-size:.95rem; }
+.teaware-hero-image { min-width:0; min-height:590px; aspect-ratio:1.15 / 1; margin:0; }
+.teaware-hero-copy { display:flex; flex-direction:column; align-items:flex-start; gap:20px; }
+.teaware-hero-copy h1 { color:var(--text-primary); font-size:clamp(3rem,4.1vw,5rem); font-weight:500; line-height:1.12; letter-spacing:-.04em; }
+.teaware-lead { color:var(--text-primary); font-size:1.25rem; line-height:1.55; }
+.teaware-hero-copy > p:not(.teaware-lead) { color:var(--text-secondary); font-size:1rem; line-height:1.75; }
+.teaware-hero-cta { margin:18px 0 0; }
+.teaware-hero-cta span { margin-left:18px; }
+.teaware-collection { padding:100px 0; background:var(--background-subtle); }
+.teaware-collection > .section-inner { width:min(1720px, calc(100% - 200px)); margin:0 auto; }
+.teaware-section-head { align-items:flex-end; }
+.teaware-section-head h2 { margin-top:18px; color:var(--text-primary); font-size:clamp(2.8rem,4vw,3.5rem); font-weight:500; line-height:1.1; letter-spacing:-.04em; }
+.teaware-section-head > p { color:var(--text-secondary); font-size:1rem; line-height:1.6; text-align:right; }
+.teaware-tabs { display:flex; gap:26px; margin-top:54px; padding-bottom:20px; overflow-x:auto; border-bottom:1px solid var(--border-default); white-space:nowrap; scrollbar-width:thin; }
+.teaware-tabs a { position:relative; flex:0 0 auto; color:var(--text-secondary); font-size:1rem; }
+.teaware-tabs a:hover, .teaware-tabs a:focus-visible { color:var(--text-primary); }
+.teaware-category-list { display:flex; flex-direction:column; gap:100px; margin-top:76px; }
+.teaware-category { display:grid; grid-template-columns:minmax(0, 1.05fr) minmax(0, .95fr); align-items:center; gap:clamp(40px,6vw,100px); scroll-margin-top:110px; }
+.teaware-category.is-reverse .teaware-category-image { order:2; }
+.teaware-category.is-reverse .teaware-category-copy { order:1; }
+.teaware-category-image { width:100%; min-height:470px; aspect-ratio:1.2 / 1; margin:0; background:var(--surface-default); }
+.teaware-category-copy { max-width:560px; }
+.teaware-category-copy h3 { margin-top:20px; color:var(--text-primary); font-size:clamp(2rem,3vw,3rem); font-weight:500; line-height:1.2; letter-spacing:-.04em; }
+.teaware-category-copy .category-lead { margin-top:24px; color:var(--text-primary); font-size:1.15rem; line-height:1.55; }
+.teaware-category-copy > p:not(.category-lead) { margin-top:16px; color:var(--text-secondary); font-size:1rem; line-height:1.75; }
+.teaware-category-copy .text-link { margin-top:32px; }
+@media (max-width:1200px) {
+ .teaware-hero .section-inner, .teaware-collection > .section-inner { width:min(100% - 120px,1720px); }
+ .teaware-hero-layout { grid-template-columns:minmax(0,1fr) minmax(0,.9fr); gap:40px; }
+ .teaware-hero-image { min-height:480px; }
+ .teaware-category { gap:48px; }
+ .teaware-category-image { min-height:380px; }
+}
+@media (max-width:1024px) {
+ .teaware-hero .section-inner, .teaware-collection > .section-inner { width:calc(100% - 100px); }
+ .teaware-hero { padding-bottom:80px; }
+ .teaware-hero-layout { grid-template-columns:1fr; gap:40px; margin-top:42px; }
+ .teaware-hero-image { min-height:0; width:100%; aspect-ratio:4 / 3; }
+ .teaware-collection { padding:80px 0; }
+ .teaware-section-head { display:block; }
+ .teaware-section-head > p { margin-top:20px; text-align:left; }
+ .teaware-tabs { gap:24px; margin-top:42px; }
+ .teaware-category-list { gap:76px; margin-top:60px; }
+ .teaware-category { grid-template-columns:1fr 1fr; gap:32px; }
+ .teaware-category-image { min-height:0; aspect-ratio:4 / 3; }
+}
+@media (max-width:640px) {
+ .teaware-hero .section-inner, .teaware-collection > .section-inner { width:calc(100% - 40px); }
+ .teaware-hero { padding-bottom:56px; }
+ .teaware-page .breadcrumb { gap:8px; margin:24px 0; font-size:.8rem; }
+ .teaware-hero-layout { gap:32px; margin-top:32px; }
+ .teaware-hero-copy h1 { font-size:2.8rem; }
+ .teaware-lead { font-size:1.125rem; }
+ .teaware-collection { padding:56px 0; }
+ .teaware-section-head h2 { font-size:2.3rem; }
+ .teaware-tabs { gap:22px; margin-top:34px; }
+ .teaware-category-list { gap:64px; margin-top:44px; }
+ .teaware-category, .teaware-category.is-reverse { grid-template-columns:1fr; gap:24px; }
+ .teaware-category.is-reverse .teaware-category-image, .teaware-category.is-reverse .teaware-category-copy { order:initial; }
+ .teaware-category-image { aspect-ratio:4 / 3; }
+ .teaware-category-copy h3 { margin-top:14px; font-size:2rem; }
+ .teaware-category-copy .category-lead { margin-top:16px; font-size:1.05rem; }
+ .teaware-category-copy > p:not(.category-lead) { font-size:.95rem; }
+ .teaware-category-copy .text-link { margin-top:24px; }
+}

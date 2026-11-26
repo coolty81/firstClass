@@ -124,7 +124,7 @@ main #mobile-menu.isOpen, header+#mobile-menu.isOpen {
     transform: translateX(0%);
 }
 
-#mobile-menu .sub-menu, #mobile-menu .sub-menu {
+#mobile-menu .sub-menu {
     display: none;
     flex-direction: column;
     gap: 18px;

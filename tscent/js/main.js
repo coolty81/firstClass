@@ -69,6 +69,7 @@ function changeTab(tabNo) {
         h3.innerText = '잎차 · 葉茶';
         p.innerText = '맑고 섬세한 향과 부드러운 맛이 조화된 티센트의 잎차를 만나보세요.\n아리산, 운남, 하동, 제주 등 각 지역의 개성과 떼루아를 큐레이션합니다.';
         a.innerText = '잎차 모두 보기 ↗';
+        a.href = 'tea.html';
     }
     
     else if(tabNo == 1) {
@@ -77,6 +78,7 @@ function changeTab(tabNo) {
         h3.innerText = '다도구 · 茶道具';
         p.innerText = '차를 끓이고, 우려내고, 마시는 일련의 과정을 돕는 도구들.\n쓰임과 재료, 질감까지 차분하게 큐레이션합니다.'
         a.innerText = '다도구 모두 보기 ↗';
+        a.href = 'teaware.html';
     }
 
     else if(tabNo == 2) {
@@ -85,6 +87,7 @@ function changeTab(tabNo) {
         h3.innerText = '선물세트 · 膳物';
         p.innerText = '차와 다도구를 정성스럽게 구성한 선물 세트입니다.\n일상 속 차의 시간을 다른 사람과 나누는 방법을 제안합니다.';
         a.innerText = '선물세트 모두 보기 ↗';
+        a.href = '#';
     }
 }
 

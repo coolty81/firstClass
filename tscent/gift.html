@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="차와 다도구를 정성스럽게 구성한 티센트의 선물세트를 만나보세요.">
+    <title>선물세트 | TSCENT</title>
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../font/css/pretendardvariable.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gift.css">
+    <script src="js/gift.js" defer></script>
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <div>
+            <a href="index.html" aria-label="티센트 메인으로 이동"><img src="img/logo.svg" alt="티센트 로고"></a>
+            <ul class="main-menu"><li>차·도구</li><ul class="sub-menu">
+                <li><a href="teaware.html">다도구</a></li><li><a href="tea.html">잎차</a></li><li><a href="gift.html" aria-current="page">선물세트</a></li>
+            </ul></ul>
+            <ul class="main-menu"><li>문화·이해</li><ul class="sub-menu">
+                <li><a href="#">티코스</a></li><li><a href="#">전시</a></li><li><a href="#">체험</a></li><li><a href="#">강의</a></li>
+            </ul></ul>
+            <ul class="main-menu"><li>About</li><ul class="sub-menu"><li><a href="about.html">회사 정보</a></li><li><a href="#">FAQ</a></li></ul></ul>
+            <ul class="main-menu"><li>Notice</li><ul class="sub-menu"><li><a href="#">공지사항</a></li><li><a href="#">Journal</a></li></ul></ul>
+        </div>
+        <div>
+            <button id="searchPanel" type="button" aria-expanded="false" aria-controls="search">검색</button>
+            <span><a href="#">로그인</a></span><span><a href="#">회원가입</a></span><span><a href="#">장바구니</a></span>
+            <img src="img/icon-menu.svg" alt="메뉴 열기" id="menuIcon">
+        </div>
+        <div id="search" style="display:none;">
+            <form action="#" role="search"><div>
+                <label class="sr-only" for="gift-search">검색어</label>
+                <input type="search" id="gift-search" name="search" placeholder="검색어를 입력해주세요.">
+                <button type="button" id="closeSearch">닫기</button>
+                <div><span>관심 키워드</span><span>아리산</span><span>월광백</span><span>보이차</span></div>
+            </div></form>
+        </div>
+    </header>
+
+    <div id="mobile-menu"><div>
+        <img src="img/icon-close.svg" id="closeMenu" alt="메뉴 닫기">
+        <ul class="main-menu"><li>차·도구</li><ul class="sub-menu"><li><a href="teaware.html">다도구</a></li><li><a href="tea.html">잎차</a></li><li><a href="gift.html">선물세트</a></li></ul></ul>
+        <ul class="main-menu"><li>문화·이해</li><ul class="sub-menu"><li><a href="#">티코스</a></li><li><a href="#">전시</a></li><li><a href="#">체험</a></li><li><a href="#">강의</a></li></ul></ul>
+        <ul class="main-menu"><li>About</li><ul class="sub-menu"><li><a href="about.html">회사 정보</a></li><li><a href="#">FAQ</a></li></ul></ul>
+        <ul class="main-menu"><li>Notice</li><ul class="sub-menu"><li><a href="#">공지사항</a></li><li><a href="#">Journal</a></li></ul></ul>
+        <button id="mobile-searchPanel" type="button">검색</button><a href="about.html#contact">문의</a>
+    </div></div>
+
+    <main class="gift-page">
+        <section class="gift-hero">
+            <div class="section-inner">
+                <nav class="breadcrumb" aria-label="브레드크럼">
+                    <a href="index.html">Home</a><span aria-hidden="true">/</span>
+                    <a href="index.html#tea-tools">차·도구</a><span aria-hidden="true">/</span>
+                    <span aria-current="page">선물세트</span>
+                </nav>
+                <div class="gift-hero-layout">
+                    <figure class="gift-hero-image image-placeholder" role="img" aria-label="티센트 선물세트 대표 이미지 자리">
+                        <figcaption class="sr-only">티센트 선물세트 대표 이미지</figcaption>
+                    </figure>
+                    <div class="gift-hero-copy">
+                        <span class="section-label">GIFT COLLECTION</span>
+                        <h1>선물세트<br>膳物</h1>
+                        <p class="gift-lead">차를 나누는 마음까지 정성스럽게 담아.</p>
+                        <p>티센트의 선물세트는 산지와 향이 다른 차를 함께 구성하거나, 차와 다도구를 한자리에 담아 차를 즐기는 시간을 제안합니다. 소중한 사람에게 전하는 선물부터 나를 위한 차의 취향까지, 다양한 구성으로 만나보세요.</p>
+                        <a class="outline-btn gift-hero-cta" href="https://tscent-tea.com/collections/gift" target="_blank" rel="noopener noreferrer">선물세트 구매하기 <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gift-collection" id="gift-products">
+            <div class="section-inner">
+                <div class="section-head gift-section-head">
+                    <div><span class="section-label">CURATED GIFTS</span><h2>마음을 전하는 차의 구성</h2></div>
+                    <p>차의 향을 담은 세트부터 다도구와 함께하는 구성까지,<br>선물의 목적과 취향에 따라 살펴보세요.</p>
+                </div>
+                <nav class="gift-tabs" aria-label="선물세트 종류 바로가기">
+                    <a href="#tea-gifts">차 선물세트</a><a href="#teaware-gifts">다도구 선물세트</a>
+                </nav>
+
+                <section class="gift-group" id="tea-gifts">
+                    <div class="gift-group-heading">
+                        <div><span class="section-label">01 / TEA GIFT SET</span><h2>차 선물세트</h2></div>
+                        <p>산지와 제다 방식, 향의 차이를 담은 차 구성입니다.<br>여러 차를 함께 경험하며 취향을 발견할 수 있습니다.</p>
+                    </div>
+                    <div class="gift-product-grid">
+
+                    <article class="gift-product">
+                        <figure class="gift-product-image image-placeholder" role="img" aria-label="향곡 2종 세트 상품 이미지 자리">
+                            <figcaption class="sr-only">향곡 2종 세트 상품 이미지</figcaption>
+                        </figure>
+                        <div class="gift-product-copy">
+                            <span class="section-label">TEA GIFT SET / 01</span>
+                            <h3>향곡 2종 세트</h3>
+                            <p>하동 화개 녹차와 제주 프리미엄 말차를 함께 구성한 세트입니다. 서로 다른 산지의 녹차 두 가지를 비교하며 차의 맑고 섬세한 풍미를 즐길 수 있습니다.</p>
+                            <div class="gift-product-meta">
+                                <strong>₩76,000</strong>
+                                <span class="is-available">판매 중</span>
+                            </div>
+                            <a class="outline-btn gift-product-link " href="https://tscent-tea.com/collections/gift" target="_blank" rel="noopener noreferrer" >구매하기 <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="gift-product">
+                        <figure class="gift-product-image image-placeholder" role="img" aria-label="향미 2종 세트 상품 이미지 자리">
+                            <figcaption class="sr-only">향미 2종 세트 상품 이미지</figcaption>
+                        </figure>
+                        <div class="gift-product-copy">
+                            <span class="section-label">TEA GIFT SET / 02</span>
+                            <h3>향미 2종 세트</h3>
+                            <p>목련호지차와 유자홍차로 구성했습니다. 고소한 향과 산뜻한 과일 향, 서로 다른 향의 조화를 경험할 수 있는 차 선물입니다.</p>
+                            <div class="gift-product-meta">
+                                <strong>₩51,000</strong>
+                                <span class="is-available">판매 중</span>
+                            </div>
+                            <a class="outline-btn gift-product-link " href="https://tscent-tea.com/collections/gift" target="_blank" rel="noopener noreferrer" >구매하기 <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="gift-product">
+                        <figure class="gift-product-image image-placeholder" role="img" aria-label="향곡과 향미 2종 세트 상품 이미지 자리">
+                            <figcaption class="sr-only">향곡과 향미 2종 세트 상품 이미지</figcaption>
+                        </figure>
+                        <div class="gift-product-copy">
+                            <span class="section-label">TEA GIFT SET / 03</span>
+                            <h3>향곡과 향미 2종 세트</h3>
+                            <p>하동 화개 녹차와 돌배계피차를 함께 담았습니다. 산뜻한 녹차와 부드러운 향신 풍미를 한 세트로 만나보세요.</p>
+                            <div class="gift-product-meta">
+                                <strong>₩56,000</strong>
+                                <span class="is-available">판매 중</span>
+                            </div>
+                            <a class="outline-btn gift-product-link " href="https://tscent-tea.com/collections/gift" target="_blank" rel="noopener noreferrer" >구매하기 <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="gift-product">
+                        <figure class="gift-product-image image-placeholder" role="img" aria-label="향곡 4종 세트 상품 이미지 자리">
+                            <figcaption class="sr-only">향곡 4종 세트 상품 이미지</figcaption>
+                        </figure>
+                        <div class="gift-product-copy">
+                            <span class="section-label">TEA GIFT SET / 04</span>
+                            <h3>향곡 4종 세트</h3>
+                            <p>하동 화개 녹차와 백차, 제주 프리미엄 말차와 거문오름 호지차로 구성한 네 가지 차의 컬렉션입니다. 산지와 제다 방식에 따른 차이를 폭넓게 살펴볼 수 있습니다.</p>
+                            <div class="gift-product-meta">
+                                <strong>₩118,000</strong>
+                                <span class="is-available">판매 중</span>
+                            </div>
+                            <a class="outline-btn gift-product-link " href="https://tscent-tea.com/collections/gift" target="_blank" rel="noopener noreferrer" >구매하기 <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="gift-product">
+                        <figure class="gift-product-image image-placeholder" role="img" aria-label="향곡과 향미 4종 세트 상품 이미지 자리">
+                            <figcaption class="sr-only">향곡과 향미 4종 세트 상품 이미지</figcaption>
+                        </figure>
+                        <div class="gift-product-copy">
+                            <span class="section-label">TEA GIFT SET / 05</span>
+                            <h3>향곡과 향미 4종 세트</h3>
+                            <p>하동 화개 녹차와 백차, 목련호지차와 돌배계피차를 한데 모았습니다. 서로 다른 차의 색과 향을 비교하며 취향을 발견할 수 있는 구성입니다.</p>
+                            <div class="gift-product-meta">
+                                <strong>₩97,000</strong>
+                                <span class="is-available">판매 중</span>
+                            </div>
+                            <a class="outline-btn gift-product-link " href="https://tscent-tea.com/collections/gift" target="_blank" rel="noopener noreferrer" >구매하기 <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    </div>
+                </section>
+
+                <section class="gift-group" id="teaware-gifts">
+                    <div class="gift-group-heading">
+                        <div><span class="section-label">02 / TEAWARE GIFT SET</span><h2>다도구 선물세트</h2></div>
+                        <p>차와 도구를 함께 구성해 차를 우리고 나누는 시간을 제안합니다.<br>혼자 또는 함께하는 차 자리에 어울리는 구성을 만나보세요.</p>
+                    </div>
+                    <div class="gift-product-grid">
+
+
+                    <article class="gift-product">
+                        <figure class="gift-product-image image-placeholder" role="img" aria-label="넓은 개완 2인 다도 세트 상품 이미지 자리">
+                            <figcaption class="sr-only">넓은 개완 2인 다도 세트 상품 이미지</figcaption>
+                        </figure>
+                        <div class="gift-product-copy">
+                            <span class="section-label">TEAWARE GIFT SET / 06</span>
+                            <h3>넓은 개완 2인 다도 세트</h3>
+                            <p>진곡요 다도구와 하동 화개 백차, 목련호지차를 함께 구성한 2인용 다도 세트입니다. 차와 도구를 함께 준비해 둘이서 차를 나누는 시간을 제안합니다.</p>
+                            <div class="gift-product-meta">
+                                <strong>가격 확인 필요</strong>
+                                <span class="is-soldout">품절</span>
+                            </div>
+                            <a class="outline-btn gift-product-link is-disabled" href="https://tscent-tea.com/collections/gift" target="_blank" rel="noopener noreferrer" aria-label="넓은 개완 2인 다도 세트 상품은 현재 품절입니다">상품 정보 보기 <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="gift-product">
+                        <figure class="gift-product-image image-placeholder" role="img" aria-label="탄배오룡과 1인 다도 세트 상품 이미지 자리">
+                            <figcaption class="sr-only">탄배오룡과 1인 다도 세트 상품 이미지</figcaption>
+                        </figure>
+                        <div class="gift-product-copy">
+                            <span class="section-label">TEAWARE GIFT SET / 07</span>
+                            <h3>탄배오룡과 1인 다도 세트</h3>
+                            <p>관문요 개완과 잔, 대만 아리산 탄배오룡으로 구성했습니다. 차 한 종류와 다구를 함께 담아 혼자만의 차 시간을 준비할 수 있습니다.</p>
+                            <div class="gift-product-meta">
+                                <strong>가격 확인 필요</strong>
+                                <span class="is-soldout">품절</span>
+                            </div>
+                            <a class="outline-btn gift-product-link is-disabled" href="https://tscent-tea.com/collections/gift" target="_blank" rel="noopener noreferrer" aria-label="탄배오룡과 1인 다도 세트 상품은 현재 품절입니다">상품 정보 보기 <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="gift-product">
+                        <figure class="gift-product-image image-placeholder" role="img" aria-label="진곡요 2인 다도 세트 상품 이미지 자리">
+                            <figcaption class="sr-only">진곡요 2인 다도 세트 상품 이미지</figcaption>
+                        </figure>
+                        <div class="gift-product-copy">
+                            <span class="section-label">TEAWARE GIFT SET / 08</span>
+                            <h3>진곡요 2인 다도 세트</h3>
+                            <p>개완과 숙우, 잔으로 구성된 2인용 다도 세트입니다. 차를 우리고 나누어 마시는 과정에 필요한 기본 다구를 한 번에 만나볼 수 있습니다.</p>
+                            <div class="gift-product-meta">
+                                <strong>가격 확인 필요</strong>
+                                <span class="is-soldout">품절</span>
+                            </div>
+                            <a class="outline-btn gift-product-link is-disabled" href="https://tscent-tea.com/collections/gift" target="_blank" rel="noopener noreferrer" aria-label="진곡요 2인 다도 세트 상품은 현재 품절입니다">상품 정보 보기 <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="gift-product">
+                        <figure class="gift-product-image image-placeholder" role="img" aria-label="토산요 2인 다기 세트 상품 이미지 자리">
+                            <figcaption class="sr-only">토산요 2인 다기 세트 상품 이미지</figcaption>
+                        </figure>
+                        <div class="gift-product-copy">
+                            <span class="section-label">TEAWARE GIFT SET / 09</span>
+                            <h3>토산요 2인 다기 세트</h3>
+                            <p>개완과 잔으로 구성한 2인용 다기 세트입니다. 차를 우리고 함께 마시는 자리에 어울리는 다구 구성을 제안합니다.</p>
+                            <div class="gift-product-meta">
+                                <strong>₩410,000</strong>
+                                <span class="is-available">판매 중</span>
+                            </div>
+                            <a class="outline-btn gift-product-link " href="https://tscent-tea.com/collections/gift" target="_blank" rel="noopener noreferrer" >구매하기 <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="gift-product">
+                        <figure class="gift-product-image image-placeholder" role="img" aria-label="미니어처 다완 세트 상품 이미지 자리">
+                            <figcaption class="sr-only">미니어처 다완 세트 상품 이미지</figcaption>
+                        </figure>
+                        <div class="gift-product-copy">
+                            <span class="section-label">TEAWARE GIFT SET / 10</span>
+                            <h3>미니어처 다완 세트</h3>
+                            <p>관문요·문경요·진곡요·정호요의 잔을 모은 미니어처 다완 세트입니다. 서로 다른 제작처의 잔 형태와 분위기를 한 구성에서 감상할 수 있습니다.</p>
+                            <div class="gift-product-meta">
+                                <strong>₩180,000</strong>
+                                <span class="is-available">판매 중</span>
+                            </div>
+                            <a class="outline-btn gift-product-link " href="https://tscent-tea.com/collections/gift" target="_blank" rel="noopener noreferrer" >구매하기 <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article></article>
+                    </div>
+                </section>
+
+                <p class="gift-source-note">상품 구성과 판매 상태는 티센트 공식 선물세트 컬렉션을 참고했습니다. 가격과 재고는 변동될 수 있으므로 구매 전 공식 판매 페이지에서 확인해 주세요.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand"><img src="img/logo.svg" alt="티센트"><p>차 한 잔에 깃든 일상의 여백.</p></div>
+                <address class="footer-contact"><p>회사 티하우스 하다 睱茶</p><p>서울특별시 강남구 선릉로146길 54, 1층</p><p><a href="tel:0260531570">02-6053-1570</a> · <a href="mailto:tscent.tea@gmail.com">tscent.tea@gmail.com</a></p></address>
+                <nav class="footer-nav" aria-label="티센트 주요 정보"><ul><li><a href="about.html">About</a></li><li><a href="#">Notice</a></li><li><a href="#">이용약관</a></li></ul></nav>
+                <nav class="footer-nav" aria-label="티센트 기타 정보"><ul><li><a href="#">Journal</a></li><li><a href="#">FAQ</a></li><li><a href="#">개인정보처리방침</a></li></ul></nav>
+            </div>
+            <div class="footer-line" aria-hidden="true"></div>
+            <p class="copyright">© 2025 tscent. UI prototype. | 이 사이트는 개인 포트폴리오 용도로 제작되었습니다.</p>
+        </div>
+    </footer>
+</div>
+<script src="js/menu.js"></script>
+</body>
+</html>

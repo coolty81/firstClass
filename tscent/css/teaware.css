@@ -30,7 +30,7 @@
 .teaware-category.is-reverse .teaware-category-image { order:2; }
 .teaware-category.is-reverse .teaware-category-copy { order:1; }
 .teaware-category-image { width:100%; min-height:470px; aspect-ratio:1.2 / 1; margin:0; background:var(--surface-default); }
-#tea-pot figure { background-image:url("img/teaware/tscent_971x971_34.webp"); background-size:contain; background-position:center; }
+#tea-pot figure { background-image:url("../img/teaware/tscent_971x971_34.webp"); background-size:contain; background-position:center; }
 .teaware-category-copy { max-width:560px; }
 .teaware-category-copy h3 { margin-top:20px; color:var(--text-primary); font-size:clamp(2rem,3vw,3rem); font-weight:500; line-height:1.2; letter-spacing:-.04em; }
 .teaware-category-copy .category-lead { margin-top:24px; color:var(--text-primary); font-size:1.15rem; line-height:1.55; }

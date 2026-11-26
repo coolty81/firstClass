@@ -51,12 +51,12 @@ document.querySelectorAll(".tea-buy-button").forEach(button => {
     });
 });
 
-document.querySelectorAll(".tea-series-tabs a").forEach(tab => {
-    tab.addEventListener("click", () => {
-        document.querySelectorAll(".tea-series-tabs a").forEach(item => item.classList.remove("is-active"));
-        tab.classList.add("is-active");
-    });
-});
+// document.querySelectorAll(".tea-series-tabs a").forEach(tab => {
+//     tab.addEventListener("click", () => {
+//         document.querySelectorAll(".tea-series-tabs a").forEach(item => item.classList.remove("is-active"));
+//         tab.classList.add("is-active");
+//     });
+// });
 
 document.addEventListener("keydown", event => {
     if (event.key === "Escape") {

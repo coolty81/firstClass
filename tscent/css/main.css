@@ -116,11 +116,11 @@ header .sub-menu li:hover {
     color: var(--accent-warm)
 }
 
-.hero-sec #mobile-menu {
+main > #mobile-menu {
     transform: translateX(100%);
 }
 
-.hero-sec #mobile-menu.isOpen {
+main > #mobile-menu.isOpen {
     transform: translateX(0%);
 }
 

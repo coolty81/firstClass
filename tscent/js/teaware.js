@@ -5,7 +5,7 @@ const closeSearch = document.querySelector('#closeSearch');
 
 function toggleSearch(open) {
     if (!search) return;
-    search.style.display = open ? 'block' : 'none';
+    search.style.display = open ? 'flex' : 'none';
     searchPanel?.setAttribute('aria-expanded', String(open));
     if (open) document.querySelector('#teaware-search')?.focus();
 }

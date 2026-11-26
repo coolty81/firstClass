@@ -29,9 +29,9 @@
 .teaware-category { display:grid; grid-template-columns:minmax(0, 1.05fr) minmax(0, .95fr); align-items:center; gap:clamp(40px,6vw,100px); scroll-margin-top:110px; }
 .teaware-category.is-reverse .teaware-category-image { order:2; }
 .teaware-category.is-reverse .teaware-category-copy { order:1; }
-.teaware-category-image { width:100%; min-height:470px; aspect-ratio:1.2 / 1; margin:0; background:var(--surface-default); background-size:contain; background-position:center; }
+.teaware-category-image { width:100%; min-height:470px; aspect-ratio:1.2 / 1; margin:0; background:var(--surface-default); background-size:cover; background-position:center; }
 #tea-pot figure { background-image:url("../img/teaware/tscent_971x971_34.webp"); }
-#gaiwan figure { background-image:url("../img/teaware/tscent_971x971_34.webp"); }
+#gaiwan figure { background-image:url("../img/teaware/1_c0110b95-bc88-4821-837f-deb2f21852f1.webp"); }
 #tea-server figure { background-image:url("../img/teaware/tscent_971x971_54.webp"); }
 #cup figure { background-image:url("../img/teaware/1_671df6f9-170f-4f60-9da0-151cef867ca8.webp"); }
 #tea-bowl figure { background-image:url("../img/teaware/tscent_971x971_91.webp"); }

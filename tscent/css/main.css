@@ -120,7 +120,7 @@ main #mobile-menu, header+#mobile-menu {
     transform: translateX(100%);
 }
 
-main #mobile-menu.isOpen, header+#mobile-menu.isOpen {
+main #mobile-menu.isOpen, header+#mobile-menu.isOpen, header+#mobile-menu.is-open {
     transform: translateX(0%);
 }
 

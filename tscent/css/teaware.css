@@ -56,7 +56,7 @@
  .teaware-category-image { min-height:0; aspect-ratio:4 / 3; }
 }
 @media (max-width:640px) {
- .teaware-hero .section-inner, .teaware-collection > .section-inner { width:calc(100% - 40px); }
+ /* .teaware-hero .section-inner, .teaware-collection > .section-inner { width:calc(100% - 40px); } */
  .teaware-hero { padding-bottom:56px; }
  .teaware-page .breadcrumb { gap:8px; margin:24px 0; font-size:.8rem; }
  .teaware-hero-layout { gap:32px; margin-top:32px; }

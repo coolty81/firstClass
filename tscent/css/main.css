@@ -752,6 +752,7 @@ main > section {
     margin-top: 54px;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--border-default);
+    overflow-y: hidden;
 }
 
 .category-tabs a {

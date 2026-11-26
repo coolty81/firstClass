@@ -6,11 +6,11 @@
 .teaware-hero .section-inner { width: min(1720px, calc(100% - 200px)); margin: 0 auto; }
 .teaware-page .breadcrumb { display:flex; align-items:center; gap:12px; margin:34px 0; color:var(--text-secondary); font-size:.875rem; line-height:1.3; }
 .teaware-page .breadcrumb [aria-current="page"] { color:var(--text-primary); }
-.teaware-hero-layout { display:grid; grid-template-columns:minmax(0, 1.15fr) minmax(360px, .85fr); align-items:center; gap:64px; }
+.teaware-hero-layout { display:flex; align-items:center; gap:64px; }
 .image-placeholder { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; padding:24px; border:1px solid var(--border-default); border-radius:14px; background:var(--surface-subtle); color:var(--text-secondary); text-align:center; }
 .image-placeholder span { font-size:.8rem; letter-spacing:.08em; }
 .image-placeholder small { font-size:.95rem; }
-.teaware-hero-image { min-width:0; min-height:590px; aspect-ratio:1.15 / 1; margin:0; }
+.teaware-hero-image { width:50vw; height:590px; aspect-ratio:1.15 / 1; margin:0; }
 .teaware-hero-copy { display:flex; flex-direction:column; align-items:flex-start; gap:20px; }
 .teaware-hero-copy h1 { color:var(--text-primary); font-size:clamp(3rem,4.1vw,5rem); font-weight:500; line-height:1.12; letter-spacing:-.04em; }
 .teaware-lead { color:var(--text-primary); font-size:1.25rem; line-height:1.55; }
@@ -38,7 +38,7 @@
 @media (max-width:1200px) {
  .teaware-hero .section-inner, .teaware-collection > .section-inner { width:min(100% - 120px,1720px); }
  .teaware-hero-layout { grid-template-columns:minmax(0,1fr) minmax(0,.9fr); gap:40px; }
- .teaware-hero-image { min-height:480px; }
+ /* .teaware-hero-image { min-height:480px; } */
  .teaware-category { gap:48px; }
  .teaware-category-image { min-height:380px; }
 }
@@ -46,7 +46,7 @@
  .teaware-hero .section-inner, .teaware-collection > .section-inner { width:calc(100% - 100px); }
  .teaware-hero { padding-bottom:80px; }
  .teaware-hero-layout { grid-template-columns:1fr; gap:40px; margin-top:42px; }
- .teaware-hero-image { min-height:0; width:100%; aspect-ratio:4 / 3; }
+ /* .teaware-hero-image { min-height:0; width:100%; aspect-ratio:4 / 3; } */
  .teaware-collection { padding:80px 0; }
  .teaware-section-head { display:block; }
  .teaware-section-head > p { margin-top:20px; text-align:left; }

@@ -1,0 +1,96 @@
+/* TSCENT Tea Course — extends shared main-page design tokens and components. */
+.tea-course-page { padding-top:85px; background:var(--background-default); }
+.tea-course-page .section-inner { width:min(1720px,calc(100% - 200px)); margin:0 auto; }
+.tea-course-page .breadcrumb { display:flex; align-items:center; gap:12px; margin:34px 0; color:var(--text-secondary); font-size:.875rem; line-height:1.3; }
+.tea-course-page .breadcrumb [aria-current="page"] { color:var(--text-primary); }
+.tea-course-page .image-placeholder { display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px; padding:24px; border:1px solid var(--border-default); background:var(--surface-subtle); color:var(--text-secondary); text-align:center; }
+.course-hero { padding-bottom:100px; }
+.course-hero-layout { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); align-items:center; gap:64px; margin-top:24px; }
+.course-hero-copy { display:flex; flex-direction:column; align-items:flex-start; gap:22px; }
+.course-hero-copy h1 { color:var(--text-primary); font-size:clamp(3rem,4.1vw,5rem); font-weight:500; line-height:1.12; letter-spacing:-.04em; }
+.course-hero-copy p:not(.course-lead) { color:var(--text-secondary); font-size:1rem; line-height:1.75; }
+.course-lead { color:var(--text-primary); font-size:1.25rem; line-height:1.55; }
+.course-hero-copy .text-link { margin-top:12px; }
+.course-hero-image { width:100%; min-height:560px; aspect-ratio:1.08 / 1; margin:0; border-radius:14px; }
+.course-introduction { padding:100px 0; background:var(--background-subtle); }
+.course-introduction .section-inner { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1fr); gap:100px; align-items:start; }
+.course-intro-heading h2 { margin-top:24px; color:var(--text-primary); font-size:clamp(2.8rem,4vw,3.5rem); font-weight:500; line-height:1.12; letter-spacing:-.04em; }
+.course-intro-content { display:flex; flex-direction:column; gap:24px; padding-top:38px; }
+.course-intro-content p { color:var(--text-secondary); font-size:1.05rem; line-height:1.85; }
+.current-course { padding:100px 0; }
+.current-course-head { align-items:flex-end; }
+.current-course-head h2 { margin-top:18px; color:var(--text-primary); font-size:clamp(2.5rem,3.8vw,3.5rem); font-weight:500; line-height:1.15; letter-spacing:-.04em; }
+.current-course-head > p { color:var(--text-secondary); font-size:1rem; line-height:1.65; text-align:right; }
+.course-status-panel { display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); gap:64px; align-items:center; margin-top:60px; padding:54px; background:var(--surface-subtle); }
+.course-status-copy { display:flex; flex-direction:column; align-items:flex-start; }
+.course-status-label { display:flex; align-items:center; gap:9px; color:var(--accent-tea); font-size:.8rem; letter-spacing:.04em; }
+.course-status-label span { width:7px; height:7px; border-radius:50%; background:var(--accent-tea); }
+.course-status-copy h3 { margin-top:24px; color:var(--text-primary); font-size:clamp(2rem,3vw,2.8rem); font-weight:500; line-height:1.2; letter-spacing:-.035em; }
+.course-status-copy > p { max-width:560px; margin-top:22px; color:var(--text-secondary); font-size:1rem; line-height:1.75; }
+.course-apply-btn { margin-top:32px; }
+.course-apply-btn span { margin-left:14px; }
+.course-status-image { width:100%; min-height:390px; aspect-ratio:4 / 3; margin:0; background:var(--surface-default); }
+.recent-course { margin-top:76px; border-top:1px solid var(--border-default); border-bottom:1px solid var(--border-default); }
+.recent-course-heading { display:flex; justify-content:space-between; align-items:center; padding:22px 0; border-bottom:1px solid var(--border-default); }
+.recent-course-heading .section-label { color:var(--text-secondary); }
+.course-ended { color:var(--text-secondary); font-size:.875rem; }
+.recent-course-content { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1fr); gap:80px; padding:34px 0 42px; }
+.recent-course-date { color:var(--text-secondary); font-size:.875rem; }
+.recent-course-content h3 { margin-top:14px; color:var(--text-primary); font-size:2rem; font-weight:500; line-height:1.25; }
+.recent-course-lead { margin-top:14px; color:var(--text-primary); font-size:1.05rem; line-height:1.6; }
+.recent-course-description p { color:var(--text-secondary); font-size:.98rem; line-height:1.8; }
+.recent-course-description .course-data-note { margin-top:16px; font-size:.875rem; }
+.course-visit { padding:100px 0; background:var(--background-subtle); }
+.course-visit .section-inner { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:80px; align-items:center; }
+.course-visit-copy h2 { margin-top:22px; color:var(--text-primary); font-size:clamp(2.6rem,3.7vw,3.5rem); font-weight:500; line-height:1.15; letter-spacing:-.04em; }
+.course-visit-copy p { margin-top:24px; color:var(--text-secondary); font-size:1rem; line-height:1.8; }
+.course-visit-copy .text-link { margin-top:30px; }
+.course-visit-image { width:100%; min-height:480px; aspect-ratio:1.25 / 1; margin:0; border-radius:14px; background:var(--surface-default); }
+@media (max-width:1200px) {
+ .tea-course-page .section-inner { width:min(100% - 120px,1720px); }
+ .course-hero-layout { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:40px; }
+ .course-hero-image { min-height:450px; }
+ .course-introduction .section-inner { gap:56px; }
+ .course-status-panel { gap:40px; padding:42px; }
+ .course-visit .section-inner { gap:50px; }
+}
+@media (max-width:1024px) {
+ .tea-course-page .section-inner { width:calc(100% - 100px); }
+ .course-hero { padding-bottom:80px; }
+ .course-hero-layout { grid-template-columns:1fr; gap:38px; }
+ .course-hero-image { min-height:0; aspect-ratio:4 / 3; }
+ .course-introduction, .current-course, .course-visit { padding:80px 0; }
+ .course-introduction .section-inner { grid-template-columns:1fr; gap:24px; }
+ .course-intro-content { padding-top:0; }
+ .current-course-head { display:block; }
+ .current-course-head > p { margin-top:20px; text-align:left; }
+ .course-status-panel { grid-template-columns:1fr; gap:32px; padding:40px; }
+ .course-status-image { min-height:0; aspect-ratio:4 / 3; }
+ .recent-course-content { gap:40px; }
+ .course-visit .section-inner { grid-template-columns:1fr; gap:34px; }
+ .course-visit-image { min-height:0; aspect-ratio:4 / 3; }
+}
+@media (max-width:640px) {
+ .tea-course-page .section-inner { width:calc(100% - 40px); }
+ .tea-course-page .breadcrumb { gap:8px; margin:24px 0; font-size:.8rem; }
+ .course-hero { padding-bottom:56px; }
+ .course-hero-layout { gap:30px; margin-top:28px; }
+ .course-hero-copy h1 { font-size:2.8rem; }
+ .course-lead { font-size:1.1rem; }
+ .course-introduction, .current-course, .course-visit { padding:56px 0; }
+ .course-intro-heading h2 { font-size:2.4rem; }
+ .course-intro-content p { font-size:.98rem; }
+ .current-course-head h2 { font-size:2.25rem; }
+ .course-status-panel { gap:28px; margin-top:38px; padding:30px 24px; }
+ .course-status-copy h3 { font-size:2rem; }
+ .course-status-copy > p { font-size:.95rem; }
+ .course-status-image { aspect-ratio:4 / 3; }
+ .recent-course { margin-top:52px; }
+ .recent-course-heading { align-items:flex-start; gap:14px; }
+ .recent-course-heading .section-label { font-size:.72rem; }
+ .recent-course-content { grid-template-columns:1fr; gap:22px; padding:28px 0 32px; }
+ .recent-course-content h3 { font-size:1.65rem; }
+ .recent-course-description p { font-size:.95rem; }
+ .course-visit-copy h2 { font-size:2.4rem; }
+ .course-visit-image { aspect-ratio:4 / 3; }
+}

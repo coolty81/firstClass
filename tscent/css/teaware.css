@@ -29,8 +29,17 @@
 .teaware-category { display:grid; grid-template-columns:minmax(0, 1.05fr) minmax(0, .95fr); align-items:center; gap:clamp(40px,6vw,100px); scroll-margin-top:110px; }
 .teaware-category.is-reverse .teaware-category-image { order:2; }
 .teaware-category.is-reverse .teaware-category-copy { order:1; }
-.teaware-category-image { width:100%; min-height:470px; aspect-ratio:1.2 / 1; margin:0; background:var(--surface-default); }
-#tea-pot figure { background-image:url("../img/teaware/tscent_971x971_34.webp"); background-size:contain; background-position:center; }
+.teaware-category-image { width:100%; min-height:470px; aspect-ratio:1.2 / 1; margin:0; background:var(--surface-default); background-size:contain; background-position:center; }
+#tea-pot figure { background-image:url("../img/teaware/tscent_971x971_34.webp"); }
+#gaiwan figure { background-image:url("../img/teaware/tscent_971x971_34.webp"); }
+#tea-server figure { background-image:url("../img/teaware/tscent_971x971_54.webp"); }
+#cup figure { background-image:url("../img/teaware/1_671df6f9-170f-4f60-9da0-151cef867ca8.webp"); }
+#tea-bowl figure { background-image:url("../img/teaware/tscent_971x971_91.webp"); }
+#flower figure { background-image:url("../img/teaware/3990f575c873e5ed3cde7c1c55fd0327_d6c68cc2-b976-4758-bb73-3a207ddc0710.webp"); }
+#tea-tools figure { background-image:url("../img/teaware/2_1406e58b-7ba6-4afb-8daa-1a6ed3a44ccc.webp"); }
+#plate figure { background-image:url("../img/teaware/tscent_971x971_167.webp"); }
+#fabric figure { background-image:url("../img/teaware/tscent_971x971_172.webp"); }
+#etc figure { background-image:url("../img/teaware/IMG_0021.webp"); }
 .teaware-category-copy { max-width:560px; }
 .teaware-category-copy h3 { margin-top:20px; color:var(--text-primary); font-size:clamp(2rem,3vw,3rem); font-weight:500; line-height:1.2; letter-spacing:-.04em; }
 .teaware-category-copy .category-lead { margin-top:24px; color:var(--text-primary); font-size:1.15rem; line-height:1.55; }

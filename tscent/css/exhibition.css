@@ -44,8 +44,8 @@
 .archive-row:nth-child(1) .archive-row-image { background-image:url("../img/exhibition/741495345_18365376460209806_1934568237743918672_n.webp"); }
 .archive-row:nth-child(2) .archive-row-image { background-image:url("../img/exhibition/teahouse_hada_post_2026__5__27___1_48_163906048501003785639.webp"); }
 .archive-row:nth-child(3) .archive-row-image { background-image:url("../img/exhibition/KakaoTalk_20251226_220531447.webp"); }
-.archive-row:nth-child(4) .archive-row-image { background-image:url("../img/4c1bc9244c062fac89716a09e10f7f6d.webp"); }
-.archive-row:nth-child(5) .archive-row-image { background-image:url("../img/KakaoTalk_20251012_161511438_01.webp"); }
+.archive-row:nth-child(4) .archive-row-image { background-image:url("../img/exhibition/4c1bc9244c062fac89716a09e10f7f6d.webp"); }
+.archive-row:nth-child(5) .archive-row-image { background-image:url("../img/exhibition/KakaoTalk_20251012_161511438_01.webp"); }
 .archive-row-image { width:100%; min-height:180px; aspect-ratio:4 / 3; margin:0; border-radius:10px; }
 .archive-row-copy { display:flex; flex-direction:column; align-items:flex-start; }
 .archive-row-copy h3 { margin-top:10px; color:var(--text-primary); font-size:1.6rem; font-weight:500; line-height:1.3; }

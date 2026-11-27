@@ -7,7 +7,7 @@
 .experience-hero { padding-bottom:100px; }
 .experience-hero-layout { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); align-items:center; gap:64px; margin-top:24px; }
 .experience-hero-copy { display:flex; flex-direction:column; align-items:flex-start; gap:22px; }
-.experience-hero-copy .experience-hero-image { background-image:url("../img/experience/2fb878124c08c69a27658472a0a60f08.webp"); background-size:cover; background-position:center; } 
+.experience-hero-copy+.experience-hero-image { background-image:url("../img/experience/2fb878124c08c69a27658472a0a60f08.webp"); background-size:cover; background-position:center; } 
 .experience-hero-copy h1 { color:var(--text-primary); font-size:clamp(3rem,4.1vw,5rem); font-weight:500; line-height:1.12; letter-spacing:-.04em; }
 .experience-hero-copy p:not(.experience-lead) { color:var(--text-secondary); font-size:1rem; line-height:1.75; }
 .experience-lead { color:var(--text-primary); font-size:1.25rem; line-height:1.55; }

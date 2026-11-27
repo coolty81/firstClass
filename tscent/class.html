@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="차의 철학과 문화, 미학을 함께 탐구하는 티센트의 강의를 소개합니다.">
+    <title>강의 | TSCENT</title>
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../font/css/pretendardvariable.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/class.css">
+    <script src="js/class.js" defer></script>
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <div>
+            <a href="index.html" aria-label="티센트 메인으로 이동"><img src="img/logo.svg" alt="티센트 로고"></a>
+            <ul class="main-menu"><li>차·도구</li><ul class="sub-menu">
+                <li><a href="teaware.html">다도구</a></li><li><a href="tea.html">잎차</a></li><li><a href="gift.html">선물세트</a></li>
+            </ul></ul>
+            <ul class="main-menu"><li>문화·이해</li><ul class="sub-menu">
+                <li><a href="tea-course.html">티코스</a></li><li><a href="exhibition.html">전시</a></li><li><a href="class.html" aria-current="page">강의</a></li><li><a href="#">체험</a></li>
+            </ul></ul>
+            <ul class="main-menu"><li>About</li><ul class="sub-menu"><li><a href="about.html">회사 정보</a></li><li><a href="#">FAQ</a></li></ul></ul>
+            <ul class="main-menu"><li>Notice</li><ul class="sub-menu"><li><a href="#">공지사항</a></li><li><a href="#">Journal</a></li></ul></ul>
+        </div>
+        <div>
+            <button id="searchPanel" type="button" aria-expanded="false" aria-controls="search">검색</button>
+            <span><a href="#">로그인</a></span><span><a href="#">회원가입</a></span><span><a href="#">장바구니</a></span>
+            <img src="img/icon-menu.svg" alt="메뉴 열기" id="menuIcon">
+        </div>
+        <div id="search" style="display:none;">
+            <form action="#" role="search" name="form"><div>
+                <label class="sr-only" for="class-search">검색어</label>
+                <input type="search" id="class-search" name="search" placeholder="검색어를 입력해주세요.">
+                <button type="button" id="closeSearch">닫기</button>
+                <div><span>관심 키워드</span><span>아리산</span><span>월광백</span><span>보이차</span></div>
+            </div></form>
+        </div>
+    </header>
+
+    <div id="mobile-menu"><div>
+        <img src="img/icon-close.svg" id="closeMenu" alt="메뉴 닫기">
+        <ul class="main-menu"><li>차·도구</li><ul class="sub-menu"><li><a href="teaware.html">다도구</a></li><li><a href="tea.html">잎차</a></li><li><a href="gift.html">선물세트</a></li></ul></ul>
+        <ul class="main-menu"><li>문화·이해</li><ul class="sub-menu"><li><a href="tea-course.html">티코스</a></li><li><a href="exhibition.html">전시</a></li><li><a href="class.html" aria-current="page">강의</a></li><li><a href="#">체험</a></li></ul></ul>
+        <ul class="main-menu"><li>About</li><ul class="sub-menu"><li><a href="about.html">회사 정보</a></li><li><a href="#">FAQ</a></li></ul></ul>
+        <ul class="main-menu"><li>Notice</li><ul class="sub-menu"><li><a href="#">공지사항</a></li><li><a href="#">Journal</a></li></ul></ul>
+        <button id="mobile-searchPanel" type="button">검색</button><a href="about.html#contact">문의</a>
+    </div></div>
+
+    <main class="class-page">
+        <section class="class-hero">
+            <div class="section-inner">
+                <nav class="breadcrumb" aria-label="브레드크럼">
+                    <a href="index.html">Home</a><span aria-hidden="true">/</span>
+                    <span>문화·이해</span><span aria-hidden="true">/</span>
+                    <span aria-current="page">강의</span>
+                </nav>
+                <div class="class-hero-layout">
+                    <div class="class-hero-copy">
+                        <span class="section-label">LECTURE · 講義</span>
+                        <h1>차를 통해 깊어지는<br>사유와 대화의 시간</h1>
+                        <p class="class-lead">차의 철학과 문화, 그 안에 담긴 미학을 함께 탐구합니다.</p>
+                        <p>차를 매개로 한 인문학 강의와 티 클래스는 익숙한 차 한 잔을 새로운 시선으로 바라보게 합니다. 역사와 예술, 다도의 정신을 배우고 서로의 생각을 나누며 차 문화의 깊이를 천천히 알아갑니다.</p>
+                        <a class="text-link" href="#current-class">진행 중인 강의 살펴보기 <span aria-hidden="true">↓</span></a>
+                    </div>
+                    <figure class="class-hero-image image-placeholder" role="img" aria-label="강의와 차 문화 관련 이미지 자리">
+                        <figcaption class="sr-only">강의와 차 문화 관련 이미지</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="class-introduction">
+            <div class="section-inner">
+                <div class="class-intro-title">
+                    <span class="section-label">01 / ABOUT LECTURE</span>
+                    <h2>배움으로 넓어지는<br>차의 세계</h2>
+                </div>
+                <div class="class-intro-copy">
+                    <p>티센트의 강의는 차를 하나의 음료에 머무르지 않고 역사와 철학, 예술이 만나는 문화로 바라봅니다.</p>
+                    <p>도자와 다완의 역사부터 일본 다도의 미학까지, 주제별 강의를 통해 차에 담긴 시대의 흐름과 사람들의 생각을 살펴봅니다. 지식을 쌓는 동시에 차를 바라보는 자신만의 관점을 발견하는 시간이 됩니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="current-class" id="current-class">
+            <div class="section-inner">
+                <div class="section-head current-class-head">
+                    <div><span class="section-label">02 / CURRENT LECTURE</span><h2>현재 진행 중인 강의</h2></div>
+                    <p>강의 일정과 신청 방법은<br>공식 안내 페이지에서 확인해 주세요.</p>
+                </div>
+
+                <article class="current-class-panel">
+                    <div class="current-class-copy">
+                        <span class="class-status"><span aria-hidden="true"></span> ONGOING · 2026</span>
+                        <p class="class-period">2026.09.02 – 12.12</p>
+                        <h3>청산녹수 도자사 part 6<br>– 조선 도자와 다완</h3>
+                        <p class="class-description">이번 강의에서는 조선 도자와 다완을 중심으로 조선의 도자 문화와 미의식을 살펴봅니다. 분청사기와 백자의 전개 과정을 시대별로 이해하고, 도자에 담긴 역사와 미감을 탐구합니다. 임진왜란 전후 조선 도공들의 이동을 통해 형성된 한·일 도자와 차문화의 교류와 영향도 함께 살펴봅니다.</p>
+                        <div class="class-instructor"><span>강의</span><strong>윤용이 교수</strong></div>
+                        <a class="outline-btn class-apply-btn" href="https://tscent-tea.com/blogs/class" target="_blank" rel="noopener noreferrer">공식 강의 안내 및 신청 <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <figure class="current-class-image image-placeholder" role="img" aria-label="청산녹수 도자사 part 6 강의 이미지 자리">
+                        <figcaption class="sr-only">청산녹수 도자사 part 6 강의 이미지</figcaption>
+                    </figure>
+                </article>
+                <p class="class-data-note">2026년 11월 27일 기준, 공식 강의 페이지에 ‘진행중’으로 소개된 일정입니다. 실제 신청 가능 여부와 세부 수업 일정은 공식 페이지에서 확인해 주세요.</p>
+            </div>
+        </section>
+
+        <section class="past-classes" id="past-classes">
+            <div class="section-inner">
+                <div class="section-head past-class-head">
+                    <div><span class="section-label">03 / LECTURE ARCHIVE</span><h2>종료된 강의</h2></div>
+                    <p>지난 강의의 주제와 기록을<br>시간의 흐름에 따라 살펴봅니다.</p>
+                </div>
+
+                <div class="class-archive">
+                    <article class="class-archive-item">
+                        <div class="archive-meta"><span>2026</span><span>2026.07.21 – 08.04</span></div>
+                        <div class="archive-main">
+                            <h3>동아시아 자연미학과 시공간</h3>
+                            <p>중국 산수화의 흐름을 따라 옛 선비가 자연을 바라보는 시선과 마음의 풍경을 살펴보는 강의입니다. 채색 산수에서 수묵 산수, 실경 산수로 이어지는 여정을 통해 동아시아 자연과 시공간의 미학을 탐구합니다.</p>
+                            <span class="archive-instructor">송희경 관장</span>
+                        </div>
+                        <span class="archive-state">종료</span>
+                    </article>
+
+                    <article class="class-archive-item">
+                        <div class="archive-meta"><span>2026</span><span>2026.07.14 – 10.27</span></div>
+                        <div class="archive-main">
+                            <h3>일기일회 일본 다도 미학 part 11<br>– 《남방록 연구》</h3>
+                            <p>센노리큐의 말과 행동을 기록한 『남방록』을 바탕으로 다도의 형식보다 마음의 본질을 살펴봅니다. 자연과 이웃, 자신과의 관계를 비추며 와비사비의 미의식과 다선일미의 태도를 함께 탐구합니다.</p>
+                            <span class="archive-instructor">박전열 교수</span>
+                        </div>
+                        <span class="archive-state">종료</span>
+                    </article>
+
+                    <article class="class-archive-item">
+                        <div class="archive-meta"><span>2026</span><span>2026.06.16</span></div>
+                        <div class="archive-main">
+                            <h3>아회(雅會), 차를 나누다</h3>
+                            <p>조선시대 회화 속 아회도에 담긴 차 문화와 미학을 살펴봅니다. 겸재 정선 등 조선 문인들의 교유와 사유를 통해 차가 지닌 문화적·철학적 의미를 함께 음미하는 특강입니다.</p>
+                            <span class="archive-instructor">송희경 관장</span>
+                        </div>
+                        <span class="archive-state">종료</span>
+                    </article>
+
+                    <article class="class-archive-item">
+                        <div class="archive-meta"><span>2026</span><span>2026.03.10 – 06.23</span></div>
+                        <div class="archive-main">
+                            <h3>일기일회 일본 다도 미학 part 10<br>– 《남방록 연구》</h3>
+                            <p>『남방록』을 중심으로 일본 다도의 철학과 미학을 살펴보며, 형식보다 마음의 본질을 중시하는 다도의 태도를 탐구합니다.</p>
+                            <span class="archive-instructor">박전열 교수</span>
+                        </div>
+                        <span class="archive-state">종료</span>
+                    </article>
+
+                    <article class="class-archive-item">
+                        <div class="archive-meta"><span>2026</span><span>2026.03.04 – 06.17</span></div>
+                        <div class="archive-main">
+                            <h3>청산녹수 도자사 part 5<br>– 고려 청자와 다완</h3>
+                            <p>고려시대 청자의 발전과 다완 문화를 중심으로 초기 청자부터 상감·철화·후기 청자까지 주요 양식을 살펴봅니다. 도자와 차가 어우러진 선조들의 삶을 역사 속에서 읽어봅니다.</p>
+                            <span class="archive-instructor">윤용이 교수</span>
+                        </div>
+                        <span class="archive-state">종료</span>
+                    </article>
+
+                    <article class="class-archive-item">
+                        <div class="archive-meta"><span>2025–2026</span><span>2025.11.11 – 2026.02.24</span></div>
+                        <div class="archive-main">
+                            <h3>일기일회 일본 다도 미학 part 9<br>– 《남방록 연구》</h3>
+                            <p>『남방록』을 통해 자연과 이웃, 자신과의 관계를 돌아보고 일본 다도의 고요한 미의식과 다선일미의 태도를 살펴본 강의입니다.</p>
+                            <span class="archive-instructor">박전열 교수</span>
+                        </div>
+                        <span class="archive-state">종료</span>
+                    </article>
+                </div>
+                <div class="class-archive-more">
+                    <a class="text-link" href="https://tscent-tea.com/blogs/class" target="_blank" rel="noopener noreferrer">공식 강의 아카이브 더 보기 <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="class-visit">
+            <div class="section-inner">
+                <div class="class-visit-copy">
+                    <span class="section-label">04 / TEAHOUSE HADA</span>
+                    <h2>차를 배우고 나누는<br>공간, 티하우스 하다</h2>
+                    <p>티하우스 하다는 차를 중심으로 배움과 대화가 이어지는 오프라인 공간입니다. 강의별 장소와 참여 방법은 공식 안내를 통해 확인해 주세요.</p>
+                    <a class="text-link" href="about.html">티하우스 하다 알아보기 <span aria-hidden="true">↗</span></a>
+                </div>
+                <figure class="class-visit-image image-placeholder" role="img" aria-label="티하우스 하다 강의 공간 이미지 자리">
+                    <figcaption class="sr-only">티하우스 하다 강의 공간 이미지</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand"><img src="img/logo.svg" alt="티센트"><p>차 한 잔에 깃든 일상의 여백.</p></div>
+                <address class="footer-contact"><p>회사 티하우스 하다 睱茶</p><p>서울특별시 강남구 선릉로146길 54, 1층</p><p><a href="tel:02-6053-1570">02-6053-1570</a> · <a href="mailto:tscent.tea@gmail.com">tscent.tea@gmail.com</a></p></address>
+                <nav class="footer-nav" aria-label="티센트 주요 정보"><ul><li><a href="about.html">About</a></li><li><a href="#">Notice</a></li><li><a href="#">이용약관</a></li></ul></nav>
+                <nav class="footer-nav" aria-label="티센트 기타 정보"><ul><li><a href="#">Journal</a></li><li><a href="#">FAQ</a></li><li><a href="#">개인정보처리방침</a></li></ul></nav>
+            </div>
+            <div class="footer-line" aria-hidden="true"></div>
+            <p class="copyright">© 2025 tscent. UI prototype. | 이 사이트는 개인 포트폴리오 용도로 제작되었습니다.</p>
+        </div>
+    </footer>
+</div>
+<script src="js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+/* TSCENT Notice page — extends existing Design.md system. */
+.notice-page { padding-top:85px; background:var(--background-default); }
+.notice-page .section-inner { width:min(1720px,calc(100% - 200px)); margin:0 auto; }
+.notice-section { padding:0 0 120px; }
+.notice-breadcrumb { display:flex; align-items:center; gap:12px; margin:34px 0 72px; color:var(--text-secondary); font-size:.875rem; line-height:1.3; }
+.notice-breadcrumb [aria-current="page"] { color:var(--text-primary); }
+.notice-heading { padding-bottom:64px; border-bottom:1px solid var(--border-default); }
+.notice-heading h1 { margin-top:20px; color:var(--text-primary); font-size:clamp(3rem,4vw,4.5rem); font-weight:500; line-height:1.12; letter-spacing:-.04em; }
+.notice-heading > p { margin-top:20px; color:var(--text-secondary); font-size:1.125rem; line-height:1.65; }
+.notice-board { margin-top:70px; }
+.notice-board-heading { display:flex; align-items:center; justify-content:space-between; padding-bottom:22px; }
+.notice-board-heading h2 { color:var(--text-primary); font-size:1.5rem; font-weight:500; }
+.notice-count { color:var(--text-secondary); font-size:.8rem; letter-spacing:.08em; }
+.notice-table { border-top:2px solid var(--text-primary); }
+.notice-table-head { display:grid; grid-template-columns:120px minmax(0,1fr) 160px; gap:24px; align-items:center; min-height:62px; padding:0 24px; border-bottom:1px solid var(--border-default); color:var(--text-secondary); font-size:.875rem; }
+.notice-table-head span:first-child, .notice-table-head span:last-child { text-align:center; }
+.notice-empty { display:flex; min-height:250px; flex-direction:column; align-items:center; justify-content:center; gap:12px; border-bottom:1px solid var(--border-default); text-align:center; }
+.notice-empty p { color:var(--text-primary); font-size:1.125rem; line-height:1.5; }
+.notice-empty span { color:var(--text-secondary); font-size:.9rem; line-height:1.6; }
+.notice-board-footer { display:flex; justify-content:flex-end; margin-top:28px; }
+.notice-data-note { margin-top:58px; padding-top:20px; border-top:1px solid var(--border-default); color:var(--text-secondary); font-size:.875rem; line-height:1.7; }
+@media (max-width:1200px) {
+ .notice-page .section-inner { width:min(100% - 120px,1720px); }
+}
+@media (max-width:1024px) {
+ .notice-page .section-inner { width:calc(100% - 100px); }
+ .notice-section { padding-bottom:90px; }
+ .notice-breadcrumb { margin:28px 0 58px; }
+ .notice-heading { padding-bottom:52px; }
+ .notice-board { margin-top:56px; }
+}
+@media (max-width:640px) {
+ .notice-page .section-inner { width:calc(100% - 40px); }
+ .notice-section { padding-bottom:64px; }
+ .notice-breadcrumb { gap:8px; margin:24px 0 42px; font-size:.8rem; }
+ .notice-heading { padding-bottom:38px; }
+ .notice-heading h1 { margin-top:16px; font-size:2.8rem; }
+ .notice-heading > p { margin-top:16px; font-size:1rem; }
+ .notice-board { margin-top:40px; }
+ .notice-board-heading { padding-bottom:16px; }
+ .notice-board-heading h2 { font-size:1.25rem; }
+ .notice-table-head { grid-template-columns:54px minmax(0,1fr) 82px; gap:10px; min-height:54px; padding:0 10px; font-size:.8rem; }
+ .notice-empty { min-height:210px; padding:24px 12px; }
+ .notice-empty p { font-size:1rem; }
+ .notice-empty span { font-size:.85rem; }
+ .notice-data-note { margin-top:42px; font-size:.82rem; }
+}

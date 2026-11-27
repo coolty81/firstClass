@@ -26,6 +26,7 @@
 .current-class-panel .current-class-image { background-image:url("../img/class/web_2.webp"); background-size:cover; background-position:center; }
 .current-class-panel+.current-class-panel .current-class-image { background-image:url("../img/class/web_544ed4af-1239-40eb-8e05-94f299327d5d.webp"); background-size:cover; background-position:center; }
 .current-class-copy { display:flex; flex-direction:column; align-items:flex-start; }
+.current-class-copy p:first-child { margin:0; }
 .class-status { display:flex; align-items:center; gap:9px; color:var(--accent-tea); font-size:.8rem; letter-spacing:.04em; }
 .class-status span { width:7px; height:7px; border-radius:50%; background:var(--accent-tea); }
 .class-period { margin-top:24px; color:var(--text-secondary); font-size:.9rem; }

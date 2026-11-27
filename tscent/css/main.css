@@ -104,6 +104,16 @@ header .main-menu, #mobile-menu .main-menu {
     cursor: pointer;
 }
 
+.cart {
+    position: fixed;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    background-color: var(--color-white);
+    top: 0;
+    z-index: 11;
+}
+
 header .main-menu:hover {
     color: var(--accent-warm)
 }

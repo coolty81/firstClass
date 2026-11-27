@@ -113,6 +113,7 @@ header .main-menu, #mobile-menu .main-menu {
     top: 0;
     z-index: 11;
     padding: 36px;
+    border: 1px solid var(--color-gray-300);
 }
 
 .cart div {

@@ -46,7 +46,7 @@
 .archive-row:nth-child(3) .archive-row-image { background-image:url("../img/exhibition/KakaoTalk_20251226_220531447.webp"); }
 .archive-row:nth-child(4) .archive-row-image { background-image:url("../img/exhibition/4c1bc9244c062fac89716a09e10f7f6d.webp"); }
 .archive-row:nth-child(5) .archive-row-image { background-image:url("../img/exhibition/KakaoTalk_20251012_161511438_01.webp"); }
-.archive-row-image { width:100%; min-height:180px; aspect-ratio:4 / 3; margin:0; border-radius:10px; }
+.archive-row-image { /* width:100%; min-height:180px; */ aspect-ratio:4 / 3; margin:0; border-radius:10px; }
 .archive-row-copy { display:flex; flex-direction:column; align-items:flex-start; }
 .archive-row-copy h3 { margin-top:10px; color:var(--text-primary); font-size:1.6rem; font-weight:500; line-height:1.3; }
 .archive-row-copy p { margin-top:12px; color:var(--text-secondary); font-size:.95rem; line-height:1.7; }

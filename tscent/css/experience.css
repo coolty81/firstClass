@@ -29,7 +29,7 @@
 .experience-current-copy > p { max-width:580px; margin-top:22px; color:var(--text-secondary); font-size:1rem; line-height:1.8; }
 .experience-official-link { margin-top:30px; }
 .experience-official-link span { margin-left:14px; }
-.experience-current-image { width:100%; min-height:390px; aspect-ratio:4 / 3; margin:0; background:var(--surface-default); border-radius:10px; }
+.experience-current-image { width:100%; min-height:390px; aspect-ratio:4 / 3; margin:0; background:var(--surface-default); border-radius:10px; background-image:url("../img/experience/web_a7fba18e-f325-480e-9c8c-01eecdca7581.webp"); background-size:cover; background-position:center; }
 .experience-data-note { margin-top:18px; color:var(--text-secondary); font-size:.875rem; line-height:1.6; }
 .experience-archive { background:var(--background-subtle); }
 .experience-archive-list { margin-top:54px; border-top:2px solid var(--border-default); }

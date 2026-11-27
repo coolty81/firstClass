@@ -49,7 +49,7 @@
 .archive-more { display:flex; justify-content:flex-end; padding-top:28px; }
 .exhibition-visit { padding:100px 0; background:var(--background-subtle); }
 .exhibition-visit .section-inner { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:80px; align-items:center; }
-.exhibition-visit-copy+.exhibition-visit-image { width:100%; }
+.exhibition-visit-copy+.exhibition-visit-image, exhibition-hero-copy+exhibition-hero-image { width:100%; }
 .exhibition-visit-copy h2 { margin-top:22px; color:var(--text-primary); font-size:clamp(2.6rem,3.7vw,3.5rem); font-weight:500; line-height:1.15; letter-spacing:-.04em; }
 .exhibition-visit-copy p { margin-top:24px; color:var(--text-secondary); font-size:1rem; line-height:1.8; }
 .exhibition-visit-copy .text-link { margin-top:30px; }

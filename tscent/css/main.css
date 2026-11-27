@@ -114,6 +114,17 @@ header .main-menu, #mobile-menu .main-menu {
     z-index: 11;
 }
 
+.cart div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cart h3 ~ * {
+    text-align: center;   
+}
+
 header .main-menu:hover {
     color: var(--accent-warm)
 }

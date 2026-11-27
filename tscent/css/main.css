@@ -112,6 +112,7 @@ header .main-menu, #mobile-menu .main-menu {
     background-color: var(--color-white);
     top: 0;
     z-index: 11;
+    padding: 36px;
 }
 
 .cart div {

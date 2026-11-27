@@ -35,7 +35,7 @@
 .recent-course-heading { display:flex; justify-content:space-between; align-items:center; padding:22px 0; border-bottom:1px solid var(--border-default); }
 .recent-course-heading .section-label { color:var(--text-secondary); }
 .course-ended { color:var(--text-secondary); font-size:.875rem; }
-.recent-course-content { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1fr); gap:80px; padding:34px 0 42px; }
+.recent-course-content { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1fr); gap:80px; padding:34px 0 42px; align-items:center; }
 .recent-course-date { color:var(--text-secondary); font-size:.875rem; }
 .recent-course-content h3 { margin-top:14px; color:var(--text-primary); font-size:2rem; font-weight:500; line-height:1.25; }
 .recent-course-lead { margin-top:14px; color:var(--text-primary); font-size:1.05rem; line-height:1.6; }

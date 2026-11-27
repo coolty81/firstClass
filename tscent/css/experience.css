@@ -65,7 +65,7 @@
  .experience-section-head { display:block; }
  .experience-section-head > p { margin-top:20px; text-align:left; }
  .experience-current-panel { grid-template-columns:1fr; gap:32px; padding:40px; }
- .experience-current-image { min-height:0; aspect-ratio:4 / 3; }
+ .experience-current-image { min-height:0; aspect-ratio:4 / 3; border-radius:10px; }
  .experience-archive-item { grid-template-columns:140px minmax(0,1fr) 54px; gap:26px; }
  .experience-space .section-inner { grid-template-columns:1fr; gap:34px; }
  .experience-space-image { min-height:0; aspect-ratio:4 / 3; }

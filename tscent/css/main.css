@@ -116,11 +116,16 @@ header .main-menu, #mobile-menu .main-menu {
     border: 1px solid var(--color-gray-300);
 }
 
-.cart div {
+.cart > div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+}
+
+.cart > div > div {
+    display: flex;
+    justify-content: space-between;
 }
 
 .cart h3 ~ * {

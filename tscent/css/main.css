@@ -126,6 +126,12 @@ header .main-menu, #mobile-menu .main-menu {
     text-align: center;   
 }
 
+.cart h3 ~ *:last-child {
+    padding: 12px 0;
+    border: 1px solid var(--color-gray-300);
+    border-radius: 10px;
+}
+
 header .main-menu:hover {
     color: var(--accent-warm)
 }

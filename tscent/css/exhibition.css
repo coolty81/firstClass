@@ -20,7 +20,7 @@
 .current-exhibition { padding:100px 0 72px; }
 .current-exhibition-head h2,.past-exhibitions-head h2 { margin-top:18px; color:var(--text-primary); font-size:clamp(2.5rem,3.8vw,3.5rem); font-weight:500; line-height:1.15; letter-spacing:-.04em; }
 .current-exhibition-head > p,.past-exhibitions-head > p { color:var(--text-secondary); font-size:1rem; line-height:1.65; text-align:right; }
-.current-exhibition-panel { display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); gap:64px; align-items:center; margin-top:60px; padding:54px; background:var(--surface-subtle); }
+.current-exhibition-panel { margin-top:60px; padding:54px; background:var(--surface-subtle); }
 .current-exhibition-copy { display:flex; flex-direction:column; align-items:flex-start; }
 .exhibition-status { display:flex; align-items:center; gap:9px; color:var(--text-secondary); font-size:.8rem; letter-spacing:.04em; }
 .exhibition-status span { width:7px; height:7px; border-radius:50%; background:var(--color-gray-600); }
